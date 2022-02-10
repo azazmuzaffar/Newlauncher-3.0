@@ -2012,41 +2012,17 @@ p .custom-badge-group {
   overflow: initial;
 }
 
-.slide-s {
-  width: auto !important;
-  max-height: auto;
-}
-
 .media-wrap {
   position: relative;
-  height: 100%;
-  width: -webkit-fit-content !important;
-  width: -moz-fit-content !important;
-  width: fit-content !important;
+  width: 100%;
 }
 
 .media-wrap .thumb {
-  height: 100%;
-  width: -webkit-fit-content !important;
-  width: -moz-fit-content !important;
-  width: fit-content !important;
+  width: 100%;
 }
 
 .media-wrap .thumb img {
-  max-height: 527px;
-  width: auto;
-}
-
-@media only screen and (max-width: 991.98px) {
-  .media-wrap .thumb img {
-    max-height: 387px;
-  }
-}
-
-@media only screen and (max-width: 767.98px) {
-  .media-wrap .thumb img {
-    max-height: 292px;
-  }
+  width: 100%;
 }
 
 .media-wrap .badge-top, .media-wrap .bottom-left-icons {
@@ -3944,8 +3920,7 @@ p .custom-badge-group {
 }
 
 .floor-card .thumb img {
-  height: 100% !important;
-  width: auto !important;
+  width: 100%;
 }
 
 .floor-card .md-text {

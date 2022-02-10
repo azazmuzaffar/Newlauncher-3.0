@@ -105,11 +105,11 @@ function DetailsPageSlide(){
     resistanceRatio : 0.5, 
     breakpoints:{ 
       0:{
-        slidesPerView:"auto", 
+        slidesPerView:1, 
         spaceBetween:4,
       },
       768:{
-        slidesPerView:"auto", 
+        slidesPerView:2, 
         spaceBetween:8,
       }
     }
@@ -649,3 +649,28 @@ $('#max-bedroom').on('input', function () {
     });
   });
 })(jQuery);
+
+
+$(".lg-next").click(function(e){
+  e.preventDefault();
+  window.location.assign("#");
+});
+
+$(function(){
+  $('lg-next').click(function(){      
+    console.log("oooooooooooooooooooooooooooooooooooooooooooo");
+    $(".i-frame").each(function() { 
+      var src= $(this).attr('data-src');
+      $(this).attr('data-src',src);  
+    });
+  });
+});
+
+document.querySelector('.lg-next').addEventListener('click', () => {
+  console.log("oooooooooooooooooooooooooooooooooooooooooooo");
+  methodsInstance.goToNextSlide();
+  $(".i-frame").each(function() { 
+    var src= $(this).attr('data-src');
+    $(this).attr('data-src',src);  
+  });
+});
