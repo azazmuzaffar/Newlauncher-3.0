@@ -397,6 +397,7 @@
 	overflow: hidden;
 	padding-bottom: 8px; 
 	.media-slide-container{ 
+		position: relative;
 		overflow: initial; 
 	}
 }
@@ -409,7 +410,7 @@
 			width: 100%; 
 		}
 	}
-	.badge-top,.bottom-left-icons{
+	.badge-top, .bottom-left-icons{
 		position: absolute;
 		z-index: 10;
 		left: 8px;
@@ -419,33 +420,37 @@
 		border-radius: 2px; 
 		padding: 3.5px 4.5px; 
 	}
-	.bottom-left-icons{ 
-		bottom: 8px;
-		display: inline-block;
-		li{
-			margin-right:3px; 
-			.badge-dark-4{ 
-				background: rgba(17, 24, 40, 0.7);
-				border-radius: 2px;
+}
+
+.bottom-left-icons{
+	position: absolute !important;
+	z-index: 99; 
+	bottom: 8px; 
+	left: 8px;
+	li{
+		margin-right:3px; 
+		.badge-dark-4{ 
+			background: rgba(17, 24, 40, 0.7);
+			border-radius: 2px;
+		}
+		.badge{
+			font-size: 16px;
+			font-weight: 400; 
+			padding: 5px 6.5px; 
+			cursor: pointer;
+			@media #{$md_device}{ 
+				font-size: 14px;
 			}
-			.badge{
-				font-size: 16px;
-				font-weight: 400; 
-				padding: 5px 6.5px; 
-				@media #{$md_device}{ 
-					font-size: 14px;
-				}
-				.icon{
-					margin-right: 6px; 
-				}
-				svg{
-					width: 16px; 
-				}
-				.icon-rotate{
-					width: 16.6px;
-					margin-top: 2px; 
-				} 
+			.icon{
+				margin-right: 6px; 
 			}
+			svg{
+				width: 16px; 
+			}
+			.icon-rotate{
+				width: 16.6px;
+				margin-top: 2px; 
+			} 
 		}
 	}
 }

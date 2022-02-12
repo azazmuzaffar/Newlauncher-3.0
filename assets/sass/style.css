@@ -2009,6 +2009,7 @@ p .custom-badge-group {
 }
 
 .media-section .media-slide-container {
+  position: relative;
   overflow: initial;
 }
 
@@ -2037,41 +2038,44 @@ p .custom-badge-group {
   padding: 3.5px 4.5px;
 }
 
-.media-wrap .bottom-left-icons {
+.bottom-left-icons {
+  position: absolute !important;
+  z-index: 99;
   bottom: 8px;
-  display: inline-block;
+  left: 8px;
 }
 
-.media-wrap .bottom-left-icons li {
+.bottom-left-icons li {
   margin-right: 3px;
 }
 
-.media-wrap .bottom-left-icons li .badge-dark-4 {
+.bottom-left-icons li .badge-dark-4 {
   background: rgba(17, 24, 40, 0.7);
   border-radius: 2px;
 }
 
-.media-wrap .bottom-left-icons li .badge {
+.bottom-left-icons li .badge {
   font-size: 16px;
   font-weight: 400;
   padding: 5px 6.5px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 767.98px) {
-  .media-wrap .bottom-left-icons li .badge {
+  .bottom-left-icons li .badge {
     font-size: 14px;
   }
 }
 
-.media-wrap .bottom-left-icons li .badge .icon {
+.bottom-left-icons li .badge .icon {
   margin-right: 6px;
 }
 
-.media-wrap .bottom-left-icons li .badge svg {
+.bottom-left-icons li .badge svg {
   width: 16px;
 }
 
-.media-wrap .bottom-left-icons li .badge .icon-rotate {
+.bottom-left-icons li .badge .icon-rotate {
   width: 16.6px;
   margin-top: 2px;
 }

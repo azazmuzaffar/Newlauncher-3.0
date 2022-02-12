@@ -98,9 +98,10 @@ function reLoadSwiper() {
 }
 
 
+
 function DetailsPageSlide(){
   // Media slide scripts start
-  new Swiper(".media-slide-container", {
+  var mySwiper = new Swiper(".media-slide-container", {
     loop:false,
     resistanceRatio : 0.5, 
     breakpoints:{ 
@@ -114,6 +115,27 @@ function DetailsPageSlide(){
       }
     }
   });
+
+
+/* Go to the slide that include images */
+$('.badge-photos').click(function(e){
+  e.preventDefault();
+  mySwiper.slideTo(0);
+});
+/* Go to the slide that include videos */
+$('.badge-videos').click(function(e){
+  e.preventDefault();
+  var Videos = $('.an-image').length;
+  console.log(Videos);
+  mySwiper.slideTo(Videos);
+});
+/* Go to the slide that include video tour */
+$('.badge-tour').click(function(e){
+  e.preventDefault();
+  var Tour = $('.a-slide').length;
+  mySwiper.slideTo(Tour);
+});
+
  
   // Media slide scripts start
   new Swiper(".floor-card-slide .swiper-container", {
@@ -651,26 +673,3 @@ $('#max-bedroom').on('input', function () {
 })(jQuery);
 
 
-$(".lg-next").click(function(e){
-  e.preventDefault();
-  window.location.assign("#");
-});
-
-$(function(){
-  $('lg-next').click(function(){      
-    console.log("oooooooooooooooooooooooooooooooooooooooooooo");
-    $(".i-frame").each(function() { 
-      var src= $(this).attr('data-src');
-      $(this).attr('data-src',src);  
-    });
-  });
-});
-
-document.querySelector('.lg-next').addEventListener('click', () => {
-  console.log("oooooooooooooooooooooooooooooooooooooooooooo");
-  methodsInstance.goToNextSlide();
-  $(".i-frame").each(function() { 
-    var src= $(this).attr('data-src');
-    $(this).attr('data-src',src);  
-  });
-});
