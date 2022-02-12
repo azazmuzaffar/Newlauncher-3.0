@@ -180,47 +180,15 @@ $('.badge-tour').click(function(e){
     slidesPerView: "auto",
     centeredSlides: false, 
     spaceBetween: 0, 
-
-
+    mode:'horizontal',
+    freeMode: true,
     navigation: {
       nextEl: ".content-tab-header .next-btn-wrap", 
       prevEl: ".content-tab-header .prev-btn-wrap",
     } ,
   });
 
-/* 
-  index = headSwiper.activeIndex;
-  headSwiper.slideTo(index+1);.swipeTo(0, 1, true); 
-  index = headSwiper.activeIndex;
-               headSwiper.slideTo(index+1);
- */
-
-               /* Go to the slide that include video tour */
- $('.ddddd').click(function(e){
   
-
-
-  
-  console.log(index);
-});
-
-/*
-var totalItems = $('.link-item').length;
-var currentIndex = $('.link-item .active').index() + 1;
-var myCarousel = document.getElementById('carouselExampleIndicators')
-myCarousel.addEventListener('slid.bs.carousel', function() {
-  currentIndex = $('.carousel-item.active').index() + 1;
-  $('#slide').text('' + currentIndex + ' / ' + totalItems + '');
-});
- */
-
-
-$(window).on('scroll', function() {
-
-});
-
-
-
   function TabHeaderScroll(TopOffset){ 
 
     var $tabHeaderLinks = $('.content-tab-header .link-item[href*="#"]:not([href="#"]'); 
@@ -711,21 +679,3 @@ $('#max-bedroom').on('input', function () {
 })(jQuery);
 
 
-function SmoothVerticalScrolling(e, time, where) {
-  var eTop = e.getBoundingClientRect().top;
-  var eAmt = eTop / 100;
-  var curTime = 0;
-  while (curTime <= time) {
-      window.setTimeout(SVS_B, curTime, eAmt, where);
-      curTime += time / 100;
-  }
-}
-
-function SVS_B(eAmt, where) {
-  if(where == "center" || where == "")
-      window.scrollBy(0, eAmt / 2);
-  if (where == "top")
-      window.scrollBy(0, eAmt);
-}
-
-SmoothVerticalScrolling(myelement, 275, "center");
