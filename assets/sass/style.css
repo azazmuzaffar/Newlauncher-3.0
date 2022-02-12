@@ -3605,7 +3605,7 @@ p .custom-badge-group {
 }
 
 .tab-header-sticky {
-  z-index: 950 !important;
+  z-index: 9990 !important;
 }
 
 .content-tab-header-section {

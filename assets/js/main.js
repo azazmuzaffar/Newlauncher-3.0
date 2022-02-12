@@ -174,18 +174,52 @@ $('.badge-tour').click(function(e){
     $(this).closest('.swiper-slide').css('width', $(this).innerWidth()+'px');
   });
 
-  new Swiper(".content-tab-header .swiper-container", {
+  var headSwiper = new Swiper(".content-tab-header .swiper-container", {
     loop:false,
-    resistanceRatio : 0.5, 
+    
     slidesPerView: "auto",
     centeredSlides: false, 
     spaceBetween: 0, 
 
+
     navigation: {
       nextEl: ".content-tab-header .next-btn-wrap", 
       prevEl: ".content-tab-header .prev-btn-wrap",
-    } 
+    } ,
   });
+
+/* 
+  index = headSwiper.activeIndex;
+  headSwiper.slideTo(index+1);.swipeTo(0, 1, true); 
+  index = headSwiper.activeIndex;
+               headSwiper.slideTo(index+1);
+ */
+
+               /* Go to the slide that include video tour */
+ $('.ddddd').click(function(e){
+  
+
+
+  
+  console.log(index);
+});
+
+/*
+var totalItems = $('.link-item').length;
+var currentIndex = $('.link-item .active').index() + 1;
+var myCarousel = document.getElementById('carouselExampleIndicators')
+myCarousel.addEventListener('slid.bs.carousel', function() {
+  currentIndex = $('.carousel-item.active').index() + 1;
+  $('#slide').text('' + currentIndex + ' / ' + totalItems + '');
+});
+ */
+
+
+$(window).on('scroll', function() {
+
+});
+
+
 
   function TabHeaderScroll(TopOffset){ 
 
@@ -215,8 +249,12 @@ $('.badge-tour').click(function(e){
 
           if($scrollPosition < $sectionBottom - (TopOffset+10) && $scrollPosition >= $sectionOffset - (TopOffset+10)){
               $(this).addClass('active');
+              $(this).parent().addClass('active');
+              var index = $('.-slide--.active').index();
+              headSwiper.slideTo(index-1);
           } else{
               $(this).removeClass('active');
+              $(this).parent().removeClass('active');
           }
         }
       });

@@ -596,50 +596,51 @@
           </div>
         </div>
       </section>
+     
       <section class="tab-header-sticky content-tab-header-section">
         <div class="container">
-          <div class="content-tab-header">
+          <div class="content-tab-header">    
             <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
+              <div class="swiper-wrapper ">
+                <div class="swiper-slide -slide--">
                   <a href="#section-1" class="link-item active">Unit Overview</a>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide -slide--">
                   <a href="#section-2" class="link-item">Highlight</a>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide -slide-- ">
                   <a href="#section-3" class="link-item">Properties Detail</a>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide -slide--">
                   <a href="#section-4" class="link-item">Facilities</a>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide -slide--">
                   <a href="#section-5" class="link-item">Locality</a>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide -slide--">
                   <a href="#section-6" class="link-item">Unit Distribution</a>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide -slide--">
                   <a href="#section-7" class="link-item">Balance Unit</a>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide -slide--">
                   <a href="#section-8" class="link-item">Floor Plans</a>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide -slide--">
                   <a href="#section-9" class="link-item">Sales Trend</a>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide -slide--">
                   <a href="#section-10" class="link-item">Sales Transaction</a>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide -slide--">
                   <a href="#section-11" class="link-item">Floor Plans</a>
                 </div>
-                <div class="swiper-slide">
+                <!-- <div class="swiper-slide">
                   <a href="#" class="link-item">Sales Trend</a>
-                </div>
-                <div class="swiper-slide">
+                </div> -->
+                <!-- <div class="swiper-slide">
                   <a href="#" class="link-item">Sales Transaction</a>
-                </div>
+                </div> -->
               </div>
             </div>
             <div class="prev-btn-wrap">
@@ -2231,17 +2232,75 @@
     <script src="assets/js/main.js"></script>
 
     <script>
-      lightGallery(document.querySelector("#media-thumbnails-gallery"), {
-        plugins: [lgZoom, lgThumbnail, lgAutoplay, lgVideo],
-        slideEndAnimation: false,
-        zoomFromOrigin: false,
+      // Code for lightgallery start
+      // all the variables here are necessary
+      // Using URL hashing to prevent Page from going back
+      // There is no way to override the default back behaviour of a browser as it is a security and usablility issue for the users
+      // However we can alter the URL hash to circumvent and do 
+      const lg = document.getElementById("media-thumbnails-gallery");
+      let shouldReplace = false; 
+      let showingGallery = false;
+      let pluginInstance = null;
+      isLightGalleryOpenedOnce = false;
+
+      let goBack = false;
+      const HASH_NAME = "property-view";
+
+      lg.addEventListener("lgInit", (event) => {
+        pluginInstance = event.detail.instance;
       });
+      lightGallery(lg, {
+        plugins: [lgZoom, lgThumbnail, lgAutoplay, lgVideo],
+        closeOnTap: false,
+        swipeToClose: false,
+      });
+
+      lg.addEventListener("lgAfterOpen", () => {
+        showingGallery = true;
+        if (shouldReplace) {
+          const url = new URL(window.location);
+          url.hash = HASH_NAME;
+          history.replaceState(null, document.title, url);
+        } else {
+          window.location.hash = HASH_NAME;
+          shouldReplace = true;
+          isLightGalleryOpenedOnce = true;
+        }
+      });
+
+      lg.addEventListener("lgBeforeClose", (e, o) => {
+        showingGallery = false;
+
+        const url = new URL(window.location);
+        url.hash = "";
+        history.replaceState(null, document.title, url);
+      });
+
+      window.addEventListener(
+        "hashchange",
+        function () {
+          if (window.location.hash == "" && showingGallery) {
+            goBack = true;
+            pluginInstance.closeGallery();
+          }
+        },
+        false
+      );
+
+      window.onpopstate = function (event) {
+        if (window.location.hash == "") {
+          shouldReplace = false;
+        }
+        if (isLightGalleryOpenedOnce === true && showingGallery === false) {
+          history.back();
+        }
+      };
+      // code for light gallery end
+
 
       (function ($) {
         $(".tab-header-sticky").sticky();
       })(jQuery);
-
-      
     </script>
   </body>
 </html>
