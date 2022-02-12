@@ -1074,7 +1074,7 @@
                 <div class="card-header">
                   <div class="d-flex align-items-center">
                     <div class="left-text me-auto">
-                      <h2 class="title">Balance Unit</h2>
+                      <h2 class="title">Balance Units</h2>
                       <p>Showing all balance unit details</p>
                     </div>
                     <div class="right-text">
@@ -1474,7 +1474,7 @@
                 <div class="card-header">
                   <div class="d-md-flex align-items-center">
                     <div class="left-text me-auto">
-                      <h2 class="title">Sales Transaction</h2>
+                      <h2 class="title">Buyers Profile</h2>
                       <p>Showing 1 - 20 of 136 transaction</p>
                     </div>
                     <div class="right-text mt-2 mt-md-0">
@@ -2253,6 +2253,8 @@
         plugins: [lgZoom, lgThumbnail, lgAutoplay, lgVideo],
         closeOnTap: false,
         swipeToClose: false,
+        slideEndAnimation: false,
+        zoomFromOrigin: false,
       });
 
       lg.addEventListener("lgAfterOpen", () => {
