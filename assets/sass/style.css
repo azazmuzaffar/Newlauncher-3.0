@@ -3686,6 +3686,10 @@ p .custom-badge-group {
   color: #743393;
 }
 
+#section-3, #section-4 {
+  pointer-events: none;
+}
+
 .panel-card {
   background: #FFFFFF;
   border: 1px solid #F3F4F6;

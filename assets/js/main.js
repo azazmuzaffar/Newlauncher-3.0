@@ -678,4 +678,3 @@ $('#max-bedroom').on('input', function () {
   });
 })(jQuery);
 
-
