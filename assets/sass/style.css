@@ -3630,12 +3630,18 @@ p .custom-badge-group {
   right: 0;
   background: -webkit-gradient(linear, right top, left top, from(#FFFFFF), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .content-tab-header .prev-btn-wrap {
   left: 0;
   background: -webkit-gradient(linear, left top, right top, from(white), color-stop(59%, rgba(255, 255, 255, 0)), color-stop(60%, rgba(255, 255, 255, 0)));
   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 59%, rgba(255, 255, 255, 0) 60%);
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .content-tab-header .light_prev_btn, .content-tab-header .light_next_btn {

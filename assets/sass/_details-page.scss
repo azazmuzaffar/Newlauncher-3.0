@@ -30,10 +30,12 @@
 	.next-btn-wrap{
 		right: 0;
 		background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+		max-width: fit-content;
 	}
 	.prev-btn-wrap{ 
 		left: 0;
 		background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 59%,rgba(255,255,255,0) 60%); 
+		max-width: fit-content;
 	}
 	.light_prev_btn,.light_next_btn{
 		position: absolute;
