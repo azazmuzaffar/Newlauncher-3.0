@@ -3889,7 +3889,7 @@ p .custom-badge-group {
   top: 0;
   right: 0;
   height: 100%;
-  width: 170px;
+  width: 100px;
   z-index: 5;
   background: -webkit-gradient(linear, right top, left top, color-stop(19.05%, #FFFFFF), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(270deg, #FFFFFF 19.05%, rgba(255, 255, 255, 0) 100%);
@@ -3897,7 +3897,7 @@ p .custom-badge-group {
 
 @media only screen and (max-width: 767.98px) {
   .table__wrapper::before {
-    width: 108px;
+    width: 20px;
     pointer-events: none;
   }
 }
@@ -3920,6 +3920,22 @@ p .custom-badge-group {
   padding-right: 83px;
   white-space: nowrap;
   padding-bottom: 11px;
+}
+
+.table-transparent td:last-of-type {
+  padding-right: 30px;
+}
+
+@media only screen and (max-width: 991.98px) {
+  .table-transparent td:last-of-type {
+    padding-right: 70px;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .table-transparent td:last-of-type {
+    padding-right: 30px;
+  }
 }
 
 .floor-card {
@@ -4208,6 +4224,29 @@ p .custom-badge-group {
 @media only screen and (min-width: 1201px) {
   .scrolling {
     pointer-events: none;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  /* width */
+  .table-transparent::-webkit-scrollbar {
+    height: 4px;
+    border-radius: 4px;
+  }
+  /* Track */
+  .table-transparent::-webkit-scrollbar-track {
+    background: #fff;
+  }
+  /* Handle */
+  .table-transparent::-webkit-scrollbar-thumb {
+    background: #fff;
+    -webkit-transition: .9s;
+    transition: .9s;
+  }
+  .table-transparent:hover::-webkit-scrollbar-thumb {
+    background: #E6E7EB;
+    -webkit-transition: .9s;
+    transition: .9s;
   }
 }
 

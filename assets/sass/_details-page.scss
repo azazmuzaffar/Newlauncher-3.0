@@ -240,11 +240,11 @@
 		position: absolute;
 		top: 0;right:0;
 		height: 100%; 
-		width: 170px;
+		width: 100px;
 		z-index: 5;
 		background: linear-gradient(270deg, #FFFFFF 19.05%, rgba(255, 255, 255, 0) 100%); 
 		@media #{$md_device}{ 
-			width: 108px;
+			width: 20px;
 			pointer-events: none;
 		}
 	}
@@ -263,6 +263,15 @@
 		padding-right: 83px; 
 		white-space: nowrap; 
 		padding-bottom: 11px;
+		&:last-of-type{
+			padding-right: 30px;
+			@media #{$lg_device}{ 
+				padding-right: 70px;
+			}
+			@media #{$md_device}{ 
+				padding-right: 30px;
+			}
+		}
 	}
 }
 .floor-card{
@@ -497,4 +506,34 @@
 	.scrolling{
 		pointer-events: none;
 	}
+}
+
+
+
+@media #{$min_xl_device}{
+/* width */
+.table-transparent::-webkit-scrollbar {
+	height: 4px;
+	border-radius: 4px;
+
+  }
+  
+  /* Track */
+.table-transparent::-webkit-scrollbar-track {
+	background: #fff; 
+  }
+   
+  /* Handle */
+.table-transparent::-webkit-scrollbar-thumb {
+	background: #fff; 
+	transition: .9s;
+  }
+  
+.table-transparent:hover{
+	&::-webkit-scrollbar-thumb {
+		background: #E6E7EB; 
+		transition: .9s;
+	
+	  }
+}
 }

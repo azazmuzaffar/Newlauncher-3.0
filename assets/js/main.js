@@ -676,6 +676,7 @@ $('#max-bedroom').on('input', function () {
 })(jQuery);
 
 
+/* Helping to ignore the site plan scroll on overall scroll */
 (function(){
   var sectionThree = document.getElementById("section-3"), timer;
   if(!window.addEventListener || !sectionThree.classList) return;
@@ -690,6 +691,7 @@ $('#max-bedroom').on('input', function () {
   },false);
 }());
 
+/* Helping to ignore the location map scroll on overall scroll */
 (function(){
   var sectionFour = document.getElementById("section-4"), timer;
   if(!window.addEventListener || !sectionFour.classList) return;
@@ -705,12 +707,16 @@ $('#max-bedroom').on('input', function () {
 }());
 
 
+/* Helping to give us smooth scroll on mobile for site plan and location map */
+ /*  
 $(window).bind("resize", function () {
   console.log($(this).width())
   if ($(this).width() > 600) {
-    $(".box-nc-scroll").niceScroll({
-      cursorcolor: "#E6E7EB"
-    });  
+  $(".box-nc-scroll").niceScroll({
+      cursorcolor: "#E6E7EB",
+    });   
   } 
 }).trigger('resize');
+*/
+
 
