@@ -4221,12 +4221,12 @@ p .custom-badge-group {
   border-radius: 8px;
 }
 
-/* @media only screen and (min-width: 1201px){
-	.scrolling{
-		pointer-events: none;
-	}
+@media only screen and (min-width: 1201px) {
+  .scrolling {
+    pointer-events: none;
+  }
 }
- */
+
 @media only screen and (min-width: 1201px) {
   /* width */
   .table-transparent::-webkit-scrollbar {

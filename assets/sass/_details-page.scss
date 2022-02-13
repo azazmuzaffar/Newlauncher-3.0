@@ -259,6 +259,7 @@
 .table-transparent{
 	width: 100%;
 	overflow-x: auto;
+	
 	td{
 		padding-right: 83px; 
 		white-space: nowrap; 
@@ -502,12 +503,12 @@
 
 
 
-/* @media #{$min_xl_device}{
+ @media #{$min_xl_device}{
 	.scrolling{
 		pointer-events: none;
 	}
 }
- */
+
 
 
 @media #{$min_xl_device}{

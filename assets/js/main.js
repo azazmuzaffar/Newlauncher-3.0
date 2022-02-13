@@ -719,4 +719,10 @@ $(window).bind("resize", function () {
 }).trigger('resize');
 */
 
-
+$(document).ready(function() {
+  $('.table-transparent').mousewheel(function(e, delta) {
+  this.scrollLeft -= (delta * 30);
+  console.log(delta);
+  e.preventDefault();
+  });
+  });
