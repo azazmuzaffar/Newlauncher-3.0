@@ -242,9 +242,9 @@
 		height: 100%; 
 		width: 170px;
 		z-index: 5;
-		background: linear-gradient(270deg, #FFFFFF 17.05%, rgba(255, 255, 255, 0) 100%); 
+		background: linear-gradient(270deg, #FFFFFF 19.05%, rgba(255, 255, 255, 0) 100%); 
 		@media #{$md_device}{ 
-			width: 108px;
+			width: 20px;
 		}
 	}
 	.light-next-btn{
