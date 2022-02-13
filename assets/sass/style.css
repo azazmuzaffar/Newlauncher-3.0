@@ -3914,8 +3914,6 @@ p .custom-badge-group {
 .table-transparent {
   width: 100%;
   overflow-x: auto;
-  background: red;
-  -webkit-overflow-scrolling: touch;
 }
 
 .table-transparent td {

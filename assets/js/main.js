@@ -268,10 +268,7 @@ $('.badge-tour').click(function(e){
     }, 300)
   });
 
-  $(".box-nc-scroll").niceScroll({
-    cursorcolor: "#E6E7EB"
-  });
-
+ 
 
 
   // HEADER SCRIPTS START
@@ -689,7 +686,7 @@ $('#max-bedroom').on('input', function () {
       }
       timer = setTimeout(function(){
         sectionThree.classList.remove('scrolling');
-      }, 800);
+      }, 700);
   },false);
 }());
 
@@ -703,8 +700,17 @@ $('#max-bedroom').on('input', function () {
       }
       timer = setTimeout(function(){
         sectionFour.classList.remove('scrolling');
-      }, 800);
+      }, 700);
   },false);
 }());
 
+
+$(window).bind("resize", function () {
+  console.log($(this).width())
+  if ($(this).width() > 600) {
+    $(".box-nc-scroll").niceScroll({
+      cursorcolor: "#E6E7EB"
+    });  
+  } 
+}).trigger('resize');
 
