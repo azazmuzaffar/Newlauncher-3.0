@@ -244,7 +244,8 @@
 		z-index: 5;
 		background: linear-gradient(270deg, #FFFFFF 19.05%, rgba(255, 255, 255, 0) 100%); 
 		@media #{$md_device}{ 
-			width: 20px;
+			width: 108px;
+			pointer-events: none;
 		}
 	}
 	.light-next-btn{
@@ -258,6 +259,8 @@
 .table-transparent{
 	width: 100%;
 	overflow-x: auto;  
+	background: red;
+	-webkit-overflow-scrolling: touch;
 	td{
 		padding-right: 83px; 
 		white-space: nowrap; 

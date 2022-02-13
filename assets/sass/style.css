@@ -3897,7 +3897,8 @@ p .custom-badge-group {
 
 @media only screen and (max-width: 767.98px) {
   .table__wrapper::before {
-    width: 20px;
+    width: 108px;
+    pointer-events: none;
   }
 }
 
@@ -3913,6 +3914,8 @@ p .custom-badge-group {
 .table-transparent {
   width: 100%;
   overflow-x: auto;
+  background: red;
+  -webkit-overflow-scrolling: touch;
 }
 
 .table-transparent td {
