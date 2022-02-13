@@ -678,3 +678,33 @@ $('#max-bedroom').on('input', function () {
   });
 })(jQuery);
 
+
+(function(){
+  var sectionThree = document.getElementById("section-3"), timer;
+  if(!window.addEventListener || !sectionThree.classList) return;
+  window.addEventListener('scroll', function(){
+      clearTimeout(timer);
+      if(!sectionThree.classList.contains('scrolling')){
+        sectionThree.classList.add('scrolling');
+      }
+      timer = setTimeout(function(){
+        sectionThree.classList.remove('scrolling');
+      }, 800);
+  },false);
+}());
+
+(function(){
+  var sectionFour = document.getElementById("section-4"), timer;
+  if(!window.addEventListener || !sectionFour.classList) return;
+  window.addEventListener('scroll', function(){
+      clearTimeout(timer);
+      if(!sectionFour.classList.contains('scrolling')){
+        sectionFour.classList.add('scrolling');
+      }
+      timer = setTimeout(function(){
+        sectionFour.classList.remove('scrolling');
+      }, 800);
+  },false);
+}());
+
+
