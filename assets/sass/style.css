@@ -3947,7 +3947,7 @@ p .custom-badge-group {
   }
 }
 
-.table-transparent .moveit-back, .table-transparent .moveit-next {
+.table-transparent .moveit-back, .table-transparent .moveit-backk, .table-transparent .moveit-next, .table-transparent .moveit-nextt {
   position: absolute;
   top: 0;
   right: 0;
@@ -3961,13 +3961,16 @@ p .custom-badge-group {
   transition: all 0.25s;
 }
 
-.table-transparent .moveit-back {
+.table-transparent .moveit-back, .table-transparent .moveit-backk {
   left: 0;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
 }
 
-.table-transparent .moveit-back.swiper-button-disabled, .table-transparent .moveit-next.swiper-button-disabled {
+.table-transparent .moveit-back.swiper-button-disabled,
+.table-transparent .moveit-backk.swiper-button-disabled,
+.table-transparent .moveit-next.swiper-button-disabled,
+.table-transparent .moveit-nextt.swiper-button-disabled {
   opacity: 0;
   visibility: hidden;
 }

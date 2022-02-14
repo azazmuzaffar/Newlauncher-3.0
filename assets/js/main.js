@@ -747,3 +747,23 @@ $(window).bind("resize", function () {
         }
       }
     });
+
+    new Swiper(".swipe-itt", {
+      loop:false,
+      resistanceRatio : 0.5,
+   
+      navigation: {
+        nextEl: ".table-transparent .moveit-nextt", 
+        prevEl: ".table-transparent .moveit-backk",
+      },
+      breakpoints:{ 
+        0:{
+          slidesPerView:1, 
+          spaceBetween:15,
+        },
+        768:{
+          slidesPerView:4, 
+          spaceBetween:15,
+        }
+      }
+    });
