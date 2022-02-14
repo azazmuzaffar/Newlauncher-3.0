@@ -731,14 +731,14 @@ $(window).bind("resize", function () {
     new Swiper(".swipe-it", {
       loop:false,
       resistanceRatio : 0.5,
-   
+      freeMode: true,
       navigation: {
         nextEl: ".table-transparent .moveit-next", 
         prevEl: ".table-transparent .moveit-back",
       },
       breakpoints:{ 
         0:{
-          slidesPerView:1, 
+          slidesPerView:2, 
           spaceBetween:15,
         },
         768:{
@@ -751,6 +751,7 @@ $(window).bind("resize", function () {
     new Swiper(".swipe-itt", {
       loop:false,
       resistanceRatio : 0.5,
+      freeMode: true,
    
       navigation: {
         nextEl: ".table-transparent .moveit-nextt", 
@@ -758,7 +759,7 @@ $(window).bind("resize", function () {
       },
       breakpoints:{ 
         0:{
-          slidesPerView:1, 
+          slidesPerView:2, 
           spaceBetween:15,
         },
         768:{
