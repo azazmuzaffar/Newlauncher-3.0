@@ -3950,7 +3950,7 @@ p .custom-badge-group {
 .table-transparent .moveit-back, .table-transparent .moveit-backk, .table-transparent .moveit-next, .table-transparent .moveit-nextt {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -15px;
   height: 100%;
   width: 100%;
   z-index: 7;
@@ -3962,7 +3962,7 @@ p .custom-badge-group {
 }
 
 .table-transparent .moveit-back, .table-transparent .moveit-backk {
-  left: 0;
+  left: -15px;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
 }

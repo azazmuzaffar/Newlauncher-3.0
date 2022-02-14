@@ -283,13 +283,13 @@
 	}
 	.moveit-back, .moveit-backk,.moveit-next,.moveit-nextt{
 		position: absolute;
-		top: 0;right: 0;height: 100%;width: 100%;z-index: 7; 
+		top: 0;right: -15px;height: 100%;width: 100%;z-index: 7; 
 		width: 0px;  
 		background: linear-gradient(270deg, #FFFFFF 17.05%, rgba(255, 255, 255, 0) 100%); 
 		transition:all 0.25s; 
 	}
 	.moveit-back, .moveit-backk{
-		left: 0;
+		left: -15px;
 		transform:scaleX(-1); 
 	}
 	.moveit-back.swiper-button-disabled, 
