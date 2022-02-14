@@ -677,7 +677,7 @@ $('#max-bedroom').on('input', function () {
 
 
 /* Helping to ignore the site plan scroll on overall scroll */
-(function(){
+/* (function(){
   var sectionThree = document.getElementById("section-3"), timer;
   if(!window.addEventListener || !sectionThree.classList) return;
   window.addEventListener('scroll', function(){
@@ -689,10 +689,10 @@ $('#max-bedroom').on('input', function () {
         sectionThree.classList.remove('scrolling');
       }, 700);
   },false);
-}());
+}()); */
 
 /* Helping to ignore the location map scroll on overall scroll */
-(function(){
+/* (function(){
   var sectionFour = document.getElementById("section-4"), timer;
   if(!window.addEventListener || !sectionFour.classList) return;
   window.addEventListener('scroll', function(){
@@ -704,7 +704,7 @@ $('#max-bedroom').on('input', function () {
         sectionFour.classList.remove('scrolling');
       }, 700);
   },false);
-}());
+}()); */
 
 
 /* Helping to give us smooth scroll on mobile for site plan and location map */
@@ -719,10 +719,31 @@ $(window).bind("resize", function () {
 }).trigger('resize');
 */
 
-$(document).ready(function() {
+/* $(document).ready(function() {
   $('.table-transparent').mousewheel(function(e, delta) {
-  this.scrollLeft -= (delta * 30);
+  this.scrollLeft -= (delta * 35);
   console.log(delta);
   e.preventDefault();
   });
-  });
+  }); */
+
+    // Media slide scripts start
+    new Swiper(".swipe-it", {
+      loop:false,
+      resistanceRatio : 0.5,
+   
+      navigation: {
+        nextEl: ".table-transparent .moveit-next", 
+        prevEl: ".table-transparent .moveit-back",
+      },
+      breakpoints:{ 
+        0:{
+          slidesPerView:1, 
+          spaceBetween:15,
+        },
+        768:{
+          slidesPerView:3, 
+          spaceBetween:15,
+        }
+      }
+    });

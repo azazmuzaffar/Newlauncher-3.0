@@ -3913,29 +3913,63 @@ p .custom-badge-group {
 
 .table-transparent {
   width: 100%;
-  overflow-x: auto;
+  overflow: hidden;
 }
 
-.table-transparent td {
+.table-transparent ul {
+  list-style: none;
+}
+
+.table-transparent ul li {
+  font-style: normal;
+  font-weight: normal;
+  color: #111828;
+  font-size: 14px;
   padding-right: 83px;
   white-space: nowrap;
   padding-bottom: 11px;
+  display: block;
 }
 
-.table-transparent td:last-of-type {
+.table-transparent ul li:last-of-type {
   padding-right: 30px;
 }
 
 @media only screen and (max-width: 991.98px) {
-  .table-transparent td:last-of-type {
+  .table-transparent ul li:last-of-type {
     padding-right: 70px;
   }
 }
 
 @media only screen and (max-width: 767.98px) {
-  .table-transparent td:last-of-type {
+  .table-transparent ul li:last-of-type {
     padding-right: 30px;
   }
+}
+
+.table-transparent .moveit-back, .table-transparent .moveit-next {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 7;
+  width: 2px;
+  background: -webkit-gradient(linear, right top, left top, color-stop(17.05%, #FFFFFF), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(270deg, #FFFFFF 17.05%, rgba(255, 255, 255, 0) 100%);
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.table-transparent .moveit-back {
+  left: 0;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.table-transparent .moveit-back.swiper-button-disabled, .table-transparent .moveit-next.swiper-button-disabled {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .floor-card {
@@ -4221,35 +4255,43 @@ p .custom-badge-group {
   border-radius: 8px;
 }
 
-@media only screen and (min-width: 1201px) {
-  .scrolling {
-    pointer-events: none;
-  }
+/* 
+ @media only screen and (min-width: 1201px){
+	.scrolling{
+		pointer-events: none;
+	}
 }
 
-@media only screen and (min-width: 1201px) {
-  /* width */
-  .table-transparent::-webkit-scrollbar {
-    height: 4px;
-    border-radius: 4px;
-  }
-  /* Track */
-  .table-transparent::-webkit-scrollbar-track {
-    background: #fff;
-  }
-  /* Handle */
-  .table-transparent::-webkit-scrollbar-thumb {
-    background: #fff;
-    -webkit-transition: .9s;
-    transition: .9s;
-  }
-  .table-transparent:hover::-webkit-scrollbar-thumb {
-    background: #E6E7EB;
-    -webkit-transition: .9s;
-    transition: .9s;
-  }
-}
 
+
+@media only screen and (min-width: 1201px){
+
+
+.table-transparent::-webkit-scrollbar {
+	height: 4px;
+	border-radius: 4px;
+
+  }
+  
+
+.table-transparent::-webkit-scrollbar-track {
+	background: #fff; 
+  }
+   
+  
+.table-transparent::-webkit-scrollbar-thumb {
+	background: #fff; 
+	transition: .9s;
+  }
+  
+.table-transparent:hover{
+	&::-webkit-scrollbar-thumb {
+		background: #E6E7EB; 
+		transition: .9s;
+	
+	  }
+}
+} */
 .footer-area {
   background: #111828;
 }

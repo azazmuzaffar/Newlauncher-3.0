@@ -258,21 +258,43 @@
 }
 .table-transparent{
 	width: 100%;
-	overflow-x: auto;
-	
-	td{
-		padding-right: 83px; 
-		white-space: nowrap; 
-		padding-bottom: 11px;
-		&:last-of-type{
-			padding-right: 30px;
-			@media #{$lg_device}{ 
-				padding-right: 70px;
-			}
-			@media #{$md_device}{ 
+	overflow: hidden;
+	ul{
+		list-style: none;
+		li{
+			font-style: normal;
+			font-weight: normal;
+			color: #111828;
+			font-size: 14px;
+			padding-right: 83px; 
+			white-space: nowrap; 
+			padding-bottom: 11px;
+			display: block;
+			&:last-of-type{
 				padding-right: 30px;
+				@media #{$lg_device}{ 
+					padding-right: 70px;
+				}
+				@media #{$md_device}{ 
+					padding-right: 30px;
+				}
 			}
 		}
+	}
+	.moveit-back,.moveit-next{
+		position: absolute;
+		top: 0;right: 0;height: 100%;width: 100%;z-index: 7; 
+		width: 2px;  
+		background: linear-gradient(270deg, #FFFFFF 17.05%, rgba(255, 255, 255, 0) 100%); 
+		transition:all 0.25s; 
+	}
+	.moveit-back{
+		left: 0;
+		transform:scaleX(-1); 
+	}
+	.moveit-back.swiper-button-disabled,.moveit-next.swiper-button-disabled{   
+		opacity: 0;
+		visibility: hidden;  
 	}
 }
 .floor-card{
@@ -502,7 +524,7 @@
 }
 
 
-
+/* 
  @media #{$min_xl_device}{
 	.scrolling{
 		pointer-events: none;
@@ -512,19 +534,20 @@
 
 
 @media #{$min_xl_device}{
-/* width */
+
+
 .table-transparent::-webkit-scrollbar {
 	height: 4px;
 	border-radius: 4px;
 
   }
   
-  /* Track */
+
 .table-transparent::-webkit-scrollbar-track {
 	background: #fff; 
   }
    
-  /* Handle */
+  
 .table-transparent::-webkit-scrollbar-thumb {
 	background: #fff; 
 	transition: .9s;
@@ -537,4 +560,4 @@
 	
 	  }
 }
-}
+} */
