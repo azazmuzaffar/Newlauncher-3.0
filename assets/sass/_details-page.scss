@@ -268,7 +268,7 @@
 			font-size: 14px;
 			padding-right: 83px; 
 			white-space: nowrap; 
-			padding-bottom: 11px;
+			padding-bottom: 7px;
 			display: block;
 			&:last-of-type{
 				padding-right: 30px;
@@ -284,7 +284,7 @@
 	.moveit-back,.moveit-next{
 		position: absolute;
 		top: 0;right: 0;height: 100%;width: 100%;z-index: 7; 
-		width: 2px;  
+		width: 0px;  
 		background: linear-gradient(270deg, #FFFFFF 17.05%, rgba(255, 255, 255, 0) 100%); 
 		transition:all 0.25s; 
 	}

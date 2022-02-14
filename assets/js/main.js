@@ -742,7 +742,7 @@ $(window).bind("resize", function () {
           spaceBetween:15,
         },
         768:{
-          slidesPerView:3, 
+          slidesPerView:4, 
           spaceBetween:15,
         }
       }

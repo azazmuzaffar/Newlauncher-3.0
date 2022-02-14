@@ -3927,7 +3927,7 @@ p .custom-badge-group {
   font-size: 14px;
   padding-right: 83px;
   white-space: nowrap;
-  padding-bottom: 11px;
+  padding-bottom: 7px;
   display: block;
 }
 
@@ -3954,7 +3954,7 @@ p .custom-badge-group {
   height: 100%;
   width: 100%;
   z-index: 7;
-  width: 2px;
+  width: 0px;
   background: -webkit-gradient(linear, right top, left top, color-stop(17.05%, #FFFFFF), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(270deg, #FFFFFF 17.05%, rgba(255, 255, 255, 0) 100%);
   -webkit-transition: all 0.25s;
