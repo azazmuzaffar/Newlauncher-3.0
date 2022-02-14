@@ -259,6 +259,9 @@
 .table-transparent{
 	width: 100%;
 	overflow: hidden;
+	.swiper-slide{
+		width: fit-content !important;
+	}
 	ul{
 		list-style: none;
 		li{
@@ -269,18 +272,25 @@
 			padding-right: 83px; 
 			white-space: nowrap; 
 			padding-bottom: 7px;
-			display: block;
-			&:last-of-type{
-				padding-right: 30px;
-				@media #{$lg_device}{ 
-					padding-right: 70px;
-				}
+		
+			
+		}
+	}
+	&.-two{
+		
+	}
+	ul{
+		&:last-of-type{
+			li{
+				padding-right: 49px;
 				@media #{$md_device}{ 
-					padding-right: 30px;
+					padding-right: 44px;
 				}
 			}
 		}
+	
 	}
+	
 	.moveit-back, .moveit-backk,.moveit-next,.moveit-nextt{
 		position: absolute;
 		top: 0;right: -15px;height: 100%;width: 100%;z-index: 7; 
@@ -564,3 +574,4 @@
 	  }
 }
 } */
+

@@ -738,12 +738,12 @@ $(window).bind("resize", function () {
       },
       breakpoints:{ 
         0:{
-          slidesPerView:2, 
+          slidesPerView: "auto", 
           spaceBetween:15,
           freeMode: true,
         },
         768:{
-          slidesPerView:4, 
+          slidesPerView: "auto", 
           spaceBetween:15,
         }
       }
@@ -759,12 +759,12 @@ $(window).bind("resize", function () {
       },
       breakpoints:{ 
         0:{
-          slidesPerView:2, 
+          slidesPerView: "auto", 
           spaceBetween:15,
           freeMode: true,
         },
         768:{
-          slidesPerView:4, 
+          slidesPerView: "auto", 
           spaceBetween:15,
         }
       }
