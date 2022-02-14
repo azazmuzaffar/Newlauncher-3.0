@@ -791,8 +791,8 @@
                       <h2 class="title">Site Plan</h2>
                       <p>Show the available facilities</p>
                     </div>
-                    <div class="right-text">
-                      <a href="#" class="btn btn-outline-primary d-inline-flex align-items-center">
+                    <div class="right-text" id="site-plan-gallery">
+                      <a href="assets/img/sections/site-plan.png" class="btn btn-outline-primary d-inline-flex align-items-center">
                         <span class="icon-left d-inline-flex">
                           <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -804,6 +804,10 @@
                           </svg>
                         </span>
                         View
+                        <img src="assets/img/sections/site-plan.png" alt="" style="display: none" />
+                      </a>
+                      <a href="assets/img/sections/site-plan.png">
+                        <img src="assets/img/sections/site-plan.png" alt="" style="display: none" />
                       </a>
                     </div>
                   </div>
@@ -836,7 +840,7 @@
                             <li>Wireless TV Network</li>
                           </ul>
                           <ul class="swiper-slide">
-                            <li>Parking Spot Parking Spot Parking Spot</li>
+                            <li>Parking Spot</li>
                             <li>Swimming Pool</li>
                             <li>Library</li>
                             <li>Dining Set</li>
@@ -883,8 +887,8 @@
                       <h2 class="title">Location Map</h2>
                       <p>Showing the nearest public place</p>
                     </div>
-                    <div class="right-text">
-                      <a href="#" class="btn btn-outline-primary d-inline-flex align-items-center">
+                    <div class="right-text" id="location-map-gallery">
+                      <a href="assets/img/sections/location-map.png" class="btn btn-outline-primary d-inline-flex align-items-center">
                         <span class="icon-left d-inline-flex">
                           <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -896,6 +900,10 @@
                           </svg>
                         </span>
                         View
+                        <img src="assets/img/sections/location-map.png" alt="" style="display: none" />
+                      </a>
+                      <a href="assets/img/sections/location-map.png">
+                        <img src="assets/img/sections/location-map.png" alt="" style="display: none" />
                       </a>
                     </div>
                   </div>
@@ -963,7 +971,7 @@
                               <p class="text-gray">5m / 5min walk</p>
                             </li>
                             <li>
-                              FY Hair Salon FY Hair Salon FY Hair Salo
+                              FY Hair Salon
                               <p class="text-gray">5m / 5min walk</p>
                             </li>
                             <li>
@@ -1030,8 +1038,8 @@
                       <h2 class="title">Unit Mix</h2>
                       <p>Showing all unit mix details</p>
                     </div>
-                    <div class="right-text">
-                      <a href="#" class="btn btn-outline-primary d-inline-flex align-items-center">
+                    <div class="right-text" id="unit-mix-gallery">
+                      <a href="assets/img/sections/unit-mix.png" class="btn btn-outline-primary d-inline-flex align-items-center">
                         <span class="icon-left d-inline-flex">
                           <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -1043,6 +1051,10 @@
                           </svg>
                         </span>
                         View
+                        <img src="assets/img/sections/unit-mix.png" alt="" style="display: none" />
+                      </a>
+                      <a href="assets/img/sections/unit-mix.png">
+                        <img src="assets/img/sections/unit-mix.png" alt="" style="display: none" />
                       </a>
                     </div>
                   </div>
@@ -1109,8 +1121,8 @@
                       <h2 class="title">Balance Units</h2>
                       <p>Showing all balance unit details</p>
                     </div>
-                    <div class="right-text">
-                      <a href="#" class="btn btn-outline-primary d-inline-flex align-items-center">
+                    <div class="right-text" id="balance-unit-gallery">
+                      <a href="assets/img/sections/balance-unit.png" class="btn btn-outline-primary d-inline-flex align-items-center">
                         <span class="icon-left d-inline-flex">
                           <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -1122,6 +1134,10 @@
                           </svg>
                         </span>
                         View
+                        <img src="assets/img/sections/balance-unit.png" alt="" style="display: none" />
+                      </a>
+                      <a href="assets/img/sections/balance-unit.png">
+                        <img src="assets/img/sections/balance-unit.png" alt="" style="display: none" />
                       </a>
                     </div>
                   </div>
@@ -2271,6 +2287,10 @@
       // There is no way to override the default back behaviour of a browser as it is a security and usablility issue for the users
       // However we can alter the URL hash to circumvent and do
       const lg = document.getElementById("media-thumbnails-gallery");
+      const lgSiteplan = document.getElementById("site-plan-gallery");
+      const lgLocationmap = document.getElementById("location-map-gallery");
+      const lgUnitmix = document.getElementById("unit-mix-gallery");
+      const lgBalanceunit = document.getElementById("balance-unit-gallery");
       let shouldReplace = false;
       let showingGallery = false;
       let pluginInstance = null;
@@ -2282,7 +2302,48 @@
       lg.addEventListener("lgInit", (event) => {
         pluginInstance = event.detail.instance;
       });
+      lgSiteplan.addEventListener("lgInit", (event) => {
+        pluginInstance = event.detail.instance;
+      });
+      lgLocationmap.addEventListener("lgInit", (event) => {
+        pluginInstance = event.detail.instance;
+      });
+      lgUnitmix.addEventListener("lgInit", (event) => {
+        pluginInstance = event.detail.instance;
+      });
+      lgBalanceunit.addEventListener("lgInit", (event) => {
+        pluginInstance = event.detail.instance;
+      });
+
       lightGallery(lg, {
+        plugins: [lgZoom, lgThumbnail, lgAutoplay, lgVideo],
+        closeOnTap: false,
+        swipeToClose: false,
+        slideEndAnimation: false,
+        zoomFromOrigin: false,
+      });
+      lightGallery(lgSiteplan, {
+        plugins: [lgZoom, lgThumbnail, lgAutoplay, lgVideo],
+        closeOnTap: false,
+        swipeToClose: false,
+        slideEndAnimation: false,
+        zoomFromOrigin: false,
+      });
+      lightGallery(lgLocationmap, {
+        plugins: [lgZoom, lgThumbnail, lgAutoplay, lgVideo],
+        closeOnTap: false,
+        swipeToClose: false,
+        slideEndAnimation: false,
+        zoomFromOrigin: false,
+      });
+      lightGallery(lgUnitmix, {
+        plugins: [lgZoom, lgThumbnail, lgAutoplay, lgVideo],
+        closeOnTap: false,
+        swipeToClose: false,
+        slideEndAnimation: false,
+        zoomFromOrigin: false,
+      });
+      lightGallery(lgBalanceunit, {
         plugins: [lgZoom, lgThumbnail, lgAutoplay, lgVideo],
         closeOnTap: false,
         swipeToClose: false,
@@ -2302,10 +2363,81 @@
           isLightGalleryOpenedOnce = true;
         }
       });
+      lgSiteplan.addEventListener("lgAfterOpen", () => {
+        showingGallery = true;
+        if (shouldReplace) {
+          const url = new URL(window.location);
+          url.hash = HASH_NAME;
+          history.replaceState(null, document.title, url);
+        } else {
+          window.location.hash = HASH_NAME;
+          shouldReplace = true;
+          isLightGalleryOpenedOnce = true;
+        }
+      });
+      lgLocationmap.addEventListener("lgAfterOpen", () => {
+        showingGallery = true;
+        if (shouldReplace) {
+          const url = new URL(window.location);
+          url.hash = HASH_NAME;
+          history.replaceState(null, document.title, url);
+        } else {
+          window.location.hash = HASH_NAME;
+          shouldReplace = true;
+          isLightGalleryOpenedOnce = true;
+        }
+      });
+      lgUnitmix.addEventListener("lgAfterOpen", () => {
+        showingGallery = true;
+        if (shouldReplace) {
+          const url = new URL(window.location);
+          url.hash = HASH_NAME;
+          history.replaceState(null, document.title, url);
+        } else {
+          window.location.hash = HASH_NAME;
+          shouldReplace = true;
+          isLightGalleryOpenedOnce = true;
+        }
+      });
+      lgBalanceunit.addEventListener("lgAfterOpen", () => {
+        showingGallery = true;
+        if (shouldReplace) {
+          const url = new URL(window.location);
+          url.hash = HASH_NAME;
+          history.replaceState(null, document.title, url);
+        } else {
+          window.location.hash = HASH_NAME;
+          shouldReplace = true;
+          isLightGalleryOpenedOnce = true;
+        }
+      });
 
       lg.addEventListener("lgBeforeClose", (e, o) => {
         showingGallery = false;
-
+        const url = new URL(window.location);
+        url.hash = "";
+        history.replaceState(null, document.title, url);
+      });
+      lgSiteplan.addEventListener("lgBeforeClose", (e, o) => {
+        showingGallery = false;
+        const url = new URL(window.location);
+        url.hash = "";
+        history.replaceState(null, document.title, url);
+      });
+      lgLocationmap.addEventListener("lgBeforeClose", (e, o) => {
+        showingGallery = false;
+        const url = new URL(window.location);
+        url.hash = "";
+        history.replaceState(null, document.title, url);
+      });
+      lgUnitmix.addEventListener("lgBeforeClose", (e, o) => {
+        showingGallery = false;
+        const url = new URL(window.location);
+        url.hash = "";
+        history.replaceState(null, document.title, url);
+      });
+      lgBalanceunit.addEventListener("lgBeforeClose", (e, o) => {
+        showingGallery = false;
         const url = new URL(window.location);
         url.hash = "";
         history.replaceState(null, document.title, url);
@@ -2321,7 +2453,6 @@
         },
         false
       );
-
       window.onpopstate = function (event) {
         if (window.location.hash == "") {
           shouldReplace = false;
@@ -2331,7 +2462,6 @@
         }
       };
       // code for light gallery end
-
       (function ($) {
         $(".tab-header-sticky").sticky();
       })(jQuery);

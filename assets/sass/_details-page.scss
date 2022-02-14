@@ -10,7 +10,7 @@
   }
 }
 .tab-header-sticky {
-  z-index: 9990 !important;
+  z-index: 990 !important;
 }
 .content-tab-header-section {
   border-top: 1px solid #e6e7eb;
@@ -285,7 +285,7 @@
       li {
         padding-right: 49px;
         @media #{$md_device} {
-          padding-right: 44px;
+          padding-right: 20px;
         }
       }
     }
@@ -552,4 +552,11 @@
 .btn-sm-style {
   padding: 11px 15px;
   border-radius: 8px;
+}
+
+.site-plan-gallery {
+  img {
+    width: 0px !important;
+    display: none;
+  }
 }

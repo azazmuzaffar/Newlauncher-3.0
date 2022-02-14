@@ -3605,7 +3605,7 @@ p .custom-badge-group {
 }
 
 .tab-header-sticky {
-  z-index: 9990 !important;
+  z-index: 990 !important;
 }
 
 .content-tab-header-section {
@@ -3949,7 +3949,7 @@ p .custom-badge-group {
 
 @media only screen and (max-width: 767.98px) {
   .table-transparent ul:last-of-type li {
-    padding-right: 44px;
+    padding-right: 20px;
   }
 }
 
@@ -4271,6 +4271,11 @@ p .custom-badge-group {
 .btn-sm-style {
   padding: 11px 15px;
   border-radius: 8px;
+}
+
+.site-plan-gallery img {
+  width: 0px !important;
+  display: none;
 }
 
 .footer-area {
