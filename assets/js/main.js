@@ -221,7 +221,7 @@ DetailsPageSlide();
       });
     });
   }
-  TabHeaderScroll(30);
+  TabHeaderScroll(50);
 
   function adjustBottomCard() {
     var $section = $(".remove-fixed-wrap");
