@@ -2294,6 +2294,11 @@
       let shouldReplace = false;
       let showingGallery = false;
       let pluginInstance = null;
+      let pluginInstance_sp = null;
+      let pluginInstance_lm = null;
+      let pluginInstance_um = null;
+      let pluginInstance_bu = null;
+
       isLightGalleryOpenedOnce = false;
 
       let goBack = false;
@@ -2303,16 +2308,16 @@
         pluginInstance = event.detail.instance;
       });
       lgSiteplan.addEventListener("lgInit", (event) => {
-        pluginInstance = event.detail.instance;
+        pluginInstance_sp = event.detail.instance;
       });
       lgLocationmap.addEventListener("lgInit", (event) => {
-        pluginInstance = event.detail.instance;
+        pluginInstance_lm = event.detail.instance;
       });
       lgUnitmix.addEventListener("lgInit", (event) => {
-        pluginInstance = event.detail.instance;
+        pluginInstance_um = event.detail.instance;
       });
       lgBalanceunit.addEventListener("lgInit", (event) => {
-        pluginInstance = event.detail.instance;
+        pluginInstance_bu = event.detail.instance;
       });
 
       lightGallery(lg, {
@@ -2449,10 +2454,15 @@
           if (window.location.hash == "" && showingGallery) {
             goBack = true;
             pluginInstance.closeGallery();
+            pluginInstance_sp.closeGallery();
+            pluginInstance_lm.closeGallery();
+            pluginInstance_um.closeGallery();
+            pluginInstance_bu.closeGallery();
           }
         },
         false
       );
+
       window.onpopstate = function (event) {
         if (window.location.hash == "") {
           shouldReplace = false;
