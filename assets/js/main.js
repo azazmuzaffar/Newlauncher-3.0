@@ -207,8 +207,7 @@ DetailsPageSlide();
           var $sectionHeight = $($section).outerHeight();
           var $sectionBottom = $sectionOffset + $sectionHeight;
           var $scrollPosition = $(document).scrollTop();
-
-          if ($scrollPosition < $sectionBottom - (TopOffset + 10) && $scrollPosition >= $sectionOffset - (TopOffset + 10)) {
+          if ($scrollPosition < $sectionBottom - (TopOffset + 10) && $scrollPosition >= $sectionOffset - (TopOffset + 24)) {
             $(this).addClass("active");
             $(this).parent().addClass("active");
             var index = $(".-slide--.active").index();
@@ -648,12 +647,10 @@ new Swiper(".swipe-itt", {
   breakpoints: {
     0: {
       slidesPerView: "auto",
-
       spaceBetween: 15,
     },
     768: {
       slidesPerView: "auto",
-
       spaceBetween: 15,
     },
   },
