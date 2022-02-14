@@ -207,7 +207,8 @@ DetailsPageSlide();
           var $sectionHeight = $($section).outerHeight();
           var $sectionBottom = $sectionOffset + $sectionHeight;
           var $scrollPosition = $(document).scrollTop();
-          if ($scrollPosition < $sectionBottom - (TopOffset + 10) && $scrollPosition >= $sectionOffset - (TopOffset + 24)) {
+
+          if ($scrollPosition < $sectionBottom - (TopOffset - 10) && $scrollPosition >= $sectionOffset - (TopOffset + 4)) {
             $(this).addClass("active");
             $(this).parent().addClass("active");
             var index = $(".-slide--.active").index();
@@ -220,7 +221,7 @@ DetailsPageSlide();
       });
     });
   }
-  TabHeaderScroll(50);
+  TabHeaderScroll(70);
 
   function adjustBottomCard() {
     var $section = $(".remove-fixed-wrap");
@@ -647,10 +648,12 @@ new Swiper(".swipe-itt", {
   breakpoints: {
     0: {
       slidesPerView: "auto",
+
       spaceBetween: 15,
     },
     768: {
       slidesPerView: "auto",
+
       spaceBetween: 15,
     },
   },
