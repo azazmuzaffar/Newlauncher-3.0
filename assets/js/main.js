@@ -731,7 +731,7 @@ $(window).bind("resize", function () {
     new Swiper(".swipe-it", {
       loop:false,
       resistanceRatio : 0.5,
-      freeMode: true,
+      
       navigation: {
         nextEl: ".table-transparent .moveit-next", 
         prevEl: ".table-transparent .moveit-back",
@@ -740,6 +740,7 @@ $(window).bind("resize", function () {
         0:{
           slidesPerView:2, 
           spaceBetween:15,
+          freeMode: true,
         },
         768:{
           slidesPerView:4, 
@@ -751,8 +752,7 @@ $(window).bind("resize", function () {
     new Swiper(".swipe-itt", {
       loop:false,
       resistanceRatio : 0.5,
-      freeMode: true,
-   
+
       navigation: {
         nextEl: ".table-transparent .moveit-nextt", 
         prevEl: ".table-transparent .moveit-backk",
@@ -761,6 +761,7 @@ $(window).bind("resize", function () {
         0:{
           slidesPerView:2, 
           spaceBetween:15,
+          freeMode: true,
         },
         768:{
           slidesPerView:4, 
