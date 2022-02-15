@@ -2388,7 +2388,7 @@
           history.replaceState(null, document.title, url);
         } else {
           window.location.hash = HASH_NAME;
-          shouldReplace = true;
+          shouldReplace = false;
           isLightGalleryOpenedOnce = true;
         }
       });
@@ -2460,7 +2460,7 @@
             pluginInstance_bu.closeGallery();
           }
         },
-        false
+        true
       );
 
       window.onpopstate = function (event) {

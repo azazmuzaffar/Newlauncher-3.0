@@ -4225,6 +4225,12 @@ p .custom-badge-group {
   top: 85px;
 }
 
+@media only screen and (min-width: 1201px) {
+  .sticky-top-1 {
+    margin-bottom: 15px;
+  }
+}
+
 .dev-profile-slide-wrap {
   position: relative;
 }
