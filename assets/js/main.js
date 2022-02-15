@@ -658,3 +658,9 @@ new Swiper(".swipe-itt", {
     },
   },
 });
+
+$(".form-check-input").blur(function () {
+  if ($(this).val()) {
+    $(this).parent().addClass("filled");
+  }
+});
