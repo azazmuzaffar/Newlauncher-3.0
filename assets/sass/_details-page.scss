@@ -581,3 +581,9 @@
     display: block;
   }
 }
+
+.content-details-section {
+  @media #{$md_device} {
+    overflow: hidden;
+  }
+}
