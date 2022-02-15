@@ -119,15 +119,27 @@
     padding-top: 0;
     padding-bottom: 10px;
     .text-content {
-      p {
-        font-size: 14px;
-        line-height: 19px;
-        color: #6b7380;
+      .paras- {
         margin-bottom: 20px;
-        a {
-          font-weight: 600;
-          color: #743393;
-          text-decoration: none;
+        max-height: 130px;
+        overflow: hidden;
+        &.more {
+          max-height: fit-content;
+        }
+        p {
+          font-size: 14px;
+          line-height: 19px;
+          color: #6b7380;
+          margin-bottom: 20px;
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+          span {
+            font-weight: 600;
+            color: #743393;
+            text-decoration: none;
+            cursor: pointer;
+          }
         }
       }
     }
@@ -189,7 +201,7 @@
     margin-bottom: 20px;
   }
   .select-with-radio {
-    width: auto;
+    width: fit-content;
     .nice-select::after {
       border-bottom: 2px solid #6b7380;
       border-right: 2px solid #6b7380;
@@ -585,5 +597,21 @@
 .content-details-section {
   @media #{$md_device} {
     overflow: hidden;
+  }
+}
+
+.sales-trend-dropdown {
+  width: 187px !important;
+}
+.buyers-profile-dropdown {
+  width: 160px !important;
+  @media #{$md_device} {
+    width: 93px !important;
+  }
+}
+.sales-transection-dropdown {
+  width: 183px !important;
+  @media #{$md_device} {
+    width: 112px !important;
   }
 }

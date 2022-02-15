@@ -238,10 +238,10 @@ DetailsPageSlide();
       $section.find(".fixed-card-sm-item").removeClass("fixed-card-sm-bottom");
     }
   }
-  adjustBottomCard();
+  /* adjustBottomCard(); */
 
   $(window).on("scroll", function () {
-    adjustBottomCard();
+    /*  adjustBottomCard(); */
   });
 })(jQuery);
 
@@ -659,8 +659,14 @@ new Swiper(".swipe-itt", {
   },
 });
 
-$(".form-check-input").blur(function () {
-  if ($(this).val()) {
-    $(this).parent().addClass("filled");
-  }
+$(".more-").click(function () {
+  $(this).parent().parent().addClass("more");
+  $(this).text(" ");
+  $(".less-").text("Read Less");
+});
+
+$(".less-").click(function () {
+  $(this).parent().parent().removeClass("more");
+  $(this).text(" ");
+  $(".more-").text("Read More");
 });
