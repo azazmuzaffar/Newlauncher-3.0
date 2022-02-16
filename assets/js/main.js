@@ -660,7 +660,7 @@ new Swiper(".swipe-itt", {
 });
 
 $(".more-").click(function () {
-  $(this).parent().parent().addClass("more");
+  $(this).parent().siblings(".paras-").addClass("more");
   $(this).text(" ");
   $(".less-").text("Read Less");
 });
@@ -671,6 +671,7 @@ $(".less-").click(function () {
   $(".more-").text("Read More");
 });
 
+/* Error validation, Detail Page, COntact Sales Section */
 $(document).ready(function () {
   $(".input-style2 input").on("input", function () {
     console.log("warning" === $(this).val().trim());

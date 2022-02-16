@@ -3811,8 +3811,7 @@ p .custom-badge-group {
 }
 
 .panel-card .card-body .text-content .paras- {
-  margin-bottom: 20px;
-  max-height: 130px;
+  max-height: 0px;
   overflow: hidden;
 }
 
@@ -3820,24 +3819,29 @@ p .custom-badge-group {
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
+  margin-bottom: 20px;
 }
 
-.panel-card .card-body .text-content .paras- p {
+.panel-card .card-body .text-content p {
   font-size: 14px;
   line-height: 19px;
   color: #6b7380;
   margin-bottom: 20px;
 }
 
-.panel-card .card-body .text-content .paras- p:last-of-type {
+.panel-card .card-body .text-content p:last-of-type {
   margin-bottom: 0;
 }
 
-.panel-card .card-body .text-content .paras- p span {
+.panel-card .card-body .text-content p span {
   font-weight: 600;
   color: #743393;
   text-decoration: none;
   cursor: pointer;
+}
+
+.panel-card .card-body .text-content p:nth-of-type(2) {
+  margin-bottom: 20px;
 }
 
 .panel-card .card-body .thumbnail img {
