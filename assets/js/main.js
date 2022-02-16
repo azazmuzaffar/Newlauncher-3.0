@@ -662,13 +662,13 @@ new Swiper(".swipe-itt", {
 $(".more-").click(function () {
   $(this).parent().siblings(".paras-").addClass("more");
   $(this).text(" ");
-  $(".less-").text("Read Less");
+  $(this).parent("p").siblings(".paras-").children().children(".less-").text("Read Less");
 });
 
 $(".less-").click(function () {
   $(this).parent().parent().removeClass("more");
   $(this).text(" ");
-  $(".more-").text("Read More");
+  $(this).parent().parent().siblings("p").children(".more-").text("Read More");
 });
 
 /* Error validation, Detail Page, COntact Sales Section */
