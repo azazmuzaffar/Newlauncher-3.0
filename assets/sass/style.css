@@ -2657,7 +2657,7 @@ p .custom-badge-group {
 }
 
 .input-style2 input:valid {
-  border-color: #d1d4db !important;
+  border-color: #743393 !important;
 }
 
 .input-style2 input:invalid {
@@ -3505,16 +3505,15 @@ p .custom-badge-group {
 .table tr td {
   padding: 14.3px 12px;
   border-bottom: 1px solid #f3f4f6;
+  /* &:first-child {
+        font-weight: 600;
+      } */
 }
 
 @media (max-width: 575.98px) {
   .table tr td {
     padding: 9px 12px;
   }
-}
-
-.table tr td:first-child {
-  font-weight: 600;
 }
 
 .table tbody tr {
@@ -3527,10 +3526,6 @@ p .custom-badge-group {
 
 .table tbody tr:nth-child(2n + 2) td {
   background-color: #f9fafc;
-}
-
-.table tbody tr:last-of-type td {
-  font-weight: 600;
 }
 
 .table-wrap {
@@ -4147,6 +4142,10 @@ p .custom-badge-group {
 }
 
 .floor-card-slide .prev-btn-wrap {
+  background: transparent;
+}
+
+.floor-card-slide .prev-btn-wrap {
   left: 0;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
@@ -4393,7 +4392,7 @@ p .custom-badge-group {
 @media only screen and (max-width: 767.98px) {
   .content-details-section {
     overflow: hidden;
-    padding-bottom: 1px;
+    padding-bottom: 20px;
   }
 }
 
@@ -4407,7 +4406,7 @@ p .custom-badge-group {
 
 @media only screen and (max-width: 767.98px) {
   .buyers-profile-dropdown {
-    width: 93px !important;
+    width: 172px !important;
   }
 }
 

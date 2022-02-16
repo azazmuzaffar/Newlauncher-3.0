@@ -397,6 +397,9 @@
     transition: all 0.25s;
   }
   .prev-btn-wrap {
+    background: transparent;
+  }
+  .prev-btn-wrap {
     left: 0;
     transform: scaleX(-1);
   }
@@ -603,7 +606,7 @@
 .content-details-section {
   @media #{$md_device} {
     overflow: hidden;
-    padding-bottom: 1px;
+    padding-bottom: 20px;
   }
 }
 
@@ -613,7 +616,7 @@
 .buyers-profile-dropdown {
   width: 160px !important;
   @media #{$md_device} {
-    width: 93px !important;
+    width: 172px !important;
   }
 }
 .sales-transection-dropdown {

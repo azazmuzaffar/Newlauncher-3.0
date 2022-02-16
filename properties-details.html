@@ -1548,8 +1548,8 @@
                           <option data-id="#Purchaser-Address">Private Residential</option>
                         </select>
                         <select name="" id="" class="has-nc-select sm-view">
-                          <option data-id="#Resedential-Status">HDB</option>
-                          <option data-id="#Purchaser-Address">Private</option>
+                          <option data-id="#Resedential-Status">Residential Status</option>
+                          <option data-id="#Purchaser-Address">Purchaser Address &nbsp;&nbsp;</option>
                         </select>
                       </div>
                     </div>
@@ -1561,11 +1561,11 @@
                       <div class="d-flex custom-horizontal-chart-wrapper">
                         <ul class="title__list">
                           <li class="title-item">
-                            <span class="d-md-none">SC</span>
+                            <span class="d-md-none">Singaporean</span>
                             <span class="d-none d-md-block">Singaporean Citizen</span>
                           </li>
                           <li class="title-item">
-                            <span class="d-md-none">SPR</span>
+                            <span class="d-md-none">Singapore PR</span>
                             <span class="d-none d-md-block">Singapore PR</span>
                           </li>
                           <li class="title-item">Foreigner</li>
@@ -1592,17 +1592,13 @@
                     <div id="Purchaser-Address" class="tab-item">
                       <div class="d-flex custom-horizontal-chart-wrapper">
                         <ul class="title__list">
-                          <li class="title-item">Singaporean Citizen</li>
-                          <li class="title-item">Singapore PR</li>
-                          <li class="title-item">Foreigner</li>
-                          <li class="title-item">Company</li>
+                          <li class="title-item">HDB Housing</li>
+                          <li class="title-item">Private Housing</li>
                         </ul>
                         <div class="custom-horizontal-chart">
                           <div class="horizontal-line-wrap">
                             <span class="horizontal-line" data-percent="80%" data-color="#5A1879"></span>
                             <span class="horizontal-line" data-percent="20%" data-color="#9255A2"></span>
-                            <span class="horizontal-line" data-percent="25%" data-color="#B77BC7"></span>
-                            <span class="horizontal-line" data-percent="13%" data-color="#DBAAE8"></span>
                           </div>
                           <div class="vertical-line-wrapper">
                             <span class="line" data-percent="0%"></span>
@@ -1724,7 +1720,12 @@
                       </div>
                       <div class="ms-auto right-area justify-content-end d-flex">
                         <div class="d-flex">
-                          <a href="#" class="btn btn-outline-primary btn-min-w106 d-none d-md-inline-block" data-get-num="+65 8597-1878">WhatsApp</a>
+                          <a
+                            href="https://api.whatsapp.com/send?phone=+6585971878"
+                            class="btn btn-outline-primary btn-min-w106 d-none d-md-inline-block"
+                            target="_blanck"
+                            >WhatsApp</a
+                          >
                           <a href="#" class="btn btn-outline-primary mr-8 d-flex align-items-center d-md-none">Call</a>
                           <a href="#" class="btn btn-primary btn-icon d-flex align-items-center d-md-none">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1771,7 +1772,8 @@
                         <button class="btn btn-sm-style btn-primary w-100">Enquire Now</button>
                       </div>
                       <div class="col-6">
-                        <button class="btn btn-sm-style btn-outline-primary w-100">Call Sales</button>
+                        <a href="tel:+6585971878" class="btn btn-sm-style btn-outline-primary w-100 d-md-none">Call Sales</a>
+                        <a href="" class="btn btn-sm-style btn-outline-primary w-100 d-none d-md-block" data-get-num="+65 8597-1878">Call Sales</a>
                       </div>
                     </div>
                   </div>
@@ -2513,6 +2515,29 @@
       (function ($) {
         $(".tab-header-sticky").sticky();
       })(jQuery);
+    </script>
+
+    <script>
+      function adjustBottomCard() {
+        var $section = $(".remove-fixed-wrap");
+        var $sectionOffset = $section.offset().top;
+        var $scrollPosition = $(document).scrollTop() + $(window).height() - 50;
+
+        console.log("Document Offset", $scrollPosition, "and item offset", $sectionOffset);
+
+        if ($scrollPosition < $sectionOffset) {
+          console.log("Yes");
+          $section.find(".fixed-card-sm-item").addClass("fixed-card-sm-bottom");
+        } else {
+          console.log("No");
+          $section.find(".fixed-card-sm-item").removeClass("fixed-card-sm-bottom");
+        }
+      }
+      adjustBottomCard();
+
+      $(window).on("scroll", function () {
+        adjustBottomCard();
+      });
     </script>
   </body>
 </html>

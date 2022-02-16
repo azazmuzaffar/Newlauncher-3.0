@@ -238,27 +238,6 @@ DetailsPageSlide();
     });
   }
   TabHeaderScroll(70);
-
-  function adjustBottomCard() {
-    var $section = $(".remove-fixed-wrap");
-    var $sectionOffset = $section.offset().top;
-    var $scrollPosition = $(document).scrollTop() + $(window).height() - 50;
-
-    console.log("Document Offset", $scrollPosition, "and item offset", $sectionOffset);
-
-    if ($scrollPosition < $sectionOffset) {
-      console.log("Yes");
-      $section.find(".fixed-card-sm-item").addClass("fixed-card-sm-bottom");
-    } else {
-      console.log("No");
-      $section.find(".fixed-card-sm-item").removeClass("fixed-card-sm-bottom");
-    }
-  }
-  /* adjustBottomCard(); */
-
-  $(window).on("scroll", function () {
-    /*  adjustBottomCard(); */
-  });
 })(jQuery);
 
 // Card Text slide End
