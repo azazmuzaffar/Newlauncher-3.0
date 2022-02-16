@@ -153,7 +153,7 @@ function DetailsPageSlide() {
     loop: false,
     resistanceRatio: 0.5,
     autoHeight: true,
-    calculateHeight: true,
+    setWrapperSize: true,
     navigation: {
       nextEl: ".dev-profile-slide-wrap .light_next_btn",
       prevEl: ".dev-profile-slide-wrap .light_prev_btn",
@@ -164,12 +164,14 @@ function DetailsPageSlide() {
     $(this).parent().siblings(".paras-").addClass("more");
     $(this).text(" ");
     $(this).parent("p").siblings(".paras-").children().children(".less-").text("Read Less");
+    sliderSwiper.updateAutoHeight(1);
   });
 
   $(".less-").click(function () {
     $(this).parent().parent().removeClass("more");
     $(this).text(" ");
     $(this).parent().parent().siblings("p").children(".more-").text("Read More");
+    sliderSwiper.updateAutoHeight(1);
   });
 }
 DetailsPageSlide();
