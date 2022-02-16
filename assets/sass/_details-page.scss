@@ -597,6 +597,7 @@
 .content-details-section {
   @media #{$md_device} {
     overflow: hidden;
+    padding-bottom: 1px;
   }
 }
 
