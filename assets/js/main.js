@@ -149,13 +149,27 @@ function DetailsPageSlide() {
     },
   });
 
-  new Swiper(".dev-profile-slide-wrap .swiper-container", {
+  var sliderSwiper = new Swiper(".dev-profile-slide-wrap .swiper-container", {
     loop: false,
     resistanceRatio: 0.5,
+    autoHeight: true,
+    calculateHeight: true,
     navigation: {
       nextEl: ".dev-profile-slide-wrap .light_next_btn",
       prevEl: ".dev-profile-slide-wrap .light_prev_btn",
     },
+  });
+
+  $(".more-").click(function () {
+    $(this).parent().siblings(".paras-").addClass("more");
+    $(this).text(" ");
+    $(this).parent("p").siblings(".paras-").children().children(".less-").text("Read Less");
+  });
+
+  $(".less-").click(function () {
+    $(this).parent().parent().removeClass("more");
+    $(this).text(" ");
+    $(this).parent().parent().siblings("p").children(".more-").text("Read More");
   });
 }
 DetailsPageSlide();
@@ -657,18 +671,6 @@ new Swiper(".swipe-itt", {
       spaceBetween: 15,
     },
   },
-});
-
-$(".more-").click(function () {
-  $(this).parent().siblings(".paras-").addClass("more");
-  $(this).text(" ");
-  $(this).parent("p").siblings(".paras-").children().children(".less-").text("Read Less");
-});
-
-$(".less-").click(function () {
-  $(this).parent().parent().removeClass("more");
-  $(this).text(" ");
-  $(this).parent().parent().siblings("p").children(".more-").text("Read More");
 });
 
 /* Error validation, Detail Page, COntact Sales Section */
