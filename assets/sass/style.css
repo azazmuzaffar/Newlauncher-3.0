@@ -2502,6 +2502,11 @@ p .custom-badge-group {
   opacity: 0.7;
 }
 
+.input-style2.light_input .error-message {
+  font-size: 12px;
+  color: red;
+}
+
 .input-style2.light_input.focused .placeholder_text {
   color: #743393;
   opacity: 1;
@@ -2514,6 +2519,14 @@ p .custom-badge-group {
 
 .input-style2.light_input.focused .form-control:focus {
   border-color: #b77bc7;
+}
+
+.input-style2.light_input.error.focused .form-control {
+  border-color: red !important;
+}
+
+.input-style2.light_input.error.focused .placeholder_text {
+  color: red;
 }
 
 .select-with-radio {
@@ -2649,6 +2662,14 @@ p .custom-badge-group {
 
 .input-style2 input:invalid {
   border-color: #743393;
+}
+
+.input-style2 input.error {
+  border-color: #743393;
+}
+
+.input-style2.error input {
+  border-color: red;
 }
 
 .filter-content-item {

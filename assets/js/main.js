@@ -670,3 +670,25 @@ $(".less-").click(function () {
   $(this).text(" ");
   $(".more-").text("Read More");
 });
+
+$(".sticky-top-1 .light_input").blur(function () {});
+
+$("").focus(function () {
+  if ($(this).val() === "123") {
+    $(this).parents(".input-style2").addClass("error");
+    $(".error-message").html("Min. bedroom can't more then max. bedroom");
+  }
+});
+
+$(document).ready(function () {
+  $(".input-style2 input").on("input", function () {
+    console.log("warning" === $(this).val().trim());
+    if ("warning" === $(this).val().trim()) {
+      $(this).parents(".input-style2").addClass("error");
+      $(this).siblings(".error-message").html("Min. bedroom can't more then max. bedroom");
+    } else {
+      $(this).parents(".input-style2").removeClass("error");
+      $(this).siblings(".error-message").html("");
+    }
+  });
+});
