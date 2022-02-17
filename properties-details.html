@@ -2461,7 +2461,7 @@
         }
       });
 
-      lg.addEventListener("lgBeforeClose", (e, o) => {
+      /* lg.addEventListener("lgBeforeClose", (e, o) => {
         showingGallery = false;
         const url = new URL(window.location);
         url.hash = "";
@@ -2490,7 +2490,7 @@
         const url = new URL(window.location);
         url.hash = "";
         history.replaceState(null, document.title, url);
-      });
+      }); */
 
       window.addEventListener(
         "hashchange",
