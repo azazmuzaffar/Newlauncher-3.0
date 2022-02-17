@@ -128,8 +128,12 @@
 
 .input-style2.light_input {
   .form-control {
-    border-color: #d1d4db;
+    border-color: #d1d4db !important;
+    &:focus {
+      border-color: #743393 !important;
+    }
   }
+
   .placeholder_text {
     color: #111828;
     opacity: 0.7;
@@ -139,6 +143,7 @@
     color: red;
   }
 }
+
 .input-style2.light_input.focused {
   .placeholder_text {
     color: #743393;
@@ -146,7 +151,7 @@
     background-color: #fff;
   }
   .form-control {
-    border-color: #b77bc7;
+    border-color: red;
     &:focus {
       border-color: #b77bc7;
     }

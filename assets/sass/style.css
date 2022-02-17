@@ -2483,7 +2483,11 @@ p .custom-badge-group {
 }
 
 .input-style2.light_input .form-control {
-  border-color: #d1d4db;
+  border-color: #d1d4db !important;
+}
+
+.input-style2.light_input .form-control:focus {
+  border-color: #743393 !important;
 }
 
 .input-style2.light_input .placeholder_text {
@@ -2503,7 +2507,7 @@ p .custom-badge-group {
 }
 
 .input-style2.light_input.focused .form-control {
-  border-color: #b77bc7;
+  border-color: red;
 }
 
 .input-style2.light_input.focused .form-control:focus {

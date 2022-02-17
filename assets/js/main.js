@@ -665,5 +665,10 @@ $(document).ready(function () {
       $(this).parents(".input-style2").removeClass("error");
       $(this).siblings(".error-message").html("");
     }
+    if ($(this).val()) {
+      $(this).parents(".input-style2").addClass("value");
+    } else {
+      $(this).parents(".input-style2").removeClass("value");
+    }
   });
 });
