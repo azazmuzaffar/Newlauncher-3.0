@@ -36,9 +36,9 @@
       @media #{$sm_device} {
         padding: 9px 12px;
       }
-      /* &:first-child {
+      &:first-child {
         font-weight: 600;
-      } */
+      }
     }
   }
   tbody {
@@ -46,6 +46,11 @@
       &:nth-child(2n + 2) {
         td {
           background-color: #f9fafc;
+        }
+      }
+      &:last-of-type {
+        td {
+          font-weight: 600;
         }
       }
       /* &:hover {

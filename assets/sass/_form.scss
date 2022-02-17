@@ -125,7 +125,6 @@
     border-color: red;
   }
 }
-
 .input-style2.light_input {
   .form-control {
     border-color: #d1d4db !important;
@@ -133,7 +132,6 @@
       border-color: #743393 !important;
     }
   }
-
   .placeholder_text {
     color: #111828;
     opacity: 0.7;
@@ -143,7 +141,6 @@
     color: red;
   }
 }
-
 .input-style2.light_input.focused {
   .placeholder_text {
     color: #743393;
@@ -288,6 +285,16 @@
   &.error {
     input {
       border-color: red;
+    }
+  }
+}
+
+.input-style2.-min,
+.input-style2.-max {
+  input {
+    border-color: #e6e7eb !important;
+    &:focus {
+      border-color: #743393 !important;
     }
   }
 }

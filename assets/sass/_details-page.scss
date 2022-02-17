@@ -570,8 +570,19 @@
     .light_prev_btn {
       margin-right: 8px;
     }
-    .swiper-button-disabled {
+    .light_next_btn,
+    .light_prev_btn {
       background: #fff;
+    }
+    .swiper-button-disabled {
+      background: #e6e7eb;
+      border-color: #e6e7eb;
+      cursor: context-menu;
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
     }
   }
 }
