@@ -398,7 +398,7 @@
 .light_prev_btn {
   width: 28px;
   height: 28px;
-  background: #fff;
+  background: #f1f4f9;
   border: 1px solid #d1d4db;
   border-radius: 50%;
   display: flex;
@@ -418,15 +418,6 @@
     svg {
       path {
         fill: #743393;
-      }
-    }
-  }
-  &:focus {
-    border-color: #d1d4db;
-    background: #e6e7eb;
-    svg {
-      path {
-        fill: #111828;
       }
     }
   }

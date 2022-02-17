@@ -1091,7 +1091,7 @@ h6 {
 .light_prev_btn {
   width: 28px;
   height: 28px;
-  background: #fff;
+  background: #f1f4f9;
   border: 1px solid #d1d4db;
   border-radius: 50%;
   display: -webkit-box;
@@ -1124,17 +1124,6 @@ h6 {
 .light_next_btn:hover svg path,
 .light_prev_btn:hover svg path {
   fill: #743393;
-}
-
-.light_next_btn:focus,
-.light_prev_btn:focus {
-  border-color: #d1d4db;
-  background: #e6e7eb;
-}
-
-.light_next_btn:focus svg path,
-.light_prev_btn:focus svg path {
-  fill: #111828;
 }
 
 .badge {
@@ -2717,7 +2706,7 @@ p .custom-badge-group {
 
 .filter-content-item .title .sm-title {
   font-size: 14px;
-  color: #6B7380;
+  color: #6b7380;
 }
 
 .filter-content-item .title .angle-btn {
@@ -2731,8 +2720,8 @@ p .custom-badge-group {
   border-radius: 50%;
   border-color: transparent;
   background-color: transparent;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .filter-content-item .title .angle-btn::before {
@@ -2772,7 +2761,8 @@ p .custom-badge-group {
   margin-bottom: 10px;
 }
 
-.filter-content-item.has-opened .title .angle-btn, .filter-content-item.has-opened .title.has-opened-title .angle-btn {
+.filter-content-item.has-opened .title .angle-btn,
+.filter-content-item.has-opened .title.has-opened-title .angle-btn {
   -webkit-transform: scale(-1) translateY(50%);
           transform: scale(-1) translateY(50%);
 }
@@ -2791,23 +2781,23 @@ p .custom-badge-group {
 }
 
 .filter-fields-wrapper .filter-content-item {
-  border-top: 1px solid #D1D4DB;
+  border-top: 1px solid #d1d4db;
   padding-top: 16px;
   padding-bottom: 16px;
 }
 
 .filter-fields-wrapper .filter-content-item:last-child {
-  border-bottom: 1px solid #D1D4DB;
+  border-bottom: 1px solid #d1d4db;
 }
 
 @media only screen and (max-width: 1200px) {
   .filter-fields-wrapper .filter-content-item {
     padding-left: 24px;
     padding-right: 24px;
-    border-top: 1px solid #F3F4F6;
+    border-top: 1px solid #f3f4f6;
   }
   .filter-fields-wrapper .filter-content-item:last-child {
-    border-bottom: 1px solid #F3F4F6;
+    border-bottom: 1px solid #f3f4f6;
   }
   .filter-fields-wrapper .filter-content-item:first-child {
     border-top: none;
@@ -2855,7 +2845,7 @@ p .custom-badge-group {
 .horizon-separator {
   width: 100%;
   height: 1px;
-  background: #E6E7EB;
+  background: #e6e7eb;
   display: block;
   margin-top: 13px;
   margin-bottom: 12px;
@@ -2863,7 +2853,7 @@ p .custom-badge-group {
 
 @media only screen and (max-width: 991.98px) {
   .horizon-separator {
-    background: #F3F4F6;
+    background: #f3f4f6;
   }
 }
 
@@ -2876,9 +2866,9 @@ p .custom-badge-group {
     position: absolute;
     right: 0;
     top: 1px;
-    height: calc(100% - 2px);
-    background: -webkit-gradient(linear, right top, left top, color-stop(81.63%, #F9FAFC), to(rgba(255, 255, 255, 0)));
-    background: linear-gradient(270deg, #F9FAFC 81.63%, rgba(255, 255, 255, 0) 100%);
+    height: calc(100%);
+    background: -webkit-gradient(linear, right top, left top, color-stop(81.63%, #f9fafc), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(270deg, #f9fafc 81.63%, rgba(255, 255, 255, 0) 100%);
     margin-right: 0;
     padding-left: 34px;
   }
@@ -2892,8 +2882,8 @@ p .custom-badge-group {
 @media only screen and (max-width: 1200px) {
   .selected-filters-wrap {
     overflow: hidden;
-    border-top: 1px solid #F3F4F6;
-    border-bottom: 1px solid #F3F4F6;
+    border-top: 1px solid #f3f4f6;
+    border-bottom: 1px solid #f3f4f6;
     padding: 12px 0;
     position: relative;
     overflow-x: auto;
@@ -2915,7 +2905,8 @@ p .custom-badge-group {
 }
 
 @media only screen and (max-width: 1200px) {
-  .all-filters-area, .sort-fixd-wrap {
+  .all-filters-area,
+  .sort-fixd-wrap {
     position: fixed;
     right: 0;
     top: 0;
@@ -2930,17 +2921,22 @@ p .custom-badge-group {
     transition: all cubic-bezier(0.17, 0.84, 0.44, 1) 0.35s;
     overflow: hidden;
   }
-  .all-filters-area .all-filters-wrap, .all-filters-area .all-sort-fixd-wrap, .sort-fixd-wrap .all-filters-wrap, .sort-fixd-wrap .all-sort-fixd-wrap {
+  .all-filters-area .all-filters-wrap,
+  .all-filters-area .all-sort-fixd-wrap,
+  .sort-fixd-wrap .all-filters-wrap,
+  .sort-fixd-wrap .all-sort-fixd-wrap {
     overflow-y: auto;
     height: calc(100% - 156px);
     width: 100%;
     padding-bottom: 10px;
   }
-  .all-filters-area .all-sort-fixd-wrap, .sort-fixd-wrap .all-sort-fixd-wrap {
+  .all-filters-area .all-sort-fixd-wrap,
+  .sort-fixd-wrap .all-sort-fixd-wrap {
     height: 100%;
     padding-bottom: 90px;
   }
-  .all-filters-area .footer-btn, .sort-fixd-wrap .footer-btn {
+  .all-filters-area .footer-btn,
+  .sort-fixd-wrap .footer-btn {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -2948,40 +2944,48 @@ p .custom-badge-group {
     z-index: 102;
     -webkit-box-shadow: 0px -2px 20px rgba(0, 0, 0, 0.07);
             box-shadow: 0px -2px 20px rgba(0, 0, 0, 0.07);
-    background: #FFFFFF;
+    background: #ffffff;
     padding: 12px 16px;
   }
-  .all-filters-area .footer-btn .btn, .sort-fixd-wrap .footer-btn .btn {
+  .all-filters-area .footer-btn .btn,
+  .sort-fixd-wrap .footer-btn .btn {
     padding: 14px 10px;
     font-size: 16px;
     font-weight: 600;
   }
-  .all-filters-area .input-style2.focused .placeholder_text, .sort-fixd-wrap .input-style2.focused .placeholder_text {
+  .all-filters-area .input-style2.focused .placeholder_text,
+  .sort-fixd-wrap .input-style2.focused .placeholder_text {
     color: #743393;
   }
 }
 
 @media (max-width: 575.98px) {
-  .all-filters-area, .sort-fixd-wrap {
+  .all-filters-area,
+  .sort-fixd-wrap {
     width: 100%;
   }
 }
 
 @media (max-width: 575.98px) {
-  .all-filters-area .all-filters-wrap, .all-filters-area .all-sort-fixd-wrap, .sort-fixd-wrap .all-filters-wrap, .sort-fixd-wrap .all-sort-fixd-wrap {
+  .all-filters-area .all-filters-wrap,
+  .all-filters-area .all-sort-fixd-wrap,
+  .sort-fixd-wrap .all-filters-wrap,
+  .sort-fixd-wrap .all-sort-fixd-wrap {
     overflow-y: auto;
     height: calc(100% - 143px);
     width: 100%;
     padding-bottom: 10px;
   }
-  .all-filters-area .all-sort-fixd-wrap, .sort-fixd-wrap .all-sort-fixd-wrap {
+  .all-filters-area .all-sort-fixd-wrap,
+  .sort-fixd-wrap .all-sort-fixd-wrap {
     height: 100%;
     padding-bottom: 90px;
   }
 }
 
 @media only screen and (max-width: 1200px) {
-  .all-filters-area.open, .sort-fixd-wrap.open {
+  .all-filters-area.open,
+  .sort-fixd-wrap.open {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
@@ -3052,12 +3056,12 @@ p .custom-badge-group {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #F3F4F6;
+  border-bottom: 1px solid #f3f4f6;
   cursor: pointer;
 }
 
 .all-sort-fixd-wrap li:hover {
-  background-color: #FAFBFD;
+  background-color: #fafbfd;
 }
 
 @media (max-width: 575.98px) {
@@ -3073,7 +3077,7 @@ p .custom-badge-group {
   top: 50%;
   height: 15px;
   width: 15px;
-  border: 1.5px solid #9CA2AE;
+  border: 1.5px solid #9ca2ae;
   border-radius: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -3805,16 +3809,28 @@ p .custom-badge-group {
   padding-bottom: 10px;
 }
 
+.panel-card .card-body .text-content {
+  /* p {
+        &:nth-of-type(2) {
+          margin-bottom: 20px;
+        }
+      } */
+}
+
 .panel-card .card-body .text-content .paras- {
   max-height: 0px;
   overflow: hidden;
+}
+
+.panel-card .card-body .text-content .paras-.-first {
+  margin-bottom: 20px;
 }
 
 .panel-card .card-body .text-content .paras-.more {
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .panel-card .card-body .text-content p {
@@ -3833,10 +3849,6 @@ p .custom-badge-group {
   color: #743393;
   text-decoration: none;
   cursor: pointer;
-}
-
-.panel-card .card-body .text-content p:nth-of-type(2) {
-  margin-bottom: 20px;
 }
 
 .panel-card .card-body .thumbnail img {
@@ -3882,9 +3894,14 @@ p .custom-badge-group {
   }
 }
 
+.panel-card .clear-btn {
+  pointer-events: none;
+}
+
 .panel-card .clear-btn .btn-text {
   padding-top: 0;
   padding-bottom: 0;
+  pointer-events: all !important;
 }
 
 .panel-card .bottom-pagination {
@@ -4134,15 +4151,16 @@ p .custom-badge-group {
   height: 100%;
   width: 100%;
   z-index: 7;
-  width: 80px;
-  background: -webkit-gradient(linear, right top, left top, color-stop(17.05%, #ffffff), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(270deg, #ffffff 17.05%, rgba(255, 255, 255, 0) 100%);
+  width: 75px;
+  background: -webkit-gradient(linear, right top, left top, color-stop(10.05%, #ffffffcc), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(270deg, #ffffffcc 10.05%, rgba(255, 255, 255, 0) 100%);
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
+  pointer-events: none;
 }
 
-.floor-card-slide .prev-btn-wrap {
-  background: transparent;
+.floor-card-slide .light-next-btn {
+  pointer-events: all;
 }
 
 .floor-card-slide .prev-btn-wrap {
@@ -4348,6 +4366,10 @@ p .custom-badge-group {
 
 .dev-profile-slide-wrap .slide-btn-wrap .light_prev_btn {
   margin-right: 8px;
+}
+
+.dev-profile-slide-wrap .slide-btn-wrap .swiper-button-disabled {
+  background: #fff;
 }
 
 @media only screen and (max-width: 991.98px) {

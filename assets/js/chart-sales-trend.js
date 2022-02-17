@@ -45,19 +45,19 @@ var options = {
   xaxis: {
     categories: [
       "Jan 01",
-      "Jan 08",
-      "Jan 15",
-      "Jan 22",
-      "Jan 29",
-      "Feb 05",
-      "Feb 12",
-      "Feb 19",
-      "Feb 26",
-      "Mar 02",
-      "Mar 09",
-      "Mar 16",
-      "Mar 23",
-      "Mar 30",
+      "Feb 01",
+      "Mar 01",
+      "Apr 01",
+      "May 01",
+      "Jun 01",
+      "Jul 01",
+      "Aug 01",
+      "Sep 01",
+      "Oct 01",
+      "Nov 01",
+      "Dec 01",
+      "Jan 01",
+      "Feb 01",
     ],
     labels: {
       minHeight: 120,
@@ -137,6 +137,19 @@ var options = {
   fill: {
     opacity: 1,
   },
+  responsive: [
+    {
+      breakpoint: 576,
+      options: {
+        legend: {
+          itemMargin: {
+            vertical: 5,
+            horizontal: 8,
+          },
+        },
+      },
+    },
+  ],
   legend: {
     show: true,
     position: "bottom",
@@ -217,19 +230,19 @@ var options2 = {
   xaxis: {
     categories: [
       "Jan 01",
-      "Jan 08",
-      "Jan 15",
-      "Jan 22",
-      "Jan 29",
-      "Feb 05",
-      "Feb 12",
-      "Feb 19",
-      "Feb 26",
-      "Mar 02",
-      "Mar 09",
-      "Mar 16",
-      "Mar 23",
-      "Mar 30",
+      "Feb 01",
+      "Mar 01",
+      "Apr 01",
+      "May 01",
+      "Jun 01",
+      "Jul 01",
+      "Aug 01",
+      "Sep 01",
+      "Oct 01",
+      "Nov 01",
+      "Dec 01",
+      "Jan 01",
+      "Feb 01",
     ],
     labels: {
       minHeight: 120,
@@ -309,6 +322,19 @@ var options2 = {
   fill: {
     opacity: 1,
   },
+  responsive: [
+    {
+      breakpoint: 576,
+      options: {
+        legend: {
+          itemMargin: {
+            vertical: 5,
+            horizontal: 8,
+          },
+        },
+      },
+    },
+  ],
   legend: {
     show: true,
     position: "bottom",

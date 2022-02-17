@@ -123,9 +123,12 @@
       .paras- {
         max-height: 0px;
         overflow: hidden;
+        &.-first {
+          margin-bottom: 20px;
+        }
         &.more {
           max-height: fit-content;
-          margin-bottom: 20px;
+          margin-top: 20px;
         }
       }
       p {
@@ -143,11 +146,11 @@
           cursor: pointer;
         }
       }
-      p {
+      /* p {
         &:nth-of-type(2) {
           margin-bottom: 20px;
         }
-      }
+      } */
     }
     .thumbnail {
       img {
@@ -185,9 +188,11 @@
     }
   }
   .clear-btn {
+    pointer-events: none;
     .btn-text {
       padding-top: 0;
       padding-bottom: 0;
+      pointer-events: all !important;
     }
   }
   .bottom-pagination {
@@ -392,13 +397,15 @@
     height: 100%;
     width: 100%;
     z-index: 7;
-    width: 80px;
-    background: linear-gradient(270deg, #ffffff 17.05%, rgba(255, 255, 255, 0) 100%);
+    width: 75px;
+    background: linear-gradient(270deg, #ffffffcc 10.05%, rgba(255, 255, 255, 0) 100%);
     transition: all 0.25s;
+    pointer-events: none;
   }
-  .prev-btn-wrap {
-    background: transparent;
+  .light-next-btn {
+    pointer-events: all;
   }
+
   .prev-btn-wrap {
     left: 0;
     transform: scaleX(-1);
@@ -562,6 +569,9 @@
     background-color: #fff;
     .light_prev_btn {
       margin-right: 8px;
+    }
+    .swiper-button-disabled {
+      background: #fff;
     }
   }
 }
