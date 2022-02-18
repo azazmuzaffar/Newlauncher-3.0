@@ -335,7 +335,6 @@ DetailsPageSlide();
     $(".all-filters-area").addClass("open");
     $(".body-backdrop").addClass("open");
     $("body").css("overflow", "hidden");
-    window.location.assign("#selectedFilters");
   });
 
   $(".filter-area-header .btn-back-icon").on("click", function (event) {
