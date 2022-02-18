@@ -3572,6 +3572,14 @@ p .custom-badge-group {
   }
 }
 
+#section-9 table tbody tr:last-of-type td {
+  font-weight: 400;
+}
+
+#section-9 table tbody tr td:first-of-type {
+  font-weight: 400;
+}
+
 .pagination .active.page-link {
   background-color: #743393;
   color: #fff;

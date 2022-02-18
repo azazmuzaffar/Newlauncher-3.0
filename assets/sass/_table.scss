@@ -77,3 +77,22 @@
     }
   }
 }
+
+#section-9 {
+  table {
+    tbody {
+      tr {
+        &:last-of-type {
+          td {
+            font-weight: 400;
+          }
+        }
+        td {
+          &:first-of-type {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
