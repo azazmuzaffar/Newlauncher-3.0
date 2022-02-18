@@ -3580,6 +3580,19 @@ p .custom-badge-group {
   font-weight: 400;
 }
 
+.pagination {
+  /* .page-item {
+    &:last-of-type {
+      .page-link {
+        &:focus {
+          background: #e3d6e9;
+        }
+      }
+    }
+  }
+ */
+}
+
 .pagination .active.page-link {
   background-color: #743393;
   color: #fff;
@@ -3613,6 +3626,7 @@ p .custom-badge-group {
   -webkit-box-shadow: none;
           box-shadow: none;
   background: #e3d6e9;
+  color: #743393;
   border-color: #743393;
 }
 

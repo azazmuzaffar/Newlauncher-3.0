@@ -2,11 +2,11 @@ var options = {
   series: [
     {
       type: "column",
-      name: "&nbspVolume",
+      name: "&nbsp;Volume",
       data: [950, 1750, 1800, 3600, 1800, 3600, 1800, 1830, 1350, 1350, 1250, 1850, 4000, 1250],
     },
     {
-      name: "&nbspAvg PSF",
+      name: "&nbsp;Avg PSF",
       type: "line",
       data: [160, 140, 120, 140, 40, 54, 60, 70, 80, 90, 120, 170, 150, 200],
     },
@@ -14,7 +14,7 @@ var options = {
   colors: ["#9255A2", "#F1AF4C"],
   chart: {
     type: "bar",
-    height: 370,
+    height: 350,
     stacked: false,
     toolbar: {
       show: false,
@@ -137,19 +137,6 @@ var options = {
   fill: {
     opacity: 1,
   },
-  responsive: [
-    {
-      breakpoint: 576,
-      options: {
-        legend: {
-          itemMargin: {
-            vertical: 5,
-            horizontal: 8,
-          },
-        },
-      },
-    },
-  ],
   legend: {
     show: true,
     position: "bottom",
@@ -157,14 +144,11 @@ var options = {
     fontSize: "14px",
     fontFamily: "Source Sans Pro, sans-serif",
     fontWeight: 400,
-    offsetY: -75,
+
+    offsetY: -65,
     labels: {
       colors: "#6B7380",
       useSeriesColors: false,
-    },
-    itemMargin: {
-      vertical: 15,
-      horizontal: 8,
     },
     markers: {
       width: 15,
@@ -187,11 +171,11 @@ var options2 = {
   series: [
     {
       type: "column",
-      name: "&nbspVolume",
+      name: "&nbsp;Volume",
       data: [1250, 1050, 1800, 3600, 1800, 3600, 1800, 1130, 1350, 1350, 1250, 1850, 4000, 1250],
     },
     {
-      name: "&nbspAvg PSF",
+      name: "&nbsp;Avg PSF",
       type: "line",
       data: [160, 140, 120, 60, 40, 54, 60, 70, 40, 90, 120, 120, 150, 200],
     },
@@ -199,7 +183,7 @@ var options2 = {
   colors: ["#9255A2", "#F1AF4C"],
   chart: {
     type: "bar",
-    height: 370,
+    height: 350,
     stacked: false,
     toolbar: {
       show: false,
@@ -322,19 +306,6 @@ var options2 = {
   fill: {
     opacity: 1,
   },
-  responsive: [
-    {
-      breakpoint: 576,
-      options: {
-        legend: {
-          itemMargin: {
-            vertical: 5,
-            horizontal: 8,
-          },
-        },
-      },
-    },
-  ],
   legend: {
     show: true,
     position: "bottom",
@@ -342,11 +313,7 @@ var options2 = {
     fontSize: "14px",
     fontFamily: "Source Sans Pro, sans-serif",
     fontWeight: 400,
-    offsetY: -75,
-    itemMargin: {
-      vertical: 15,
-      horizontal: 8,
-    },
+    offsetY: -65,
     labels: {
       colors: "#111828",
       useSeriesColors: false,
