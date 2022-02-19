@@ -335,6 +335,10 @@ DetailsPageSlide();
     $(".all-filters-area").addClass("open");
     $(".body-backdrop").addClass("open");
     $("body").css("overflow", "hidden");
+
+    setTimeout(function () {
+      $(".all-filters-wrap").scrollTop(0);
+    }, 0);
   });
 
   $(".filter-area-header .btn-back-icon").on("click", function (event) {
