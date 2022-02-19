@@ -171,6 +171,10 @@
       background: linear-gradient(270deg, #f9fafc 81.63%, rgba(255, 255, 255, 0) 100%);
       margin-right: 0;
       padding-left: 34px;
+      pointer-events: none;
+      .btn-text {
+        pointer-events: all;
+      }
     }
   }
 }
