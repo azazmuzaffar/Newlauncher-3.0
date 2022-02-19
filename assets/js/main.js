@@ -434,17 +434,24 @@ DetailsPageSlide();
     }
   });
 
-  /*   $(window).on("resize", function (e) {
+  $(window).on("resize", function (e) {
     if ($(window).innerWidth() > 576) {
       $(".footer-accourdion-wrap").find(".ac-body").css("display", "block");
       e.preventDefault();
-    } else {
+    }
+    if ($(".footer-accourdion-wrap .footer-title").hasClass("active")) {
+      $(".footer-accourdion-wrap .footer-title").removeClass("active");
+    }
+  });
+
+  $(window).on("resize", function (e) {
+    if ($(window).innerWidth() < 576) {
       $(".footer-accourdion-wrap").find(".ac-body").css("display", "none");
       e.preventDefault();
     }
-  }); */
+  });
 
-  var dwidth = $(window).width();
+  /*   var dwidth = $(window).width();
 
   $(window).resize(function () {
     var wwidth = $(window).width();
@@ -453,7 +460,7 @@ DetailsPageSlide();
     } else if (dwidth !== wwidth && wwidth > 576) {
       $(".footer-accourdion-wrap").find(".ac-body").css("display", "block");
     }
-  });
+  }); */
 
   // Tab Scripts
   $(".custom-tab-wrapper").each(function () {
