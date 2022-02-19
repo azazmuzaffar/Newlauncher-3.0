@@ -420,15 +420,16 @@ DetailsPageSlide();
       var dropDown = $(this).closest(".accourdion-item").find(".ac-body");
 
       $(this).closest(".footer-accourdion-wrap").find(".ac-body").not(dropDown).slideUp(250);
+      dropDown.stop(false, true).slideToggle(250);
 
       if ($(this).hasClass("active")) {
         $(this).removeClass("active");
+        $(this).siblings(".footer-link").removeClass("active");
       } else {
         $(this).closest(".footer-accourdion-wrap").find(".footer-title.active").removeClass("active");
+        $(this).siblings(".footer-link").addClass("active");
         $(this).addClass("active");
       }
-
-      dropDown.stop(false, true).slideToggle(250);
 
       j.preventDefault();
     }
