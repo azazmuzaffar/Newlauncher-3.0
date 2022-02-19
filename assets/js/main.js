@@ -419,8 +419,6 @@ DetailsPageSlide();
       console.log("Right");
       var dropDown = $(this).closest(".accourdion-item").find(".ac-body");
 
-      $(this).closest(".footer-accourdion-wrap").find(".ac-body").not(dropDown).slideUp(250);
-
       if ($(this).hasClass("active")) {
         $(this).removeClass("active");
       } else {
@@ -433,14 +431,14 @@ DetailsPageSlide();
       j.preventDefault();
     }
   });
-  /*   $(window).on("resize", function () {
+  $(window).on("resize", function () {
     if ($(window).innerWidth() > 576) {
       $(".footer-accourdion-wrap").find(".ac-body").css("display", "block");
     } else {
       $(".footer-accourdion-wrap").find(".ac-body").css("display", "none");
     }
   });
- */
+
   // Tab Scripts
   $(".custom-tab-wrapper").each(function () {
     var __this = $(this);
