@@ -443,6 +443,9 @@ DetailsPageSlide();
       } else {
         $(".footer-accourdion-wrap").find(".ac-body").css("display", "block");
       }
+      if ($(".footer-accourdion-wrap .footer-title").hasClass("active")) {
+        $(".footer-accourdion-wrap .footer-title").removeClass("active");
+      }
     }
   });
 
