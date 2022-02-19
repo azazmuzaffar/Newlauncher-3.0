@@ -434,7 +434,19 @@ DetailsPageSlide();
     }
   });
 
-  $(window).on("resize", function (e) {
+  var width = $(window).width();
+  $(window).resize(function () {
+    if ($(window).width() != width) {
+      width = $(window).width();
+      if ($(window).width() < 576) {
+        $(".footer-accourdion-wrap").find(".ac-body").css("display", "none");
+      } else {
+        $(".footer-accourdion-wrap").find(".ac-body").css("display", "block");
+      }
+    }
+  });
+
+  /*   $(window).on("resize", function (e) {
     if ($(window).innerWidth() > 576) {
       $(".footer-accourdion-wrap").find(".ac-body").css("display", "block");
       e.preventDefault();
@@ -449,7 +461,7 @@ DetailsPageSlide();
       $(".footer-accourdion-wrap").find(".ac-body").css("display", "none");
       e.preventDefault();
     }
-  });
+  }); */
 
   /*   var dwidth = $(window).width();
 
