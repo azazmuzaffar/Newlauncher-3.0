@@ -4741,9 +4741,6 @@ p .custom-badge-group {
   .footer-accourdion-wrap .accourdion-item .ac-body {
     display: none;
   }
-  .footer-accourdion-wrap .accourdion-item .ac-body.active {
-    display: block;
-  }
 }
 
 @media only screen and (max-width: 991.98px) {
