@@ -42,6 +42,16 @@ var options = {
     width: 2,
     colors: ["transparent", "#F1AF4C"],
   },
+  responsive: [
+    {
+      breakpoint: 576,
+      options: {
+        xaxis: {
+          categories: ["", "", "Feb 21", "", "", "May 21", "", "", "Aug 21", "", "", "Nov 21", "", ""],
+        },
+      },
+    },
+  ],
   xaxis: {
     categories: [
       "Dec 20",
