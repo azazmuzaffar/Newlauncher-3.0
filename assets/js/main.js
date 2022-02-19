@@ -434,7 +434,7 @@ DetailsPageSlide();
     }
   });
 
-  /*  $(window).on("resize", function (e) {
+  /*   $(window).on("resize", function (e) {
     if ($(window).innerWidth() > 576) {
       $(".footer-accourdion-wrap").find(".ac-body").css("display", "block");
       e.preventDefault();
@@ -443,6 +443,17 @@ DetailsPageSlide();
       e.preventDefault();
     }
   }); */
+
+  var dwidth = $(window).width();
+
+  $(window).resize(function () {
+    var wwidth = $(window).width();
+    if (wwidth < 576 || dwidth === wwidth) {
+      $(".footer-accourdion-wrap").find(".ac-body").css("display", "none");
+    } else if (dwidth !== wwidth && wwidth > 576) {
+      $(".footer-accourdion-wrap").find(".ac-body").css("display", "block");
+    }
+  });
 
   // Tab Scripts
   $(".custom-tab-wrapper").each(function () {

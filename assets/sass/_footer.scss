@@ -182,13 +182,7 @@
 .accourdion-item.mb-40 {
   margin-bottom: 27px;
 }
-.footer-accourdion-wrap {
-  .accourdion-item {
-    .ac-body {
-      display: block;
-    }
-  }
-}
+
 @media #{$sm_device} {
   .footer-accourdion-wrap {
     margin-left: 0;

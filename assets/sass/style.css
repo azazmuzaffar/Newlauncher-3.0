@@ -4719,10 +4719,6 @@ p .custom-badge-group {
   margin-bottom: 27px;
 }
 
-.footer-accourdion-wrap .accourdion-item .ac-body {
-  display: block;
-}
-
 @media (max-width: 575.98px) {
   .footer-accourdion-wrap {
     margin-left: 0;
