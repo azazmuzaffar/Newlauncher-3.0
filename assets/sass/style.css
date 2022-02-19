@@ -4569,7 +4569,7 @@ p .custom-badge-group {
 
 @media only screen and (max-width: 991.98px) {
   .footer-content .copyright {
-    border-top: 1px solid #353B48;
+    border-top: 1px solid #353b48;
     padding-top: 20px;
     margin-top: 5px;
   }
@@ -4586,6 +4586,7 @@ p .custom-badge-group {
   font-weight: 400;
   line-height: 20px;
   color: #fff;
+  opacity: 0.7;
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -4599,13 +4600,17 @@ p .custom-badge-group {
   text-decoration: none;
 }
 
+.footer-content a {
+  font-weight: 600;
+}
+
 .footer-content a:hover {
-  font-weight: 700;
+  font-weight: 600;
   color: #fff;
 }
 
 .footer-item a:hover {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .footer-item .footer-title {
@@ -4700,14 +4705,16 @@ p .custom-badge-group {
 }
 
 @media (max-width: 575.98px) {
-  .footer-item .footer-link, .footer-item .footer-title {
+  .footer-item .footer-link,
+  .footer-item .footer-title {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 
 @media only screen and (max-width: 575.98px) and (max-width: 767.98px) {
-  .footer-item .footer-link, .footer-item .footer-title {
+  .footer-item .footer-link,
+  .footer-item .footer-title {
     padding-left: 16px;
     padding-right: 16px;
   }

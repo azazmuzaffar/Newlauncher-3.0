@@ -157,7 +157,7 @@ var options = {
 
     offsetY: -65,
     labels: {
-      colors: "#6B7380",
+      colors: "rgb(17, 24, 40)",
       useSeriesColors: false,
     },
     markers: {
@@ -335,7 +335,7 @@ var options2 = {
     fontWeight: 400,
     offsetY: -65,
     labels: {
-      colors: "#111828",
+      colors: "rgb(17, 24, 40)",
       useSeriesColors: false,
     },
     markers: {
