@@ -1518,8 +1518,8 @@ p .custom-badge-group {
 }
 
 .card-primary {
-  background: #FFFFFF;
-  border: 1px solid #E6E7EB;
+  background: #ffffff;
+  border: 1px solid #e6e7eb;
   -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
           box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
   font-size: 14px;
@@ -1543,7 +1543,7 @@ p .custom-badge-group {
 .card-primary .card-header {
   padding: 0;
   background-color: transparent;
-  border-bottom: 1px solid #E6E7EB;
+  border-bottom: 1px solid #e6e7eb;
 }
 
 .card-primary .card-header .thumbnail-wrapper {
@@ -1650,7 +1650,7 @@ p .custom-badge-group {
 }
 
 .card-primary .card-footer .thumbnail img {
-  border: 1px solid #E6E7EB;
+  border: 1px solid #e6e7eb;
   border-radius: 50%;
 }
 
@@ -1683,7 +1683,8 @@ p .custom-badge-group {
   }
 }
 
-.inline-dot-list, .inline-line-list {
+.inline-dot-list,
+.inline-line-list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -1695,34 +1696,39 @@ p .custom-badge-group {
   white-space: nowrap;
 }
 
-.inline-dot-list li, .inline-line-list li {
+.inline-dot-list li,
+.inline-line-list li {
   position: relative;
-  color: #6B7380;
+  color: #6b7380;
   padding-right: 8px;
   padding-left: 11.5px;
 }
 
-.inline-dot-list li:last-child, .inline-line-list li:last-child {
+.inline-dot-list li:last-child,
+.inline-line-list li:last-child {
   text-overflow: ellipsis;
   overflow: hidden;
   padding-right: 0;
 }
 
-.inline-dot-list li:first-child, .inline-line-list li:first-child {
+.inline-dot-list li:first-child,
+.inline-line-list li:first-child {
   padding-left: 0;
 }
 
-.inline-dot-list li a, .inline-line-list li a {
-  color: #6B7380;
+.inline-dot-list li a,
+.inline-line-list li a {
+  color: #6b7380;
   text-decoration: none !important;
 }
 
-.inline-dot-list li::before, .inline-line-list li::before {
+.inline-dot-list li::before,
+.inline-line-list li::before {
   content: "";
   position: absolute;
   width: 3px;
   height: 3px;
-  background: #D1D4DB;
+  background: #d1d4db;
   left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1730,7 +1736,8 @@ p .custom-badge-group {
   border-radius: 50%;
 }
 
-.inline-dot-list li:first-child::before, .inline-line-list li:first-child::before {
+.inline-dot-list li:first-child::before,
+.inline-line-list li:first-child::before {
   display: none;
 }
 
@@ -1748,7 +1755,7 @@ p .custom-badge-group {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-color: #F3F4F6;
+  background-color: #f3f4f6;
 }
 
 .my-8 {
@@ -1794,19 +1801,19 @@ p .custom-badge-group {
 }
 
 .custom-badge-group .bg-1 {
-  background-color: #00ACBC;
+  background-color: #00acbc;
 }
 
 .custom-badge-group .bg-2 {
-  background-color: #9D5A18;
+  background-color: #9d5a18;
 }
 
 .custom-badge-group .bg-3 {
-  background-color: #00943A;
+  background-color: #00943a;
 }
 
 .text-gray {
-  color: #6B7380;
+  color: #6b7380;
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -1840,7 +1847,7 @@ p .custom-badge-group {
 }
 
 .com-avater-info .text-info p {
-  color: #6B7380;
+  color: #6b7380;
   font-size: 12px;
   line-height: 16px;
   margin-bottom: 0;
@@ -1857,7 +1864,7 @@ p .custom-badge-group {
   width: 100%;
   opacity: 1 !important;
   height: 2px;
-  background-color: #E6E7EB;
+  background-color: #e6e7eb;
 }
 
 @media (max-width: 575.98px) {
@@ -1872,7 +1879,11 @@ p .custom-badge-group {
 }
 
 .text-slide-wrapper.disable-scrollbar .slide-scrollbar .swiper-scrollbar-drag {
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
+}
+
+.text-slide-wrapper .ms-auto span.text-dark {
+  font-weight: 600;
 }
 
 .stories-slide-container {
@@ -1891,7 +1902,8 @@ p .custom-badge-group {
   color: #fff;
 }
 
-.stories-card .bg, .stories-card::before, .stories-card .bottom-text-content {
+.stories-card .bg, .stories-card::before,
+.stories-card .bottom-text-content {
   position: absolute;
   left: 0;
   top: 0;
@@ -1920,7 +1932,8 @@ p .custom-badge-group {
   margin-bottom: 8px;
 }
 
-.stories-card .bottom-text-content .sub-title, .stories-card .bottom-text-content p {
+.stories-card .bottom-text-content .sub-title,
+.stories-card .bottom-text-content p {
   font-size: 12px;
   color: #fff;
   font-weight: normal;
@@ -1953,7 +1966,7 @@ p .custom-badge-group {
 .pagination-long .swiper-pagination-bullet {
   height: 4px;
   width: auto;
-  background: #E6E7EB;
+  background: #e6e7eb;
   border-radius: 50px;
   margin-right: 8px;
   overflow: hidden;
@@ -2037,7 +2050,8 @@ p .custom-badge-group {
   width: 100%;
 }
 
-.media-wrap .badge-top, .media-wrap .bottom-left-icons {
+.media-wrap .badge-top,
+.media-wrap .bottom-left-icons {
   position: absolute;
   z-index: 10;
   left: 8px;
