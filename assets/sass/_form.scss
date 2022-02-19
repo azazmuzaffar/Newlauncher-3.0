@@ -196,13 +196,13 @@
       }
     }
     &::after {
-      height: 8px;
-      width: 8px;
-      border-bottom: 2px solid #111828;
-      border-right: 2px solid #111828;
+      border-bottom: 2px solid #6b7380;
+      border-right: 2px solid #6b7380;
+      width: 7px;
+      height: 7px;
       right: 17px;
       @media #{$sm_device} {
-        top: calc(50% + -1px);
+        top: calc(50% + -0px);
       }
     }
     .option {
