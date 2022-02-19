@@ -428,19 +428,19 @@ DetailsPageSlide();
         $(this).addClass("active");
       }
 
-      dropDown.stop(true, false).slideToggle(250);
+      dropDown.stop(false, true).slideToggle(250);
 
       j.preventDefault();
     }
   });
-  $(window).on("resize", function () {
+  /*   $(window).on("resize", function () {
     if ($(window).innerWidth() > 576) {
       $(".footer-accourdion-wrap").find(".ac-body").css("display", "block");
     } else {
       $(".footer-accourdion-wrap").find(".ac-body").css("display", "none");
     }
   });
-
+ */
   // Tab Scripts
   $(".custom-tab-wrapper").each(function () {
     var __this = $(this);
