@@ -221,11 +221,14 @@
     }
     .nice-select {
       border-color: #e6e7eb;
-      padding: 0 6px;
+      padding: 0;
       .current {
         padding-right: 30px;
+        padding: 0 6px;
       }
       .list {
+        position: relative;
+        top: 0;
         width: auto;
         z-index: 99;
       }
@@ -631,7 +634,7 @@
   }
 }
 
-.sales-trend-dropdown {
+/* .sales-trend-dropdown {
   width: 187px !important;
 }
 .buyers-profile-dropdown {
@@ -646,3 +649,4 @@
     width: 112px !important;
   }
 }
+ */

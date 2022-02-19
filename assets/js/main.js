@@ -434,7 +434,7 @@ DetailsPageSlide();
     }
   });
 
-  $(window).on("resize", function (e) {
+  /*  $(window).on("resize", function (e) {
     if ($(window).innerWidth() > 576) {
       $(".footer-accourdion-wrap").find(".ac-body").css("display", "block");
       e.preventDefault();
@@ -442,7 +442,7 @@ DetailsPageSlide();
       $(".footer-accourdion-wrap").find(".ac-body").css("display", "none");
       e.preventDefault();
     }
-  });
+  }); */
 
   // Tab Scripts
   $(".custom-tab-wrapper").each(function () {

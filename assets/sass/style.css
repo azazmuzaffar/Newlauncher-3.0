@@ -484,21 +484,21 @@ h6 {
 }
 
 .bg-gray {
-  background-color: #F9FAFC;
+  background-color: #f9fafc;
 }
 
 @media only screen and (min-width: 1200px) {
   .bg-xl-gray {
-    background-color: #F9FAFC;
+    background-color: #f9fafc;
   }
 }
 
 .text-danger {
-  color: #007F46 !important;
+  color: #007f46 !important;
 }
 
 .text-gray-2 {
-  color: #6B7380 !important;
+  color: #6b7380 !important;
 }
 
 .container-fluid {
@@ -3988,14 +3988,17 @@ p .custom-badge-group {
 
 .panel-card .select-with-radio .nice-select {
   border-color: #e6e7eb;
-  padding: 0 6px;
+  padding: 0;
 }
 
 .panel-card .select-with-radio .nice-select .current {
   padding-right: 30px;
+  padding: 0 6px;
 }
 
 .panel-card .select-with-radio .nice-select .list {
+  position: relative;
+  top: 0;
   width: auto;
   z-index: 99;
 }
@@ -4477,30 +4480,22 @@ p .custom-badge-group {
   }
 }
 
-.sales-trend-dropdown {
+/* .sales-trend-dropdown {
   width: 187px !important;
 }
-
 .buyers-profile-dropdown {
   width: 160px !important;
-}
-
-@media only screen and (max-width: 767.98px) {
-  .buyers-profile-dropdown {
+  @media only screen and (max-width: 767.98px) {
     width: 172px !important;
   }
 }
-
 .sales-transection-dropdown {
   width: 183px !important;
-}
-
-@media only screen and (max-width: 767.98px) {
-  .sales-transection-dropdown {
+  @media only screen and (max-width: 767.98px) {
     width: 112px !important;
   }
 }
-
+ */
 .footer-area {
   background: #111828;
 }
@@ -4722,6 +4717,10 @@ p .custom-badge-group {
 
 .accourdion-item.mb-40 {
   margin-bottom: 27px;
+}
+
+.footer-accourdion-wrap .accourdion-item .ac-body {
+  display: block;
 }
 
 @media (max-width: 575.98px) {

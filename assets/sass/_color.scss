@@ -1,17 +1,17 @@
-.text-dark{
-	color: #111828 !important;
-} 
-.bg-gray{
-	background-color:#F9FAFC;
+.text-dark {
+  color: #111828 !important;
 }
-.bg-xl-gray{
-	@media only screen and (min-width: 1200px){ 
-		background-color:#F9FAFC;
-	}
+.bg-gray {
+  background-color: #f9fafc;
 }
-.text-danger{
-	color: #007F46 !important;
-} 
-.text-gray-2{
-	color: #6B7380 !important; 
-} 
+.bg-xl-gray {
+  @media only screen and (min-width: 1200px) {
+    background-color: #f9fafc;
+  }
+}
+.text-danger {
+  color: #007f46 !important;
+}
+.text-gray-2 {
+  color: #6b7380 !important;
+}
