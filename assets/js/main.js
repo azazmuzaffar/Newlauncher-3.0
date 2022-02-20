@@ -783,8 +783,10 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".pagination-home li a").click(function () {
     queryString.push("hide", true);
-    getParameters();
     $("html,body").animate({ scrollTop: 0 }, 350);
+    setTimeout(function () {
+      getParameters();
+    }, 700);
   });
 });
 
