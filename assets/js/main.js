@@ -786,7 +786,7 @@ $(document).ready(function () {
     $("html,body").animate({ scrollTop: 0 }, 350);
     setTimeout(function () {
       getParameters();
-    }, 350);
+    }, 400);
   });
 });
 
