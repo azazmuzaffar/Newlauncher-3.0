@@ -783,8 +783,8 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".pagination-home li a").click(function () {
     queryString.push("hide", true);
-    window.scrollTo(0, 0);
     getParameters();
+    $("html,body").animate({ scrollTop: 0 }, 350);
   });
 });
 
