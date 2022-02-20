@@ -788,6 +788,10 @@ $(document).ready(function () {
   });
 });
 
+window.onload = function () {
+  getParameters();
+};
+
 function getParameters() {
   var url = window.location.href;
   console.log(url);
