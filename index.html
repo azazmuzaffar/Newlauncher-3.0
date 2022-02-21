@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/fontawesome-all.css" />
     <link rel="stylesheet" href="assets/css/swiper.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/sass/style.css" />
   </head>
   <body>
     <main class="page-root">
@@ -538,378 +538,117 @@
           </div>
         </div>
       </section>
-      <section class="sec-pt-80 sec-pb-80 bg-gray">
+      <section class="blog-area sec-pt-100 sec-pb-100">
         <div class="container">
           <div class="row">
-            <div class="col-xl-3">
-              <div class="all-filters-area">
-                <div class="filter-area-header d-flex align-items-center d-xl-none">
-                  <button class="btn-back-icon"></button>
-                  <h4 class="title me-auto">Filter</h4>
-                  <a href="#" class="btn-text px-0">Clear All</a>
+            <div class="col-lg-8">
+              <div class="section-title">
+                <h2 class="title">Developer Sales Volume</h2>
+                <p class="small-title">Based on sales from Nov 19 to Nov 21</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="dropdown--all-posts">
+              <div class="dropdown--">
+                <div data-area="#chart-area-1" class="has-tab-link select-with-radio d-inline-block sales-trend-dropdown">
+                  <select name="" id="" class="has-nc-select" prefix="Sort by">
+                    <option value="Best Match">Best Match</option>
+                    <option value="Best Seller">Best Seller</option>
+                    <option value="Earliest Top">Earliest Top</option>
+                    <option value="Newest Launch">Newest Launch</option>
+                    <option value="Price: Low to High">Price: Low to High</option>
+                    <option value="Price: High to Low">Price: High to Low</option>
+                    <option value="Size: Low to High">Size: Low to High</option>
+                    <option value="Size: High to Low">Size: High to Low</option>
+                    <option value="PSF: Low to High">PSF: Low to High</option>
+                    <option value="PSF: High to Low">PSF: High to Low</option>
+                  </select>
                 </div>
-                <div class="all-filters-wrap">
-                  <div class="footer-btn">
-                    <a href="#" class="btn w-100 btn-primary d-xl-none">View 154 Launches</a>
+              </div>
+              <div class="show-all-posts--">
+                <h6>See all posts</h6>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 mb-40">
+              <div class="blog-card">
+                <div class="thumb card-thumb">
+                  <img src="assets/img/card/1-sm.png" alt="" />
+                  <span class="--tag">Mixed Development</span>
+                  <span class="badge badge-dark-4 badge-img-count d-inline-flex align-items-center badge-photos --photos">
+                    <svg class="icon" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2 0C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2V12C0 12.5304 0.210714 13.0391 0.585786 13.4142C0.960859 13.7893 1.46957 14 2 14H14C14.5304 14 15.0391 13.7893 15.4142 13.4142C15.7893 13.0391 16 12.5304 16 12V2C16 1.46957 15.7893 0.960859 15.4142 0.585786C15.0391 0.210714 14.5304 0 14 0H2ZM14 12H2L6 4L9 10L11 6L14 12Z"
+                        fill="white"
+                      />
+                    </svg>
+                    12
+                  </span>
+                </div>
+                <div class="blog-content card-post-content">
+                  <div class="text-content">
+                    <h2 class="title">Amber Park <small>in Amber Garden</small></h2>
+                    <ul class="inline-dot-list">
+                      <li>Core Central</li>
+                      <li>Prime Disctrict</li>
+                      <li>D15 - East Coast / Marine...</li>
+                    </ul>
+                    <p class="mt-10 mb-9 text-gray">
+                      1,250m to
+                      <span class="custom-badge-group d-inline-flex">
+                        <span class="badge-item bg-1">JS1</span>
+                        <span class="badge-item bg-2">JS1</span>
+                        <span class="badge-item bg-3">JS1</span>
+                      </span>
+                      Choa Chu Kang West MRT
+                    </p>
+                    <ul class="inline-line-list mb-12">
+                      <li><a href="#">Dec 2021</a></li>
+                      <li><a href="#">99-Years</a></li>
+                      <li><a href="#">Condominium</a></li>
+                    </ul>
+                    <ul class="badge-group-2 d-flex flex-wrap">
+                      <li>
+                        <span class="badge badge-light"><span>Total:</span> 450 units</span>
+                      </li>
+                      <li>
+                        <span class="badge badge-light"><span>Available:</span> 150 units</span>
+                      </li>
+                      <li>
+                        <span class="badge badge-light hide-xl-xxl"><span>Sold:</span> 300 units</span>
+                      </li>
+                    </ul>
                   </div>
-                  <div class="panel-title-area d-none d-xl-block">
-                    <h2 class="title">Filter</h2>
-                  </div>
-                  <!-- ALL FILTER WRAPPER -->
-                  <div class="filter-fields-wrapper">
-                    <!-- FILTER ITEM -->
-                    <div id="selectedFilters" class="selected-filter-bg filter-content-item has-opened d-xl-none">
-                      <h3 class="title">
-                        Selected Filter
-                        <span class="chip chip-sm chip-bg">
-                          <span>1</span>
-                          <button class="btn-times fas fa-times-circle"></button>
-                        </span>
-                        <button class="angle-btn fas fa-angle-down"></button>
-                      </h3>
-                      <div class="filter-body">
-                        <ul class="selected-filter-2 reset-ul d-flex flex-wrap">
-                          <li class="chip chip-light">MS H20 <button class="btn-times fas fa-times-circle"></button></li>
-                          <li class="chip chip-light">Sunrise Property Consultant <button class="btn-times fas fa-times-circle"></button></li>
-                          <li class="chip chip-light">Romel Group chip-light <button class="btn-times fas fa-times-circle"></button></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- FILTER ITEM -->
-                    <div class="filter-content-item has-opened">
-                      <h3 class="title">
-                        Project Name
-                        <span class="chip chip-sm chip-bg">
-                          <span>1</span>
-                          <button class="btn-times fas fa-times-circle filter-close"></button>
-                        </span>
-                        <button class="angle-btn fas fa-angle-down"></button>
-                      </h3>
-                      <div class="filter-body">
-                        <div class="sm-searech">
-                          <input type="text" class="form-control" placeholder="Search project name" />
-                          <button class="search-icon-btn"></button>
+                  <div class="card-footer">
+                    <div class="d-flex align-items-center">
+                      <div class="com-avater-info d-flex align-items-center">
+                        <div class="thumbnail">
+                          <img src="assets/img/avater.png" alt="" />
                         </div>
-                        <ul id="expanded-project-name" data-each-show="5" class="check-box-lists mh-none">
-                          <li class="list-item form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="check-box-1" />
-                            <label class="form-check-label" for="check-box-1"> Sunrise property Consultant </label>
-                          </li>
-                          <li class="list-item form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="check-box-2" />
-                            <label class="form-check-label" for="check-box-2"> Deepak Devkate </label>
-                          </li>
-                          <li class="list-item form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="check-box-3" />
-                            <label class="form-check-label" for="check-box-3"> A Plus Life Space </label>
-                          </li>
-                          <li class="list-item form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="check-box-4" />
-                            <label class="form-check-label" for="check-box-4"> Romell Group </label>
-                          </li>
-                          <li class="list-item form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="check-box-5" />
-                            <label class="form-check-label" for="check-box-5"> Deepak Devkate </label>
-                          </li>
-                          <li class="list-item form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="check-box-6" />
-                            <label class="form-check-label" for="check-box-6"> Aansh Property </label>
-                          </li>
-                          <li class="list-item form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="check-box--1" />
-                            <label class="form-check-label" for="check-box--1"> Sunrise property Consultant </label>
-                          </li>
-                          <li class="list-item d-none form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="check-box--2" />
-                            <label class="form-check-label" for="check-box--2"> Deepak Devkate </label>
-                          </li>
-                          <li class="list-item d-none form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="check-box--3" />
-                            <label class="form-check-label" for="check-box--3"> A Plus Life Space </label>
-                          </li>
-                          <li class="list-item d-none form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="check-box--4" />
-                            <label class="form-check-label" for="check-box--4"> Romell Group </label>
-                          </li>
-                          <li class="list-item d-none form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="check-box--5" />
-                            <label class="form-check-label" for="check-box--5"> Deepak Devkate </label>
-                          </li>
-                          <li class="list-item d-none form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="check-box--6" />
-                            <label class="form-check-label" for="check-box--6"> Aansh Property </label>
-                          </li>
-                          <li class="list-item d-none form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="check-box---1" />
-                            <label class="form-check-label" for="check-box---1"> Sunrise property Consultant </label>
-                          </li>
-                          <li class="list-item d-none form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="check-box---2" />
-                            <label class="form-check-label" for="check-box---2"> Deepak Devkate </label>
-                          </li>
-                          <li class="list-item d-none form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="check-box---3" />
-                            <label class="form-check-label" for="check-box---3"> A Plus Life Space </label>
-                          </li>
-                          <li class="list-item d-none form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="check-box---4" />
-                            <label class="form-check-label" for="check-box---4"> Romell Group </label>
-                          </li>
-                          <li class="list-item d-none form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="check-box---5" />
-                            <label class="form-check-label" for="check-box---5"> Deepak Devkate </label>
-                          </li>
-                          <li class="list-item d-none form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="check-box---6" />
-                            <label class="form-check-label" for="check-box---6"> Aansh Property </label>
-                          </li>
-                        </ul>
-                        <a href="#" class="btn-text p-0 mt-2 d-inline-block" data-expandedlist="#expanded-project-name">Show More</a>
-                      </div>
-                    </div>
-                    <!-- FILTER ITEM -->
-                    <div class="filter-content-item has-opened">
-                      <h3 class="title">
-                        Project Developer
-                        <span class="chip chip-sm chip-bg">
-                          <span>1</span>
-                          <button class="btn-times fas fa-times-circle filter-close"></button>
-                        </span>
-                        <button class="angle-btn fas fa-angle-down"></button>
-                      </h3>
-                      <div class="filter-body">
-                        <div class="sm-searech">
-                          <input type="text" class="form-control" placeholder="Search project name" />
-                          <button class="search-icon-btn"></button>
-                        </div>
-                        <small class="sm-text">2 projects found</small>
-                        <ul class="check-box-lists mh-none">
-                          <li class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="scheck-box-1" />
-                            <label class="form-check-label" for="scheck-box-1"> Sunrise property Consultant </label>
-                          </li>
-                          <li class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="scheck-box-2" />
-                            <label class="form-check-label" for="scheck-box-2"> Deepak Devkate </label>
-                          </li>
-                        </ul>
-                        <span class="horizon-separator"></span>
-                        <ul id="expanded-project-Developer" data-each-show="5" class="check-box-lists mh-none">
-                          <li class="list-item form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="Sunrisecheck-box-1" />
-                            <label class="form-check-label" for="Sunrisecheck-box-1"> Sunrise property Consultant </label>
-                          </li>
-                          <li class="list-item form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="Sunrisecheck-box-2" />
-                            <label class="form-check-label" for="Sunrisecheck-box-2"> Deepak Devkate </label>
-                          </li>
-                          <li class="list-item form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="Sunrisecheck-box-3" />
-                            <label class="form-check-label" for="Sunrisecheck-box-3"> A Plus Life Space </label>
-                          </li>
-                          <li class="list-item form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="Sunrisecheck-box-4" />
-                            <label class="form-check-label" for="Sunrisecheck-box-4"> Romell Group </label>
-                          </li>
-                          <li class="list-item form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="Sunrisecheck-box-5" />
-                            <label class="form-check-label" for="Sunrisecheck-box-5"> Deepak Devkate </label>
-                          </li>
-                          <li class="list-item d-none form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="Sunrisecheck-box-1" />
-                            <label class="form-check-label" for="Sunrisecheck-box-1"> Sunrise property Consultant </label>
-                          </li>
-                          <li class="list-item d-none form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="Sunrisecheck-box-2" />
-                            <label class="form-check-label" for="Sunrisecheck-box-2"> Deepak Devkate </label>
-                          </li>
-                          <li class="list-item d-none form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="Sunrisecheck-box-3" />
-                            <label class="form-check-label" for="Sunrisecheck-box-3"> A Plus Life Space </label>
-                          </li>
-                          <li class="list-item d-none form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="Sunrisecheck-box-4" />
-                            <label class="form-check-label" for="Sunrisecheck-box-4"> Romell Group </label>
-                          </li>
-                          <li class="list-item d-none form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="Sunrisecheck-box-5" />
-                            <label class="form-check-label" for="Sunrisecheck-box-5"> Deepak Devkate </label>
-                          </li>
-                          <li class="list-item d-none form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="Sunrisecheck-box-1" />
-                            <label class="form-check-label" for="Sunrisecheck-box-1"> Sunrise property Consultant </label>
-                          </li>
-                          <li class="list-item d-none form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="Sunrisecheck-box-2" />
-                            <label class="form-check-label" for="Sunrisecheck-box-2"> Deepak Devkate </label>
-                          </li>
-                          <li class="list-item d-none form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="Sunrisecheck-box-3" />
-                            <label class="form-check-label" for="Sunrisecheck-box-3"> A Plus Life Space </label>
-                          </li>
-                          <li class="list-item d-none form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="Sunrisecheck-box-4" />
-                            <label class="form-check-label" for="Sunrisecheck-box-4"> Romell Group </label>
-                          </li>
-                          <li class="list-item d-none form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="Sunrisecheck-box-5" />
-                            <label class="form-check-label" for="Sunrisecheck-box-5"> Deepak Devkate </label>
-                          </li>
-                        </ul>
-                        <a href="#" class="btn-text p-0 mt-2 d-inline-block" data-expandedlist="#expanded-project-Developer">Show More</a>
-                      </div>
-                    </div>
-                    <!-- FILTER ITEM -->
-                    <div class="filter-content-item has-opened">
-                      <h3 class="title">
-                        Project Location
-                        <span class="chip chip-sm chip-bg">
-                          <span>1</span>
-                          <button class="btn-times fas fa-times-circle filter-close"></button>
-                        </span>
-                        <button class="angle-btn fas fa-angle-down"></button>
-                      </h3>
-                      <div class="filter-body">
-                        <div class="sm-searech">
-                          <input type="text" class="form-control" placeholder="Search project name" />
-                          <button class="search-icon-btn"></button>
-                        </div>
-                        <small class="sm-text">No location found</small>
-                        <span class="horizon-separator"></span>
-                        <ul class="check-box-lists mh-none">
-                          <li>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="checkAllFirst" />
-                              <label class="form-check-label" for="checkAllFirst"> Sunrise property Consultant </label>
-                            </div>
-                            <ul class="check-box-lists">
-                              <li>
-                                <div class="form-check">
-                                  <input class="form-check-input cb-1" type="checkbox" value="" id="LocationNestedcheck-box-1" />
-                                  <label class="form-check-label" for="LocationNestedcheck-box-1"> Sunrise property Consultant </label>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="form-check">
-                                  <input class="form-check-input cb-1" type="checkbox" value="" id="LocationNestedcheck-box-2" />
-                                  <label class="form-check-label" for="LocationNestedcheck-box-2"> Sunrise property Consultant </label>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="form-check">
-                                  <input class="form-check-input cb-1" type="checkbox" value="" id="LocationNestedcheck-box-3" />
-                                  <label class="form-check-label" for="LocationNestedcheck-box-3"> Sunrise property Consultant </label>
-                                </div>
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="checkAllSecond" />
-                              <label class="form-check-label" for="checkAllSecond"> Sunrise property Consultant </label>
-                            </div>
-                            <ul class="check-box-lists">
-                              <li>
-                                <div class="form-check">
-                                  <input class="form-check-input cb-2" type="checkbox" value="" id="LocationNestedcheck-box-4" />
-                                  <label class="form-check-label" for="LocationNestedcheck-box-4"> Sunrise property Consultant </label>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="form-check">
-                                  <input class="form-check-input cb-2" type="checkbox" value="" id="LocationNestedcheck-box-5" />
-                                  <label class="form-check-label" for="LocationNestedcheck-box-5"> Sunrise property Consultant </label>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="form-check">
-                                  <input class="form-check-input cb-2" type="checkbox" value="" id="LocationNestedcheck-box-6" />
-                                  <label class="form-check-label" for="LocationNestedcheck-box-6"> Sunrise property Consultant </label>
-                                </div>
-                              </li>
-                            </ul>
-                          </li>
-                          <li class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="LocationNestedcheck-box-7" />
-                            <label class="form-check-label" for="LocationNestedcheck-box-7"> Deepak Devkate </label>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- FILTER ITEM -->
-                    <div class="filter-content-item has-opened">
-                      <h3 class="title">
-                        Completion Status
-                        <span class="chip chip-sm chip-bg">
-                          <span>1</span>
-                          <button class="btn-times fas fa-times-circle filter-close"></button>
-                        </span>
-                        <div class="sm-title fw-400 toggle-with-parent">Completed Projects</div>
-                        <button class="angle-btn fas fa-angle-down"></button>
-                      </h3>
-                      <div class="filter-body">
-                        <ul class="check-box-lists mt-16">
-                          <li class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="check-box-CoProjects" />
-                            <label class="form-check-label" for="check-box-CoProjects"> Completed Projects </label>
-                          </li>
-                          <li class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="check-box-UnProjects" />
-                            <label class="form-check-label" for="check-box-UnProjects"> Uncompleted Projects </label>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- FILTER ITEM -->
-                    <div class="filter-content-item has-opened">
-                      <h3 class="title">
-                        Completion Year
-                        <span class="chip chip-sm chip-bg">
-                          <span id="no-of-f">1</span>
-                          <button class="btn-times fas fa-times-circle filter-close"></button>
-                        </span>
-                        <button class="angle-btn fas fa-angle-down"></button>
-                      </h3>
-                      <div class="filter-body">
-                        <div class="needs-validation mt-16">
-                          <div class="input_group">
-                            <div class="input-style2 -min">
-                              <span class="placeholder_text">Min. year</span>
-                              <input type="text" class="form-control" min="10" max="20" />
-                            </div>
-                            <span class="sep">-</span>
-                            <div class="input-style2 -max">
-                              <span class="placeholder_text">Max. year</span>
-                              <input type="text" class="form-control" min="10" max="20" />
-                            </div>
-                          </div>
+                        <div class="text-info">
+                          <h6 class="name d-none d-md-block">Jayden Realtors Construction</h6>
+                          <h6 class="name d-md-none">Jayden Realtors Construction</h6>
+                          <p>Developer Sales Team</p>
                         </div>
                       </div>
-                    </div>
-                    <!-- FILTER ITEM -->
-                    <div class="filter-content-item has-opened">
-                      <h3 class="title">
-                        Unit Bedroom
-                        <span class="chip chip-sm chip-bg">
-                          <span>1</span>
-                          <button class="btn-times fas fa-times-circle filter-close"></button>
-                        </span>
-                        <button class="angle-btn fas fa-angle-down"></button>
-                      </h3>
-                      <div class="filter-body">
-                        <div class="needs-validation mt-16">
-                          <div class="input_group">
-                            <div class="input-style2 bedroom -min">
-                              <span class="placeholder_text">Min. Bedroom</span>
-                              <input id="min-bedroom" type="text" class="form-control" min="10" max="20" />
-                            </div>
-                            <span class="sep">-</span>
-                            <div class="input-style2 bedroom -max">
-                              <span class="placeholder_text">Max. Bedroom</span>
-                              <input id="max-bedroom" type="text" class="form-control max-bedroom" min="10" max="20" />
-                            </div>
-                          </div>
-                          <p class="mt-1 error-message"></p>
+                      <div class="ms-auto right-area justify-content-end d-flex">
+                        <div class="d-flex">
+                          <a href="#" class="btn btn-outline-primary mr-8 btn-min-w106 d-none d-md-inline-block call-" data-get-num="+65 8597-1878"
+                            >Call</a
+                          >
+                          <a href="#" class="btn btn-outline-primary mr-8 d-md-none call-">Call</a>
+                          <a href="#" class="btn btn-primary btn-icon d-flex align-items-center">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M8 0C3.582 0 0 3.582 0 8C0 9.50081 0.421561 10.9 1.14062 12.1003L0.0716146 16L4.05469 14.9544C5.21957 15.6167 6.56433 16 8 16C12.418 16 16 12.418 16 8C16 3.582 12.418 0 8 0ZM5.26172 4.26823C5.39172 4.26823 5.52529 4.26744 5.64063 4.27344C5.78329 4.27677 5.93857 4.28722 6.08724 4.61589C6.26391 5.00655 6.64858 5.9866 6.69792 6.08594C6.74725 6.18527 6.78221 6.30229 6.71354 6.43229C6.64821 6.56563 6.61423 6.64632 6.51823 6.76432C6.4189 6.87899 6.31005 7.02141 6.22005 7.10807C6.12072 7.20741 6.01815 7.31632 6.13281 7.51432C6.24748 7.71232 6.64571 8.36142 7.23437 8.88542C7.99104 9.56142 8.62946 9.76916 8.82812 9.86849C9.02679 9.96782 9.14184 9.95234 9.25651 9.81901C9.37451 9.68901 9.75208 9.24294 9.88542 9.04427C10.0154 8.8456 10.1481 8.87998 10.3281 8.94531C10.5108 9.01065 11.4849 9.49051 11.6836 9.58984C11.8823 9.68918 12.0125 9.73834 12.0625 9.81901C12.1138 9.90234 12.1139 10.2991 11.9492 10.7617C11.7846 11.2237 10.9759 11.6705 10.6133 11.7018C10.2473 11.7358 9.90571 11.8663 8.23438 11.2083C6.21838 10.4143 4.94699 8.34948 4.84766 8.21615C4.74832 8.08615 4.04036 7.1426 4.04036 6.16927C4.04036 5.1926 4.55244 4.71429 4.73177 4.51562C4.91444 4.31696 5.12839 4.26823 5.26172 4.26823Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -917,1710 +656,170 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-6 col-lg-8 spacing_">
-              <div class="d-xl-flex align-items-xl-center">
-                <div class="panel-title-area me-auto">
-                  <h2 class="title">Available New Launches</h2>
-                  <p>Showing 1 - 20 of 154 available launches</p>
-                </div>
-                <div class="d-flex mt-xl-0 filter-btn-group-wrap">
-                  <a href="#" class="open-filter-area d-flex align-items-center btn-outline-light d-xl-none me-2 me-sm-3">
-                    <span class="icon-settings"></span>
-                    Filter
-                    <span class="baudge-rounded d-flex align-items-center justify-content-center">4</span>
-                  </a>
-                  <a href="#" class="open-sort-area filter-input-show sort-filter-show btn-outline-light d-xl-none d-flex align-items-center">
-                    <span class="abs d-flex align-items-center">
-                      <span class="icon-filter"></span>
-                      Sort by
-                    </span>
-                    <span class="current-text d-block">Price: High to...</span>
-                  </a>
-                  <div class="sort-fixd-wrap d-xl-none">
-                    <div class="filter-area-header d-flex align-items-center d-xl-none">
-                      <button class="btn-back-icon"></button>
-                      <h4 class="title me-auto">Sort</h4>
-                      <a href="#" class="btn-text px-0">Reset to Default</a>
-                    </div>
-                    <div class="all-sort-fixd-wrap">
-                      <ul class="list reset-ul">
-                        <li class="option selected focus">Best Match</li>
-                        <li class="option">Best Seller</li>
-                        <li class="option">Earliest Top</li>
-                        <li class="option">Newest Launch</li>
-                        <li class="option">Price: Low to High</li>
-                        <li class="option">Price: High to Low</li>
-                        <li class="option">Size: Low to High</li>
-                        <li class="option">Size: High to Low</li>
-                        <li class="option">PSF: Low to High</li>
-                        <li class="option">PSF: High to Low</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="select-with-radio d-none d-xl-block">
-                    <select name="" id="" vlaue="Price: High to Low" class="has-nc-select" prefix="Sort by">
-                      <option value="Best Match">Best Match</option>
-                      <option value="Best Seller">Best Seller</option>
-                      <option value="Earliest Top">Earliest Top</option>
-                      <option value="Newest Launch">Newest Launch</option>
-                      <option value="Price: Low to High">Price: Low to High</option>
-                      <option value="Price: High to Low">Price: High to Low</option>
-                      <option value="Size: Low to High">Size: Low to High</option>
-                      <option value="Size: High to Low">Size: High to Low</option>
-                      <option value="PSF: Low to High">PSF: Low to High</option>
-                      <option value="PSF: High to Low">PSF: High to Low</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="selected-filters-parent-wrap">
-                <ul class="selected-filters-wrap d-flex flex-xl-wrap">
-                  <li class="chip">4 Stars <button class="btn-times fas fa-times-circle"></button></li>
-                  <li class="chip">5 Stars <button class="btn-times fas fa-times-circle"></button></li>
-                  <li class="chip">Air conditioning <button class="btn-times fas fa-times-circle"></button></li>
-                  <li class="chip">Prime District <button class="btn-times fas fa-times-circle"></button></li>
-                  <li class="chip">D10 - Tanglin/Holland/Bukit Timah <button class="btn-times fas fa-times-circle"></button></li>
-                  <li class="clear-btn d-none d-xl-flex align-items-center"><a href="#" class="btn-text">Clear All</a></li>
-                </ul>
-                <div class="clear-btn d-flex d-xl-none align-items-center"><a href="#" class="btn-text">Clear All</a></div>
-              </div>
-              <!-- Listing Start -->
-              <div class="card-primary mb-4">
-                <!-- Card Header -->
-                <div class="card-header">
-                  <div class="d-md-flex">
-                    <!-- Thumbnail -->
-                    <div class="thumbnail-wrapper flex-shrink-1">
-                      <a href="#" class="badge badge-primary">Mixed Development</a>
-                      <span class="badge badge-dark-4 badge-img-count d-flex align-items-center">
-                        <svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M1.4002 0.799988C0.737454 0.799988 0.200195 1.33725 0.200195 1.99999V7.99999C0.200195 8.66273 0.737454 9.19999 1.4002 9.19999H8.60019C9.26294 9.19999 9.80019 8.66273 9.80019 7.99999V1.99999C9.80019 1.33725 9.26294 0.799988 8.60019 0.799988H1.4002ZM8.60019 7.99999H1.4002L3.80019 3.19999L5.60019 6.79999L6.80019 4.39999L8.60019 7.99999Z"
-                            fill="white"
-                          />
-                        </svg>
-                        12
-                      </span>
-                      <div class="thumb d-none d-md-block" style="background-image: url('assets/img/card/1.png')"></div>
-                      <div class="thumb d-md-none" style="background-image: url('assets/img/card/1-sm.png')"></div>
-                    </div>
-                    <!-- Text Content -->
-                    <div class="text-content">
-                      <h2 class="title">Amber Park <small>in Amber Garden</small></h2>
-                      <ul class="inline-dot-list">
-                        <li>Core Central</li>
-                        <li>Prime Disctrict</li>
-                        <li>D15 - East Coast / Marine...</li>
-                      </ul>
-                      <p class="mt-10 mb-9 text-gray">
-                        1,250m to
-                        <span class="custom-badge-group d-inline-flex">
-                          <span class="badge-item bg-1">JS1</span>
-                          <span class="badge-item bg-2">JS1</span>
-                          <span class="badge-item bg-3">JS1</span>
-                        </span>
-                        Choa Chu Kang West MRT
-                      </p>
-                      <ul class="inline-line-list mb-12">
-                        <li><a href="#">Dec 2021</a></li>
-                        <li><a href="#">99-Years</a></li>
-                        <li><a href="#">Condominium</a></li>
-                      </ul>
-                      <ul class="badge-group-2 d-flex flex-wrap">
-                        <li>
-                          <span class="badge badge-light"><span>Total:</span> 450 units</span>
-                        </li>
-                        <li>
-                          <span class="badge badge-light"><span>Available:</span> 150 units</span>
-                        </li>
-                        <li>
-                          <span class="badge badge-light hide-xl-xxl"><span>Sold:</span> 300 units</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body p-0">
-                  <!-- SLIDE WRAPPER -->
-                  <div class="text-slide-wrapper disable-scrollbar" id="checkWidth">
-                    <div class="text-slide-container swiper-container">
-                      <div class="swiper-wrapper">
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide-scrollbar"></div>
-                  </div>
-                  <!-- SLIDE WRAPPER -->
-                  <div class="text-slide-wrapper disable-scrollbar">
-                    <div class="text-slide-container swiper-container">
-                      <div class="swiper-wrapper">
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide-scrollbar"></div>
-                  </div>
-                  <!-- SLIDE WRAPPER -->
-                  <div class="text-slide-wrapper disable-scrollbar">
-                    <div class="text-slide-container swiper-container">
-                      <div class="swiper-wrapper">
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide-scrollbar"></div>
-                  </div>
-                  <!-- SLIDE WRAPPER -->
-                  <div class="text-slide-wrapper disable-scrollbar">
-                    <div class="text-slide-container swiper-container">
-                      <div class="swiper-wrapper">
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide-scrollbar"></div>
-                  </div>
-                  <!-- SLIDE WRAPPER -->
-                  <div class="text-slide-wrapper disable-scrollbar">
-                    <div class="text-slide-container swiper-container">
-                      <div class="swiper-wrapper">
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide-scrollbar"></div>
-                  </div>
-                  <!-- SLIDE WRAPPER -->
-                  <div class="text-slide-wrapper disable-scrollbar">
-                    <div class="text-slide-container swiper-container">
-                      <div class="swiper-wrapper">
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide-scrollbar"></div>
-                  </div>
-                </div>
-                <!-- Card Footer -->
-                <div class="card-footer">
-                  <div class="d-flex align-items-center">
-                    <div class="com-avater-info d-flex align-items-center">
-                      <div class="thumbnail">
-                        <img src="assets/img/avater.png" alt="" />
-                      </div>
-                      <div class="text-info">
-                        <h6 class="name d-none d-md-block">Jayden Realtors Construction</h6>
-                        <h6 class="name d-md-none">Jayden Realtors Construction</h6>
-                        <p>Developer Sales Team</p>
-                      </div>
-                    </div>
-                    <div class="ms-auto right-area justify-content-end d-flex">
-                      <div class="d-flex">
-                        <a href="#" class="btn btn-outline-primary mr-8 btn-min-w106 d-none d-md-inline-block" data-get-num="+65 8597-1878"
-                          >Call Sales</a
-                        >
-                        <a href="#" class="btn btn-outline-primary mr-8 d-md-none">Call</a>
-                        <a href="#" class="btn btn-primary btn-icon d-flex align-items-center">
-                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M8 0C3.582 0 0 3.582 0 8C0 9.50081 0.421561 10.9 1.14062 12.1003L0.0716146 16L4.05469 14.9544C5.21957 15.6167 6.56433 16 8 16C12.418 16 16 12.418 16 8C16 3.582 12.418 0 8 0ZM5.26172 4.26823C5.39172 4.26823 5.52529 4.26744 5.64063 4.27344C5.78329 4.27677 5.93857 4.28722 6.08724 4.61589C6.26391 5.00655 6.64858 5.9866 6.69792 6.08594C6.74725 6.18527 6.78221 6.30229 6.71354 6.43229C6.64821 6.56563 6.61423 6.64632 6.51823 6.76432C6.4189 6.87899 6.31005 7.02141 6.22005 7.10807C6.12072 7.20741 6.01815 7.31632 6.13281 7.51432C6.24748 7.71232 6.64571 8.36142 7.23437 8.88542C7.99104 9.56142 8.62946 9.76916 8.82812 9.86849C9.02679 9.96782 9.14184 9.95234 9.25651 9.81901C9.37451 9.68901 9.75208 9.24294 9.88542 9.04427C10.0154 8.8456 10.1481 8.87998 10.3281 8.94531C10.5108 9.01065 11.4849 9.49051 11.6836 9.58984C11.8823 9.68918 12.0125 9.73834 12.0625 9.81901C12.1138 9.90234 12.1139 10.2991 11.9492 10.7617C11.7846 11.2237 10.9759 11.6705 10.6133 11.7018C10.2473 11.7358 9.90571 11.8663 8.23438 11.2083C6.21838 10.4143 4.94699 8.34948 4.84766 8.21615C4.74832 8.08615 4.04036 7.1426 4.04036 6.16927C4.04036 5.1926 4.55244 4.71429 4.73177 4.51562C4.91444 4.31696 5.12839 4.26823 5.26172 4.26823Z"
-                              fill="white"
-                            />
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Listing Start -->
-              <div class="card-primary mb-4">
-                <!-- Card Header -->
-                <div class="card-header">
-                  <div class="d-md-flex">
-                    <!-- Thumbnail -->
-                    <div class="thumbnail-wrapper flex-shrink-1">
-                      <a href="#" class="badge badge-primary">Mixed Development</a>
-                      <span class="badge badge-dark-4 badge-img-count d-flex align-items-center">
-                        <svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M1.4002 0.799988C0.737454 0.799988 0.200195 1.33725 0.200195 1.99999V7.99999C0.200195 8.66273 0.737454 9.19999 1.4002 9.19999H8.60019C9.26294 9.19999 9.80019 8.66273 9.80019 7.99999V1.99999C9.80019 1.33725 9.26294 0.799988 8.60019 0.799988H1.4002ZM8.60019 7.99999H1.4002L3.80019 3.19999L5.60019 6.79999L6.80019 4.39999L8.60019 7.99999Z"
-                            fill="white"
-                          />
-                        </svg>
-                        12
-                      </span>
-                      <div class="thumb d-none d-md-block" style="background-image: url('assets/img/card/1.png')"></div>
-                      <div class="thumb d-md-none" style="background-image: url('assets/img/card/1-sm.png')"></div>
-                    </div>
-                    <!-- Text Content -->
-                    <div class="text-content pt-12px">
-                      <ul class="badge-gray-lists reset-ul d-flex flex-wrap mb-lg-1 pt-1 pt-lg-0">
-                        <li class="me-1"><span class="badge badge-gray rounded-pill">Upcoming Launch</span></li>
-                        <li class="me-1"><span class="badge badge-gray rounded-pill">From 22nd Dec 2022</span></li>
-                        <li class="me-1"><span class="badge badge-gray rounded-pill hide-xl-xxl">Indicative Prices</span></li>
-                      </ul>
-                      <h2 class="title">Amber Park <small>in Amber Garden</small></h2>
-                      <ul class="inline-dot-list">
-                        <li>Core Central</li>
-                        <li>Prime Disctrict</li>
-                        <li>D15 - East Coast / Marine...</li>
-                      </ul>
-                      <p class="mt-10 mb-9 text-gray">
-                        1,250m to
-                        <span class="custom-badge-group d-inline-flex">
-                          <span class="badge-item bg-1">JS1</span>
-                          <span class="badge-item bg-2">JS1</span>
-                          <span class="badge-item bg-3">JS1</span>
-                        </span>
-                        Choa Chu Kang West MRT
-                      </p>
-                      <ul class="inline-line-list mb-12">
-                        <li><a href="#">Dec 2021</a></li>
-                        <li><a href="#">99-Years</a></li>
-                        <li><a href="#">Condominium</a></li>
-                      </ul>
-                      <ul class="badge-group-2 d-flex flex-wrap">
-                        <li>
-                          <span class="badge badge-light"><span>Total:</span> 450 units</span>
-                        </li>
-                        <li>
-                          <span class="badge badge-light"><span>Available:</span> 150 units</span>
-                        </li>
-                        <li>
-                          <span class="badge badge-light hide-xl-xxl"><span>Sold:</span> 300 units</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body p-0">
-                  <!-- SLIDE WRAPPER -->
-                  <div class="text-slide-wrapper disable-scrollbar">
-                    <div class="text-slide-container swiper-container">
-                      <div class="swiper-wrapper">
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide-scrollbar"></div>
-                  </div>
-                  <!-- SLIDE WRAPPER -->
-                  <div class="text-slide-wrapper disable-scrollbar">
-                    <div class="text-slide-container swiper-container">
-                      <div class="swiper-wrapper">
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide-scrollbar"></div>
-                  </div>
-                  <!-- SLIDE WRAPPER -->
-                  <div class="text-slide-wrapper disable-scrollbar">
-                    <div class="text-slide-container swiper-container">
-                      <div class="swiper-wrapper">
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide-scrollbar"></div>
-                  </div>
-                  <!-- SLIDE WRAPPER -->
-                  <div class="text-slide-wrapper disable-scrollbar">
-                    <div class="text-slide-container swiper-container">
-                      <div class="swiper-wrapper">
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide-scrollbar"></div>
-                  </div>
-                  <!-- SLIDE WRAPPER -->
-                  <div class="text-slide-wrapper disable-scrollbar">
-                    <div class="text-slide-container swiper-container">
-                      <div class="swiper-wrapper">
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide-scrollbar"></div>
-                  </div>
-                  <!-- SLIDE WRAPPER -->
-                  <div class="text-slide-wrapper disable-scrollbar">
-                    <div class="text-slide-container swiper-container">
-                      <div class="swiper-wrapper">
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide-scrollbar"></div>
-                  </div>
-                </div>
-                <!-- Card Footer -->
-                <div class="card-footer">
-                  <div class="d-flex align-items-center">
-                    <div class="com-avater-info d-flex align-items-center">
-                      <div class="thumbnail">
-                        <img src="assets/img/avater.png" alt="" />
-                      </div>
-                      <div class="text-info">
-                        <h6 class="name d-none d-md-block">Jayden Realtors Construction</h6>
-                        <h6 class="name d-md-none">Jayden Realtors...</h6>
-                        <p>Developer Sales Team</p>
-                      </div>
-                    </div>
-                    <div class="ms-auto right-area justify-content-end d-flex">
-                      <div class="d-flex">
-                        <a href="#" class="btn btn-outline-primary mr-8 btn-min-w106 d-none d-md-inline-block" data-get-num="+65 8597-1878"
-                          >Call Sales</a
-                        >
-                        <a href="#" class="btn btn-outline-primary mr-8 d-md-none">Call</a>
-                        <a href="#" class="btn btn-primary btn-icon d-flex align-items-center">
-                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M8 0C3.582 0 0 3.582 0 8C0 9.50081 0.421561 10.9 1.14062 12.1003L0.0716146 16L4.05469 14.9544C5.21957 15.6167 6.56433 16 8 16C12.418 16 16 12.418 16 8C16 3.582 12.418 0 8 0ZM5.26172 4.26823C5.39172 4.26823 5.52529 4.26744 5.64063 4.27344C5.78329 4.27677 5.93857 4.28722 6.08724 4.61589C6.26391 5.00655 6.64858 5.9866 6.69792 6.08594C6.74725 6.18527 6.78221 6.30229 6.71354 6.43229C6.64821 6.56563 6.61423 6.64632 6.51823 6.76432C6.4189 6.87899 6.31005 7.02141 6.22005 7.10807C6.12072 7.20741 6.01815 7.31632 6.13281 7.51432C6.24748 7.71232 6.64571 8.36142 7.23437 8.88542C7.99104 9.56142 8.62946 9.76916 8.82812 9.86849C9.02679 9.96782 9.14184 9.95234 9.25651 9.81901C9.37451 9.68901 9.75208 9.24294 9.88542 9.04427C10.0154 8.8456 10.1481 8.87998 10.3281 8.94531C10.5108 9.01065 11.4849 9.49051 11.6836 9.58984C11.8823 9.68918 12.0125 9.73834 12.0625 9.81901C12.1138 9.90234 12.1139 10.2991 11.9492 10.7617C11.7846 11.2237 10.9759 11.6705 10.6133 11.7018C10.2473 11.7358 9.90571 11.8663 8.23438 11.2083C6.21838 10.4143 4.94699 8.34948 4.84766 8.21615C4.74832 8.08615 4.04036 7.1426 4.04036 6.16927C4.04036 5.1926 4.55244 4.71429 4.73177 4.51562C4.91444 4.31696 5.12839 4.26823 5.26172 4.26823Z"
-                              fill="white"
-                            />
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Listing Start -->
-              <div class="card-primary mb-4">
-                <!-- Card Header -->
-                <div class="card-header">
-                  <div class="d-md-flex">
-                    <!-- Thumbnail -->
-                    <div class="thumbnail-wrapper flex-shrink-1">
-                      <a href="#" class="badge badge-primary">Mixed Development</a>
-                      <span class="badge badge-dark-4 badge-img-count d-flex align-items-center">
-                        <svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M1.4002 0.799988C0.737454 0.799988 0.200195 1.33725 0.200195 1.99999V7.99999C0.200195 8.66273 0.737454 9.19999 1.4002 9.19999H8.60019C9.26294 9.19999 9.80019 8.66273 9.80019 7.99999V1.99999C9.80019 1.33725 9.26294 0.799988 8.60019 0.799988H1.4002ZM8.60019 7.99999H1.4002L3.80019 3.19999L5.60019 6.79999L6.80019 4.39999L8.60019 7.99999Z"
-                            fill="white"
-                          />
-                        </svg>
-                        12
-                      </span>
-                      <div class="thumb d-none d-md-block" style="background-image: url('assets/img/card/1.png')"></div>
-                      <div class="thumb d-md-none" style="background-image: url('assets/img/card/1-sm.png')"></div>
-                    </div>
-                    <!-- Text Content -->
-                    <div class="text-content">
-                      <h2 class="title">Amber Park <small>in Amber Garden</small></h2>
-                      <ul class="inline-dot-list">
-                        <li>Core Central</li>
-                        <li>Prime Disctrict</li>
-                        <li>D15 - East Coast / Marine...</li>
-                      </ul>
-                      <p class="mt-10 mb-9 text-gray">
-                        1,250m to
-                        <span class="custom-badge-group d-inline-flex">
-                          <span class="badge-item bg-1">JS1</span>
-                          <span class="badge-item bg-2">JS1</span>
-                          <span class="badge-item bg-3">JS1</span>
-                        </span>
-                        Choa Chu Kang West MRT
-                      </p>
-                      <ul class="inline-line-list mb-12">
-                        <li><a href="#">Dec 2021</a></li>
-                        <li><a href="#">99-Years</a></li>
-                        <li><a href="#">Condominium</a></li>
-                      </ul>
-                      <ul class="badge-group-2 d-flex flex-wrap">
-                        <li>
-                          <span class="badge badge-light"><span>Total:</span> 450 units</span>
-                        </li>
-                        <li>
-                          <span class="badge badge-light"><span>Available:</span> 150 units</span>
-                        </li>
-                        <li>
-                          <span class="badge badge-light hide-xl-xxl"><span>Sold:</span> 300 units</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body p-0">
-                  <!-- SLIDE WRAPPER -->
-                  <div class="text-slide-wrapper disable-scrollbar">
-                    <div class="text-slide-container swiper-container">
-                      <div class="swiper-wrapper">
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide-scrollbar"></div>
-                  </div>
-                  <!-- SLIDE WRAPPER -->
-                  <div class="text-slide-wrapper disable-scrollbar">
-                    <div class="text-slide-container swiper-container">
-                      <div class="swiper-wrapper">
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide-scrollbar"></div>
-                  </div>
-                  <!-- SLIDE WRAPPER -->
-                  <div class="text-slide-wrapper disable-scrollbar">
-                    <div class="text-slide-container swiper-container">
-                      <div class="swiper-wrapper">
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide-scrollbar"></div>
-                  </div>
-                  <!-- SLIDE WRAPPER -->
-                  <div class="text-slide-wrapper disable-scrollbar">
-                    <div class="text-slide-container swiper-container">
-                      <div class="swiper-wrapper">
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide-scrollbar"></div>
-                  </div>
-                  <!-- SLIDE WRAPPER -->
-                  <div class="text-slide-wrapper disable-scrollbar">
-                    <div class="text-slide-container swiper-container">
-                      <div class="swiper-wrapper">
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide-scrollbar"></div>
-                  </div>
-                  <!-- SLIDE WRAPPER -->
-                  <div class="text-slide-wrapper disable-scrollbar">
-                    <div class="text-slide-container swiper-container">
-                      <div class="swiper-wrapper">
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                        <!-- SLIDE ITEM -->
-                        <div class="swiper-slide">
-                          <div class="slide-item d-flex align-items-center">
-                            <div class="left-area">
-                              <span class="badge badge-light mr-6px d-md-inline-block d-none">7 types</span>
-                              <!--FOR LARGE DEVICE-->
-                              <span class="text-dark d-block d-md-inline-block mb-1 mb-md-0 mr-4px">3BR</span>
-                              <span class="badge badge-light d-md-none">7 types</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray">1,500 - 1,650 sqft</span>
-                            </div>
-                            <div class="ms-auto text-end text-md-start">
-                              <span class="text-dark d-md-none d-block mb-1">$1.258M - $1.398M</span>
-                              <!--FOR SMALL DEVICE-->
-                              <span class="text-12 text-gray mr-4px mr-0fsm">$2,500 - $2,650 PSF</span>
-                              <span class="text-dark d-md-inline-block d-none">$1.258M - $1.398M</span>
-                              <!--FOR LARGE DEVICE-->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="slide-scrollbar"></div>
-                  </div>
-                </div>
-                <!-- Card Footer -->
-                <div class="card-footer">
-                  <div class="d-flex align-items-center">
-                    <div class="com-avater-info d-flex align-items-center">
-                      <div class="thumbnail">
-                        <img src="assets/img/avater.png" alt="" />
-                      </div>
-                      <div class="text-info">
-                        <h6 class="name d-none d-md-block">Jayden Realtors Construction</h6>
-                        <h6 class="name d-md-none">Jayden Realtors...</h6>
-                        <p>Developer Sales Team</p>
-                      </div>
-                    </div>
-                    <div class="ms-auto right-area justify-content-end d-flex">
-                      <div class="d-flex">
-                        <a href="#" class="btn btn-outline-primary mr-8 btn-min-w106 d-none d-md-inline-block" data-get-num="+65 8597-1878"
-                          >Call Sales</a
-                        >
-                        <a href="#" class="btn btn-outline-primary mr-8 d-md-none">Call</a>
-                        <a href="#" class="btn btn-primary btn-icon d-flex align-items-center">
-                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M8 0C3.582 0 0 3.582 0 8C0 9.50081 0.421561 10.9 1.14062 12.1003L0.0716146 16L4.05469 14.9544C5.21957 15.6167 6.56433 16 8 16C12.418 16 16 12.418 16 8C16 3.582 12.418 0 8 0ZM5.26172 4.26823C5.39172 4.26823 5.52529 4.26744 5.64063 4.27344C5.78329 4.27677 5.93857 4.28722 6.08724 4.61589C6.26391 5.00655 6.64858 5.9866 6.69792 6.08594C6.74725 6.18527 6.78221 6.30229 6.71354 6.43229C6.64821 6.56563 6.61423 6.64632 6.51823 6.76432C6.4189 6.87899 6.31005 7.02141 6.22005 7.10807C6.12072 7.20741 6.01815 7.31632 6.13281 7.51432C6.24748 7.71232 6.64571 8.36142 7.23437 8.88542C7.99104 9.56142 8.62946 9.76916 8.82812 9.86849C9.02679 9.96782 9.14184 9.95234 9.25651 9.81901C9.37451 9.68901 9.75208 9.24294 9.88542 9.04427C10.0154 8.8456 10.1481 8.87998 10.3281 8.94531C10.5108 9.01065 11.4849 9.49051 11.6836 9.58984C11.8823 9.68918 12.0125 9.73834 12.0625 9.81901C12.1138 9.90234 12.1139 10.2991 11.9492 10.7617C11.7846 11.2237 10.9759 11.6705 10.6133 11.7018C10.2473 11.7358 9.90571 11.8663 8.23438 11.2083C6.21838 10.4143 4.94699 8.34948 4.84766 8.21615C4.74832 8.08615 4.04036 7.1426 4.04036 6.16927C4.04036 5.1926 4.55244 4.71429 4.73177 4.51562C4.91444 4.31696 5.12839 4.26823 5.26172 4.26823Z"
-                              fill="white"
-                            />
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Listing Start -->
-
-              <!-- Pagination -->
-              <ul class="pagination justify-content-center pagination-fc pagination-home">
-                <li class="page-item disabled">
-                  <a href="javascript:void(0)" class="page-link angle-icon">
-                    <svg width="8" height="12" viewBox="0 0 8 12" fill="none">
-                      <path d="M6.5 11L1.5 6L6.5 1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <div class="col-lg-4 mb-40">
+              <div class="blog-card">
+                <div class="thumb card-thumb">
+                  <img src="assets/img/card/1-sm.png" alt="" />
+                  <span class="--tag">Mixed Development</span>
+                  <span class="badge badge-dark-4 badge-img-count d-inline-flex align-items-center badge-photos --photos">
+                    <svg class="icon" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2 0C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2V12C0 12.5304 0.210714 13.0391 0.585786 13.4142C0.960859 13.7893 1.46957 14 2 14H14C14.5304 14 15.0391 13.7893 15.4142 13.4142C15.7893 13.0391 16 12.5304 16 12V2C16 1.46957 15.7893 0.960859 15.4142 0.585786C15.0391 0.210714 14.5304 0 14 0H2ZM14 12H2L6 4L9 10L11 6L14 12Z"
+                        fill="white"
+                      />
                     </svg>
-                  </a>
-                </li>
-                <li class="page-item"><a class="page-link active" href="javascript:void(0)">1</a></li>
-                <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
-                <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
-                <li class="page-item">
-                  <a class="page-link angle-icon" href="javascript:void(0)">
-                    <svg width="8" height="12" viewBox="0 0 8 12" fill="none">
-                      <path d="M1.5 11L6.5 6L1.5 1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-              <div id="test-variable"></div>
+                    12
+                  </span>
+                </div>
+                <div class="blog-content card-post-content">
+                  <div class="text-content">
+                    <h2 class="title">Amber Park <small>in Amber Garden</small></h2>
+                    <ul class="inline-dot-list">
+                      <li>Core Central</li>
+                      <li>Prime Disctrict</li>
+                      <li>D15 - East Coast / Marine...</li>
+                    </ul>
+                    <p class="mt-10 mb-9 text-gray">
+                      1,250m to
+                      <span class="custom-badge-group d-inline-flex">
+                        <span class="badge-item bg-1">JS1</span>
+                        <span class="badge-item bg-2">JS1</span>
+                        <span class="badge-item bg-3">JS1</span>
+                      </span>
+                      Choa Chu Kang West MRT
+                    </p>
+                    <ul class="inline-line-list mb-12">
+                      <li><a href="#">Dec 2021</a></li>
+                      <li><a href="#">99-Years</a></li>
+                      <li><a href="#">Condominium</a></li>
+                    </ul>
+                    <ul class="badge-group-2 d-flex flex-wrap">
+                      <li>
+                        <span class="badge badge-light"><span>Total:</span> 450 units</span>
+                      </li>
+                      <li>
+                        <span class="badge badge-light"><span>Available:</span> 150 units</span>
+                      </li>
+                      <li>
+                        <span class="badge badge-light hide-xl-xxl"><span>Sold:</span> 300 units</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-footer">
+                    <div class="d-flex align-items-center">
+                      <div class="com-avater-info d-flex align-items-center">
+                        <div class="thumbnail">
+                          <img src="assets/img/avater.png" alt="" />
+                        </div>
+                        <div class="text-info">
+                          <h6 class="name d-none d-md-block">Jayden Realtors Construction</h6>
+                          <h6 class="name d-md-none">Jayden Realtors Construction</h6>
+                          <p>Developer Sales Team</p>
+                        </div>
+                      </div>
+                      <div class="ms-auto right-area justify-content-end d-flex">
+                        <div class="d-flex">
+                          <a href="#" class="btn btn-outline-primary mr-8 btn-min-w106 d-none d-md-inline-block call-" data-get-num="+65 8597-1878"
+                            >Call</a
+                          >
+                          <a href="#" class="btn btn-outline-primary mr-8 d-md-none call-">Call</a>
+                          <a href="#" class="btn btn-primary btn-icon d-flex align-items-center">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M8 0C3.582 0 0 3.582 0 8C0 9.50081 0.421561 10.9 1.14062 12.1003L0.0716146 16L4.05469 14.9544C5.21957 15.6167 6.56433 16 8 16C12.418 16 16 12.418 16 8C16 3.582 12.418 0 8 0ZM5.26172 4.26823C5.39172 4.26823 5.52529 4.26744 5.64063 4.27344C5.78329 4.27677 5.93857 4.28722 6.08724 4.61589C6.26391 5.00655 6.64858 5.9866 6.69792 6.08594C6.74725 6.18527 6.78221 6.30229 6.71354 6.43229C6.64821 6.56563 6.61423 6.64632 6.51823 6.76432C6.4189 6.87899 6.31005 7.02141 6.22005 7.10807C6.12072 7.20741 6.01815 7.31632 6.13281 7.51432C6.24748 7.71232 6.64571 8.36142 7.23437 8.88542C7.99104 9.56142 8.62946 9.76916 8.82812 9.86849C9.02679 9.96782 9.14184 9.95234 9.25651 9.81901C9.37451 9.68901 9.75208 9.24294 9.88542 9.04427C10.0154 8.8456 10.1481 8.87998 10.3281 8.94531C10.5108 9.01065 11.4849 9.49051 11.6836 9.58984C11.8823 9.68918 12.0125 9.73834 12.0625 9.81901C12.1138 9.90234 12.1139 10.2991 11.9492 10.7617C11.7846 11.2237 10.9759 11.6705 10.6133 11.7018C10.2473 11.7358 9.90571 11.8663 8.23438 11.2083C6.21838 10.4143 4.94699 8.34948 4.84766 8.21615C4.74832 8.08615 4.04036 7.1426 4.04036 6.16927C4.04036 5.1926 4.55244 4.71429 4.73177 4.51562C4.91444 4.31696 5.12839 4.26823 5.26172 4.26823Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-xl-3 col-lg-4 d-none d-lg-block">
-              <div class="panel-title-area mb-3">
-                <h2 class="title">Best Deals</h2>
-                <p class="text-14">Handpicked projects recommended for you.</p>
-              </div>
-              <div class="stories-slide-wrapper">
-                <div class="pagination pagination-long"></div>
-                <div class="stories-slide-container swiper-container">
-                  <div class="swiper-wrapper">
-                    <!-- SLIDE ITEM -->
-                    <div class="swiper-slide">
-                      <div class="stories-card">
-                        <div class="bg" style="background-image: url('assets/img/stories/1.jpg')"></div>
-                        <div class="com-avater-info d-flex align-items-center">
-                          <div class="thumbnail">
-                            <img src="assets/img/avater.png" alt="" />
-                          </div>
-                          <div class="text-info">
-                            <h6 class="name d-none d-md-block">Jayden Realtors Construction</h6>
-                          </div>
+            <div class="col-lg-4 mb-40">
+              <div class="blog-card">
+                <div class="thumb card-thumb">
+                  <img src="assets/img/card/1-sm.png" alt="" />
+                  <span class="--tag">Mixed Development</span>
+                  <span class="badge badge-dark-4 badge-img-count d-inline-flex align-items-center badge-photos --photos">
+                    <svg class="icon" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2 0C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2V12C0 12.5304 0.210714 13.0391 0.585786 13.4142C0.960859 13.7893 1.46957 14 2 14H14C14.5304 14 15.0391 13.7893 15.4142 13.4142C15.7893 13.0391 16 12.5304 16 12V2C16 1.46957 15.7893 0.960859 15.4142 0.585786C15.0391 0.210714 14.5304 0 14 0H2ZM14 12H2L6 4L9 10L11 6L14 12Z"
+                        fill="white"
+                      />
+                    </svg>
+                    12
+                  </span>
+                </div>
+                <div class="blog-content card-post-content">
+                  <div class="text-content">
+                    <h2 class="title">Amber Park <small>in Amber Garden</small></h2>
+                    <ul class="inline-dot-list">
+                      <li>Core Central</li>
+                      <li>Prime Disctrict</li>
+                      <li>D15 - East Coast / Marine...</li>
+                    </ul>
+                    <p class="mt-10 mb-9 text-gray">
+                      1,250m to
+                      <span class="custom-badge-group d-inline-flex">
+                        <span class="badge-item bg-1">JS1</span>
+                        <span class="badge-item bg-2">JS1</span>
+                        <span class="badge-item bg-3">JS1</span>
+                      </span>
+                      Choa Chu Kang West MRT
+                    </p>
+                    <ul class="inline-line-list mb-12">
+                      <li><a href="#">Dec 2021</a></li>
+                      <li><a href="#">99-Years</a></li>
+                      <li><a href="#">Condominium</a></li>
+                    </ul>
+                    <ul class="badge-group-2 d-flex flex-wrap">
+                      <li>
+                        <span class="badge badge-light"><span>Total:</span> 450 units</span>
+                      </li>
+                      <li>
+                        <span class="badge badge-light"><span>Available:</span> 150 units</span>
+                      </li>
+                      <li>
+                        <span class="badge badge-light hide-xl-xxl"><span>Sold:</span> 300 units</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-footer">
+                    <div class="d-flex align-items-center">
+                      <div class="com-avater-info d-flex align-items-center">
+                        <div class="thumbnail">
+                          <img src="assets/img/avater.png" alt="" />
                         </div>
-                        <div class="bottom-text-content">
-                          <h3 class="title">Pullman Residence</h3>
-                          <h4 class="sub-title">District 11 - Newton Novena</h4>
-                          <p>Vasai East, Mirai Road and Beyond, Mumbai The 1st Branded Residence of Pullman</p>
+                        <div class="text-info">
+                          <h6 class="name d-none d-md-block">Jayden Realtors Construction</h6>
+                          <h6 class="name d-md-none">Jayden Realtors Construction</h6>
+                          <p>Developer Sales Team</p>
+                        </div>
+                      </div>
+                      <div class="ms-auto right-area justify-content-end d-flex">
+                        <div class="d-flex">
+                          <a href="#" class="btn btn-outline-primary mr-8 btn-min-w106 d-none d-md-inline-block call-" data-get-num="+65 8597-1878"
+                            >Call</a
+                          >
+                          <a href="#" class="btn btn-outline-primary mr-8 d-md-none call-">Call</a>
+                          <a href="#" class="btn btn-primary btn-icon d-flex align-items-center">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M8 0C3.582 0 0 3.582 0 8C0 9.50081 0.421561 10.9 1.14062 12.1003L0.0716146 16L4.05469 14.9544C5.21957 15.6167 6.56433 16 8 16C12.418 16 16 12.418 16 8C16 3.582 12.418 0 8 0ZM5.26172 4.26823C5.39172 4.26823 5.52529 4.26744 5.64063 4.27344C5.78329 4.27677 5.93857 4.28722 6.08724 4.61589C6.26391 5.00655 6.64858 5.9866 6.69792 6.08594C6.74725 6.18527 6.78221 6.30229 6.71354 6.43229C6.64821 6.56563 6.61423 6.64632 6.51823 6.76432C6.4189 6.87899 6.31005 7.02141 6.22005 7.10807C6.12072 7.20741 6.01815 7.31632 6.13281 7.51432C6.24748 7.71232 6.64571 8.36142 7.23437 8.88542C7.99104 9.56142 8.62946 9.76916 8.82812 9.86849C9.02679 9.96782 9.14184 9.95234 9.25651 9.81901C9.37451 9.68901 9.75208 9.24294 9.88542 9.04427C10.0154 8.8456 10.1481 8.87998 10.3281 8.94531C10.5108 9.01065 11.4849 9.49051 11.6836 9.58984C11.8823 9.68918 12.0125 9.73834 12.0625 9.81901C12.1138 9.90234 12.1139 10.2991 11.9492 10.7617C11.7846 11.2237 10.9759 11.6705 10.6133 11.7018C10.2473 11.7358 9.90571 11.8663 8.23438 11.2083C6.21838 10.4143 4.94699 8.34948 4.84766 8.21615C4.74832 8.08615 4.04036 7.1426 4.04036 6.16927C4.04036 5.1926 4.55244 4.71429 4.73177 4.51562C4.91444 4.31696 5.12839 4.26823 5.26172 4.26823Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </a>
                         </div>
                       </div>
                     </div>
-                    <!-- SLIDE ITEM -->
-                    <div class="swiper-slide">
-                      <div class="stories-card">
-                        <div class="bg" style="background-image: url('assets/img/stories/1.jpg')"></div>
-                        <div class="com-avater-info d-flex align-items-center">
-                          <div class="thumbnail">
-                            <img src="assets/img/avater.png" alt="" />
-                          </div>
-                          <div class="text-info">
-                            <h6 class="name d-none d-md-block">Jayden Realtors Construction</h6>
-                          </div>
-                        </div>
-                        <div class="bottom-text-content">
-                          <h3 class="title">Pullman Residence</h3>
-                          <h4 class="sub-title">District 11 - Newton Novena</h4>
-                          <p>Vasai East, Mirai Road and Beyond, Mumbai The 1st Branded Residence of Pullman</p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- SLIDE ITEM -->
-                    <div class="swiper-slide">
-                      <div class="stories-card">
-                        <div class="bg" style="background-image: url('assets/img/stories/1.jpg')"></div>
-                        <div class="com-avater-info d-flex align-items-center">
-                          <div class="thumbnail">
-                            <img src="assets/img/avater.png" alt="" />
-                          </div>
-                          <div class="text-info">
-                            <h6 class="name d-none d-md-block">Jayden Realtors Construction</h6>
-                          </div>
-                        </div>
-                        <div class="bottom-text-content">
-                          <h3 class="title">Pullman Residence</h3>
-                          <h4 class="sub-title">District 11 - Newton Novena</h4>
-                          <p>Vasai East, Mirai Road and Beyond, Mumbai The 1st Branded Residence of Pullman</p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- SLIDE ITEM -->
-                    <div class="swiper-slide">
-                      <div class="stories-card">
-                        <div class="bg" style="background-image: url('assets/img/stories/1.jpg')"></div>
-                        <div class="com-avater-info d-flex align-items-center">
-                          <div class="thumbnail">
-                            <img src="assets/img/avater.png" alt="" />
-                          </div>
-                          <div class="text-info">
-                            <h6 class="name d-none d-md-block">Jayden Realtors Construction</h6>
-                          </div>
-                        </div>
-                        <div class="bottom-text-content">
-                          <h3 class="title">Pullman Residence</h3>
-                          <h4 class="sub-title">District 11 - Newton Novena</h4>
-                          <p>Vasai East, Mirai Road and Beyond, Mumbai The 1st Branded Residence of Pullman</p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- SLIDE ITEM -->
-                    <div class="swiper-slide">
-                      <div class="stories-card">
-                        <div class="bg" style="background-image: url('assets/img/stories/1.jpg')"></div>
-                        <div class="com-avater-info d-flex align-items-center">
-                          <div class="thumbnail">
-                            <img src="assets/img/avater.png" alt="" />
-                          </div>
-                          <div class="text-info">
-                            <h6 class="name d-none d-md-block">Jayden Realtors Construction</h6>
-                          </div>
-                        </div>
-                        <div class="bottom-text-content">
-                          <h3 class="title">Pullman Residence</h3>
-                          <h4 class="sub-title">District 11 - Newton Novena</h4>
-                          <p>Vasai East, Mirai Road and Beyond, Mumbai The 1st Branded Residence of Pullman</p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- SLIDE ITEM END -->
                   </div>
                 </div>
               </div>
@@ -2628,6 +827,642 @@
           </div>
         </div>
       </section>
+      <section class="blog-area sec-pt-100 sec-pb-100 bg-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="section-title">
+                <h2 class="title">New Launch Column</h2>
+                <p class="small-title">The ways people travel, work and live are blurring.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="dropdown--all-posts">
+              <div class="dropdown--">
+                <div data-area="#chart-area-1" class="has-tab-link select-with-radio d-inline-block sales-trend-dropdown">
+                  <select name="" id="" class="has-nc-select" prefix="Sort by">
+                    <option value="Best Match">Best Match</option>
+                    <option value="Best Seller">Best Seller</option>
+                    <option value="Earliest Top">Earliest Top</option>
+                    <option value="Newest Launch">Newest Launch</option>
+                    <option value="Price: Low to High">Price: Low to High</option>
+                    <option value="Price: High to Low">Price: High to Low</option>
+                    <option value="Size: Low to High">Size: Low to High</option>
+                    <option value="Size: High to Low">Size: High to Low</option>
+                    <option value="PSF: Low to High">PSF: Low to High</option>
+                    <option value="PSF: High to Low">PSF: High to Low</option>
+                  </select>
+                </div>
+              </div>
+              <div class="show-all-posts--">
+                <h6>See all posts</h6>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 mb-40">
+              <div class="blog-card">
+                <div class="thumb card-thumb">
+                  <img src="assets/img/card/1-sm.png" alt="" />
+                  <span class="--tag">Mixed Development</span>
+                  <span class="badge badge-dark-4 badge-img-count d-inline-flex align-items-center badge-photos --photos">
+                    <svg class="icon" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2 0C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2V12C0 12.5304 0.210714 13.0391 0.585786 13.4142C0.960859 13.7893 1.46957 14 2 14H14C14.5304 14 15.0391 13.7893 15.4142 13.4142C15.7893 13.0391 16 12.5304 16 12V2C16 1.46957 15.7893 0.960859 15.4142 0.585786C15.0391 0.210714 14.5304 0 14 0H2ZM14 12H2L6 4L9 10L11 6L14 12Z"
+                        fill="white"
+                      />
+                    </svg>
+                    12
+                  </span>
+                </div>
+                <div class="blog-content card-post-content">
+                  <div class="text-content">
+                    <h2 class="title">Amber Park <small>in Amber Garden</small></h2>
+                    <ul class="inline-dot-list">
+                      <li>Core Central</li>
+                      <li>Prime Disctrict</li>
+                      <li>D15 - East Coast / Marine...</li>
+                    </ul>
+                    <p class="mt-10 mb-9 text-gray">
+                      1,250m to
+                      <span class="custom-badge-group d-inline-flex">
+                        <span class="badge-item bg-1">JS1</span>
+                        <span class="badge-item bg-2">JS1</span>
+                        <span class="badge-item bg-3">JS1</span>
+                      </span>
+                      Choa Chu Kang West MRT
+                    </p>
+                    <ul class="inline-line-list mb-12">
+                      <li><a href="#">Dec 2021</a></li>
+                      <li><a href="#">99-Years</a></li>
+                      <li><a href="#">Condominium</a></li>
+                    </ul>
+                    <ul class="badge-group-2 d-flex flex-wrap">
+                      <li>
+                        <span class="badge badge-light"><span>Total:</span> 450 units</span>
+                      </li>
+                      <li>
+                        <span class="badge badge-light"><span>Available:</span> 150 units</span>
+                      </li>
+                      <li>
+                        <span class="badge badge-light hide-xl-xxl"><span>Sold:</span> 300 units</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-footer">
+                    <div class="d-flex align-items-center">
+                      <div class="com-avater-info d-flex align-items-center">
+                        <div class="thumbnail">
+                          <img src="assets/img/avater.png" alt="" />
+                        </div>
+                        <div class="text-info">
+                          <h6 class="name d-none d-md-block">Jayden Realtors Construction</h6>
+                          <h6 class="name d-md-none">Jayden Realtors Construction</h6>
+                          <p>Developer Sales Team</p>
+                        </div>
+                      </div>
+                      <div class="ms-auto right-area justify-content-end d-flex">
+                        <div class="d-flex">
+                          <a href="#" class="btn btn-outline-primary mr-8 btn-min-w106 d-none d-md-inline-block call-" data-get-num="+65 8597-1878"
+                            >Call</a
+                          >
+                          <a href="#" class="btn btn-outline-primary mr-8 d-md-none call-">Call</a>
+                          <a href="#" class="btn btn-primary btn-icon d-flex align-items-center">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M8 0C3.582 0 0 3.582 0 8C0 9.50081 0.421561 10.9 1.14062 12.1003L0.0716146 16L4.05469 14.9544C5.21957 15.6167 6.56433 16 8 16C12.418 16 16 12.418 16 8C16 3.582 12.418 0 8 0ZM5.26172 4.26823C5.39172 4.26823 5.52529 4.26744 5.64063 4.27344C5.78329 4.27677 5.93857 4.28722 6.08724 4.61589C6.26391 5.00655 6.64858 5.9866 6.69792 6.08594C6.74725 6.18527 6.78221 6.30229 6.71354 6.43229C6.64821 6.56563 6.61423 6.64632 6.51823 6.76432C6.4189 6.87899 6.31005 7.02141 6.22005 7.10807C6.12072 7.20741 6.01815 7.31632 6.13281 7.51432C6.24748 7.71232 6.64571 8.36142 7.23437 8.88542C7.99104 9.56142 8.62946 9.76916 8.82812 9.86849C9.02679 9.96782 9.14184 9.95234 9.25651 9.81901C9.37451 9.68901 9.75208 9.24294 9.88542 9.04427C10.0154 8.8456 10.1481 8.87998 10.3281 8.94531C10.5108 9.01065 11.4849 9.49051 11.6836 9.58984C11.8823 9.68918 12.0125 9.73834 12.0625 9.81901C12.1138 9.90234 12.1139 10.2991 11.9492 10.7617C11.7846 11.2237 10.9759 11.6705 10.6133 11.7018C10.2473 11.7358 9.90571 11.8663 8.23438 11.2083C6.21838 10.4143 4.94699 8.34948 4.84766 8.21615C4.74832 8.08615 4.04036 7.1426 4.04036 6.16927C4.04036 5.1926 4.55244 4.71429 4.73177 4.51562C4.91444 4.31696 5.12839 4.26823 5.26172 4.26823Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-40">
+              <div class="blog-card">
+                <div class="thumb card-thumb">
+                  <img src="assets/img/card/1-sm.png" alt="" />
+                  <span class="--tag">Mixed Development</span>
+                  <span class="badge badge-dark-4 badge-img-count d-inline-flex align-items-center badge-photos --photos">
+                    <svg class="icon" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2 0C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2V12C0 12.5304 0.210714 13.0391 0.585786 13.4142C0.960859 13.7893 1.46957 14 2 14H14C14.5304 14 15.0391 13.7893 15.4142 13.4142C15.7893 13.0391 16 12.5304 16 12V2C16 1.46957 15.7893 0.960859 15.4142 0.585786C15.0391 0.210714 14.5304 0 14 0H2ZM14 12H2L6 4L9 10L11 6L14 12Z"
+                        fill="white"
+                      />
+                    </svg>
+                    12
+                  </span>
+                </div>
+                <div class="blog-content card-post-content">
+                  <div class="text-content">
+                    <h2 class="title">Amber Park <small>in Amber Garden</small></h2>
+                    <ul class="inline-dot-list">
+                      <li>Core Central</li>
+                      <li>Prime Disctrict</li>
+                      <li>D15 - East Coast / Marine...</li>
+                    </ul>
+                    <p class="mt-10 mb-9 text-gray">
+                      1,250m to
+                      <span class="custom-badge-group d-inline-flex">
+                        <span class="badge-item bg-1">JS1</span>
+                        <span class="badge-item bg-2">JS1</span>
+                        <span class="badge-item bg-3">JS1</span>
+                      </span>
+                      Choa Chu Kang West MRT
+                    </p>
+                    <ul class="inline-line-list mb-12">
+                      <li><a href="#">Dec 2021</a></li>
+                      <li><a href="#">99-Years</a></li>
+                      <li><a href="#">Condominium</a></li>
+                    </ul>
+                    <ul class="badge-group-2 d-flex flex-wrap">
+                      <li>
+                        <span class="badge badge-light"><span>Total:</span> 450 units</span>
+                      </li>
+                      <li>
+                        <span class="badge badge-light"><span>Available:</span> 150 units</span>
+                      </li>
+                      <li>
+                        <span class="badge badge-light hide-xl-xxl"><span>Sold:</span> 300 units</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-footer">
+                    <div class="d-flex align-items-center">
+                      <div class="com-avater-info d-flex align-items-center">
+                        <div class="thumbnail">
+                          <img src="assets/img/avater.png" alt="" />
+                        </div>
+                        <div class="text-info">
+                          <h6 class="name d-none d-md-block">Jayden Realtors Construction</h6>
+                          <h6 class="name d-md-none">Jayden Realtors Construction</h6>
+                          <p>Developer Sales Team</p>
+                        </div>
+                      </div>
+                      <div class="ms-auto right-area justify-content-end d-flex">
+                        <div class="d-flex">
+                          <a href="#" class="btn btn-outline-primary mr-8 btn-min-w106 d-none d-md-inline-block call-" data-get-num="+65 8597-1878"
+                            >Call</a
+                          >
+                          <a href="#" class="btn btn-outline-primary mr-8 d-md-none call-">Call</a>
+                          <a href="#" class="btn btn-primary btn-icon d-flex align-items-center">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M8 0C3.582 0 0 3.582 0 8C0 9.50081 0.421561 10.9 1.14062 12.1003L0.0716146 16L4.05469 14.9544C5.21957 15.6167 6.56433 16 8 16C12.418 16 16 12.418 16 8C16 3.582 12.418 0 8 0ZM5.26172 4.26823C5.39172 4.26823 5.52529 4.26744 5.64063 4.27344C5.78329 4.27677 5.93857 4.28722 6.08724 4.61589C6.26391 5.00655 6.64858 5.9866 6.69792 6.08594C6.74725 6.18527 6.78221 6.30229 6.71354 6.43229C6.64821 6.56563 6.61423 6.64632 6.51823 6.76432C6.4189 6.87899 6.31005 7.02141 6.22005 7.10807C6.12072 7.20741 6.01815 7.31632 6.13281 7.51432C6.24748 7.71232 6.64571 8.36142 7.23437 8.88542C7.99104 9.56142 8.62946 9.76916 8.82812 9.86849C9.02679 9.96782 9.14184 9.95234 9.25651 9.81901C9.37451 9.68901 9.75208 9.24294 9.88542 9.04427C10.0154 8.8456 10.1481 8.87998 10.3281 8.94531C10.5108 9.01065 11.4849 9.49051 11.6836 9.58984C11.8823 9.68918 12.0125 9.73834 12.0625 9.81901C12.1138 9.90234 12.1139 10.2991 11.9492 10.7617C11.7846 11.2237 10.9759 11.6705 10.6133 11.7018C10.2473 11.7358 9.90571 11.8663 8.23438 11.2083C6.21838 10.4143 4.94699 8.34948 4.84766 8.21615C4.74832 8.08615 4.04036 7.1426 4.04036 6.16927C4.04036 5.1926 4.55244 4.71429 4.73177 4.51562C4.91444 4.31696 5.12839 4.26823 5.26172 4.26823Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-40">
+              <div class="blog-card">
+                <div class="thumb card-thumb">
+                  <img src="assets/img/card/1-sm.png" alt="" />
+                  <span class="--tag">Mixed Development</span>
+                  <span class="badge badge-dark-4 badge-img-count d-inline-flex align-items-center badge-photos --photos">
+                    <svg class="icon" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2 0C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2V12C0 12.5304 0.210714 13.0391 0.585786 13.4142C0.960859 13.7893 1.46957 14 2 14H14C14.5304 14 15.0391 13.7893 15.4142 13.4142C15.7893 13.0391 16 12.5304 16 12V2C16 1.46957 15.7893 0.960859 15.4142 0.585786C15.0391 0.210714 14.5304 0 14 0H2ZM14 12H2L6 4L9 10L11 6L14 12Z"
+                        fill="white"
+                      />
+                    </svg>
+                    12
+                  </span>
+                </div>
+                <div class="blog-content card-post-content">
+                  <div class="text-content">
+                    <h2 class="title">Amber Park <small>in Amber Garden</small></h2>
+                    <ul class="inline-dot-list">
+                      <li>Core Central</li>
+                      <li>Prime Disctrict</li>
+                      <li>D15 - East Coast / Marine...</li>
+                    </ul>
+                    <p class="mt-10 mb-9 text-gray">
+                      1,250m to
+                      <span class="custom-badge-group d-inline-flex">
+                        <span class="badge-item bg-1">JS1</span>
+                        <span class="badge-item bg-2">JS1</span>
+                        <span class="badge-item bg-3">JS1</span>
+                      </span>
+                      Choa Chu Kang West MRT
+                    </p>
+                    <ul class="inline-line-list mb-12">
+                      <li><a href="#">Dec 2021</a></li>
+                      <li><a href="#">99-Years</a></li>
+                      <li><a href="#">Condominium</a></li>
+                    </ul>
+                    <ul class="badge-group-2 d-flex flex-wrap">
+                      <li>
+                        <span class="badge badge-light"><span>Total:</span> 450 units</span>
+                      </li>
+                      <li>
+                        <span class="badge badge-light"><span>Available:</span> 150 units</span>
+                      </li>
+                      <li>
+                        <span class="badge badge-light hide-xl-xxl"><span>Sold:</span> 300 units</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-footer">
+                    <div class="d-flex align-items-center">
+                      <div class="com-avater-info d-flex align-items-center">
+                        <div class="thumbnail">
+                          <img src="assets/img/avater.png" alt="" />
+                        </div>
+                        <div class="text-info">
+                          <h6 class="name d-none d-md-block">Jayden Realtors Construction</h6>
+                          <h6 class="name d-md-none">Jayden Realtors Construction</h6>
+                          <p>Developer Sales Team</p>
+                        </div>
+                      </div>
+                      <div class="ms-auto right-area justify-content-end d-flex">
+                        <div class="d-flex">
+                          <a href="#" class="btn btn-outline-primary mr-8 btn-min-w106 d-none d-md-inline-block call-" data-get-num="+65 8597-1878"
+                            >Call</a
+                          >
+                          <a href="#" class="btn btn-outline-primary mr-8 d-md-none call-">Call</a>
+                          <a href="#" class="btn btn-primary btn-icon d-flex align-items-center">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M8 0C3.582 0 0 3.582 0 8C0 9.50081 0.421561 10.9 1.14062 12.1003L0.0716146 16L4.05469 14.9544C5.21957 15.6167 6.56433 16 8 16C12.418 16 16 12.418 16 8C16 3.582 12.418 0 8 0ZM5.26172 4.26823C5.39172 4.26823 5.52529 4.26744 5.64063 4.27344C5.78329 4.27677 5.93857 4.28722 6.08724 4.61589C6.26391 5.00655 6.64858 5.9866 6.69792 6.08594C6.74725 6.18527 6.78221 6.30229 6.71354 6.43229C6.64821 6.56563 6.61423 6.64632 6.51823 6.76432C6.4189 6.87899 6.31005 7.02141 6.22005 7.10807C6.12072 7.20741 6.01815 7.31632 6.13281 7.51432C6.24748 7.71232 6.64571 8.36142 7.23437 8.88542C7.99104 9.56142 8.62946 9.76916 8.82812 9.86849C9.02679 9.96782 9.14184 9.95234 9.25651 9.81901C9.37451 9.68901 9.75208 9.24294 9.88542 9.04427C10.0154 8.8456 10.1481 8.87998 10.3281 8.94531C10.5108 9.01065 11.4849 9.49051 11.6836 9.58984C11.8823 9.68918 12.0125 9.73834 12.0625 9.81901C12.1138 9.90234 12.1139 10.2991 11.9492 10.7617C11.7846 11.2237 10.9759 11.6705 10.6133 11.7018C10.2473 11.7358 9.90571 11.8663 8.23438 11.2083C6.21838 10.4143 4.94699 8.34948 4.84766 8.21615C4.74832 8.08615 4.04036 7.1426 4.04036 6.16927C4.04036 5.1926 4.55244 4.71429 4.73177 4.51562C4.91444 4.31696 5.12839 4.26823 5.26172 4.26823Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="section-4" class="panel-card home--">
+        <div class="section-title container">
+          <h2 class="title">Developer Sales Volume</h2>
+          <p class="small-title">Based on sales from Nov 19 to Nov 21</p>
+        </div>
+        <div class="card-body container">
+          <div class="table__wrapper">
+            <div class="table-transparent text_info_list -two">
+              <div class="swipe-itt">
+                <div class="swiper-wrapper">
+                  <ul class="swiper-slide">
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Bras Basah Complex
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Papi’s Tacos
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Raffles Boutique
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        FY Hair Salon
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Garden Shop
+                        <p class="text-gray">30m / 10min walk</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="swiper-slide">
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Bras Basah Complex
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Papi’s Tacos
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Raffles Boutique
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        FY Hair Salon
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Garden Shop
+                        <p class="text-gray">30m / 10min walk</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="swiper-slide">
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Bras Basah Complex
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Papi’s Tacos
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Raffles Boutique
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        FY Hair Salon
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Garden Shop
+                        <p class="text-gray">30m / 10min walk</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="swiper-slide">
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Bras Basah Complex
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Papi’s Tacos
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Raffles Boutique
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        FY Hair Salon
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Garden Shop
+                        <p class="text-gray">30m / 10min walk</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="swiper-slide">
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Bras Basah Complex
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Papi’s Tacos
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Raffles Boutique
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        FY Hair Salon
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Garden Shop
+                        <p class="text-gray">30m / 10min walk</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="swiper-slide">
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Bras Basah Complex
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Papi’s Tacos
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Raffles Boutique
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        FY Hair Salon
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Garden Shop
+                        <p class="text-gray">30m / 10min walk</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="swiper-slide">
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Bras Basah Complex
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Papi’s Tacos
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Raffles Boutique
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        FY Hair Salon
+                        <p class="text-gray">5m / 5min walk</p>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="thumbnail">
+                        <img src="assets/img/avater.png" alt="" />
+                      </div>
+                      <div class="text---">
+                        Garden Shop
+                        <p class="text-gray">30m / 10min walk</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="moveit-backk d-flex align-items-center justify-content-center"><button class="light-next-btn"></button></div>
+              <div class="moveit-nextt d-flex align-items-center justify-content-center"><button class="light-next-btn"></button></div>
+            </div>
+          </div>
+        </div>
+      </div>
       <section class="new-launch sec-pt-80 sec-pb-80">
         <div class="container">
           <div class="section-title">
