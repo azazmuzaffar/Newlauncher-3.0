@@ -1,5 +1,7 @@
 .blog-area {
   background: #f9fafc;
+  padding-top: 95px;
+  padding-bottom: 60px;
   @media #{$sm_device} {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -168,8 +170,8 @@
 
 .panel-card.home-- {
   background: red;
-  padding-top: 80px;
-  padding-bottom: 100px;
+  padding-top: 95px;
+  padding-bottom: 92px;
   border: none;
   background: #f9fafc;
   .container.-heading {
@@ -182,16 +184,23 @@
   overflow-x: hidden;
   .card-body {
     padding: 0;
+    .swipe-itt {
+      padding: 8px;
+    }
     ul {
       li {
         padding: 14px 16px 14px 16px;
         background: #ffffff;
-        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+        box-shadow: 0px 1px 8px rgba(17, 24, 40, 0.116);
         border-radius: 8px;
         width: 290px;
         margin: 0px 35px 16px 0px;
         @media #{$sm_device} {
           margin-right: 0px;
+        }
+
+        &:last-of-type {
+          margin-bottom: 0px;
         }
       }
       &:last-of-type {
