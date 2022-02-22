@@ -57,11 +57,22 @@
         background: #743393;
         color: white;
         font-weight: 600;
+        @media #{$sm_device} {
+          font-size: 12px;
+          padding: 0px 6px 0px 6px;
+          border-radius: 3px;
+          top: 13px;
+          left: 13px;
+        }
       }
       .--photos {
         position: absolute;
         bottom: 15px;
         left: 15px;
+        @media #{$sm_device} {
+          bottom: 13px;
+          left: 13px;
+        }
       }
     }
   }
@@ -107,7 +118,14 @@
       padding: 0px;
       .text-content {
         padding: 13px 15px;
+        @media #{$sm_device} {
+          padding: 13px 12px;
+        }
         .title {
+          @media #{$sm_device} {
+            font-size: 20px;
+            margin-bottom: 5px !important;
+          }
           small {
             font-size: 14px;
             line-height: 19px;
@@ -115,10 +133,30 @@
             font-weight: normal;
           }
         }
+        .inline-dot-list,
+        .inline-line-list {
+          li {
+            @media #{$sm_device} {
+              font-size: 14px;
+            }
+          }
+        }
+        .inline-line-list {
+          margin-bottom: 10px !important;
+        }
+        .badges-- {
+          @media #{$sm_device} {
+            margin-top: 7px !important;
+            margin-bottom: 7px !important;
+          }
+        }
       }
       .card-footer {
         background: white;
         padding: 15px 15px;
+        @media #{$sm_device} {
+          padding: 15px 12px;
+        }
         .text-info {
           p {
             margin: 0;
@@ -129,10 +167,27 @@
             border: 1px solid #e6e7eb;
             border-radius: 50%;
           }
+          .text-info {
+            p {
+              @media #{$sm_device} {
+                font-size: 12px;
+              }
+            }
+          }
         }
         .right-area .btn.call- {
           min-width: fit-content;
           padding: 7px 14px;
+          @media #{$sm_device} {
+            padding: 3px 9px;
+            height: fit-content;
+          }
+        }
+        .right-area .whatsapp- {
+          @media #{$sm_device} {
+            padding: 6px 9px;
+            height: fit-content;
+          }
         }
       }
     }
@@ -174,8 +229,20 @@
   padding-bottom: 92px;
   border: none;
   background: #f9fafc;
-  .container.-heading {
+
+  .container.-heading,
+  .card-body.container {
     padding: 0;
+
+    @media #{$sm_device} {
+      padding-left: 0px;
+    }
+  }
+  .container.-heading {
+    padding-left: 10px;
+    @media #{$sm_device} {
+      padding-left: 0;
+    }
   }
   @media #{$sm_device} {
     margin: 0;
@@ -185,7 +252,22 @@
   .card-body {
     padding: 0;
     .swipe-itt {
-      padding: 8px 4px;
+      padding: 8px 0px 8px 10px;
+      @media #{$sm_device} {
+        padding: 8px 0px 8px 2px;
+      }
+    }
+    .moveit-backk {
+      left: -20px;
+      @media #{$sm_device} {
+        left: -25px;
+      }
+    }
+    .moveit-nextt {
+      right: -20px;
+      @media #{$sm_device} {
+        right: -25px;
+      }
     }
     ul {
       li {
@@ -194,18 +276,17 @@
         box-shadow: 0px 1px 8px rgba(17, 24, 40, 0.116);
         border-radius: 8px;
         width: 290px;
-        margin: 0px 34px 16px 0px;
+        margin: 0px 31px 16px 0px;
         @media #{$sm_device} {
           margin-right: 0px;
         }
-
         &:last-of-type {
           margin-bottom: 0px;
         }
       }
       &:last-of-type {
         li {
-          margin-right: 0px;
+          margin-right: 12px;
         }
       }
       .thumbnail {
