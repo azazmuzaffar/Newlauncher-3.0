@@ -3486,6 +3486,7 @@ p .custom-badge-group {
 .panel-card.home-- .table__wrapper::before {
   background: -webkit-gradient(linear, right top, left top, color-stop(19.05%, #f9fafc), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(270deg, #f9fafc 19.05%, rgba(255, 255, 255, 0) 100%);
+  width: 30px;
 }
 
 /*testimonial-item*/

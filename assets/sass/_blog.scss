@@ -217,6 +217,7 @@
     position: relative;
     &::before {
       background: linear-gradient(270deg, #f9fafc 19.05%, rgba(255, 255, 255, 0) 100%);
+      width: 30px;
     }
   }
 }
