@@ -3214,9 +3214,14 @@ p .custom-badge-group {
 }
 
 .blog-area {
-  padding-top: 80px;
-  padding-bottom: 100px;
   background: #f9fafc;
+}
+
+@media (max-width: 575.98px) {
+  .blog-area {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .blog-area .dropdown--all-posts {
@@ -3227,6 +3232,12 @@ p .custom-badge-group {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 35px;
+}
+
+@media (max-width: 575.98px) {
+  .blog-area .dropdown--all-posts {
+    margin-bottom: 24px;
+  }
 }
 
 .blog-area .dropdown--all-posts .show-all-posts-- {
@@ -3416,6 +3427,18 @@ p .custom-badge-group {
   padding-bottom: 100px;
   border: none;
   background: #f9fafc;
+  overflow-x: hidden;
+}
+
+.panel-card.home-- .container.-heading {
+  padding: 0;
+}
+
+@media (max-width: 575.98px) {
+  .panel-card.home-- {
+    margin: 0;
+    padding: 40px 15px;
+  }
 }
 
 .panel-card.home-- .card-body {
@@ -3430,6 +3453,12 @@ p .custom-badge-group {
   border-radius: 8px;
   width: 290px;
   margin: 0px 35px 16px 0px;
+}
+
+@media (max-width: 575.98px) {
+  .panel-card.home-- .card-body ul li {
+    margin-right: 0px;
+  }
 }
 
 .panel-card.home-- .card-body ul:last-of-type li {
