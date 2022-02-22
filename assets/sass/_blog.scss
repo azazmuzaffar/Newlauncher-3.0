@@ -170,9 +170,28 @@
   .card-body {
     padding: 0;
     ul {
+      li {
+        padding: 14px 16px 14px 16px;
+        background: #ffffff;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+        border-radius: 8px;
+        width: 290px;
+        margin: 0px 35px 16px 0px;
+      }
+      &:last-of-type {
+        li {
+          margin-right: 0px;
+        }
+      }
       .thumbnail {
         margin-right: 16px;
       }
+    }
+  }
+  .table__wrapper {
+    position: relative;
+    &::before {
+      background: linear-gradient(270deg, #f9fafc 19.05%, rgba(255, 255, 255, 0) 100%);
     }
   }
 }

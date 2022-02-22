@@ -3422,8 +3422,31 @@ p .custom-badge-group {
   padding: 0;
 }
 
+.panel-card.home-- .card-body ul li {
+  padding: 14px 16px 14px 16px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  width: 290px;
+  margin: 0px 35px 16px 0px;
+}
+
+.panel-card.home-- .card-body ul:last-of-type li {
+  margin-right: 0px;
+}
+
 .panel-card.home-- .card-body ul .thumbnail {
   margin-right: 16px;
+}
+
+.panel-card.home-- .table__wrapper {
+  position: relative;
+}
+
+.panel-card.home-- .table__wrapper::before {
+  background: -webkit-gradient(linear, right top, left top, color-stop(19.05%, #f9fafc), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(270deg, #f9fafc 19.05%, rgba(255, 255, 255, 0) 100%);
 }
 
 /*testimonial-item*/
