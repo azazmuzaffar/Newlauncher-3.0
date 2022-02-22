@@ -185,7 +185,7 @@
   .card-body {
     padding: 0;
     .swipe-itt {
-      padding: 8px;
+      padding: 8px 5px;
     }
     ul {
       li {
@@ -194,7 +194,7 @@
         box-shadow: 0px 1px 8px rgba(17, 24, 40, 0.116);
         border-radius: 8px;
         width: 290px;
-        margin: 0px 30px 16px 0px;
+        margin: 0px 35px 16px 0px;
         @media #{$sm_device} {
           margin-right: 0px;
         }
