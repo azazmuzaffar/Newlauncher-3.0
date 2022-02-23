@@ -3285,37 +3285,20 @@ p .custom-badge-group {
 .blog-card .thumb.card-thumb .--tag {
   display: block;
   position: absolute;
-  top: 15px;
-  left: 15px;
-  font-size: 14px;
-  padding: 1px 7px 2px 7px;
-  border-radius: 5px;
   background: #743393;
   color: white;
   font-weight: 600;
-}
-
-@media (max-width: 575.98px) {
-  .blog-card .thumb.card-thumb .--tag {
-    font-size: 12px;
-    padding: 0px 6px 0px 6px;
-    border-radius: 3px;
-    top: 13px;
-    left: 13px;
-  }
+  font-size: 12px;
+  padding: 0px 6px 0px 6px;
+  border-radius: 3px;
+  top: 13px;
+  left: 13px;
 }
 
 .blog-card .thumb.card-thumb .--photos {
   position: absolute;
-  bottom: 15px;
-  left: 15px;
-}
-
-@media (max-width: 575.98px) {
-  .blog-card .thumb.card-thumb .--photos {
-    bottom: 13px;
-    left: 13px;
-  }
+  bottom: 13px;
+  left: 13px;
 }
 
 .blog-card .blog-content {
@@ -3329,14 +3312,13 @@ p .custom-badge-group {
   font-weight: 600;
   line-height: 24px;
   color: #111828;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 @media (max-width: 575.98px) {
   .blog-card .blog-content .title {
     font-size: 18px;
     line-height: 22px;
-    margin-bottom: 8px;
   }
 }
 
@@ -3396,22 +3378,18 @@ p .custom-badge-group {
   font-weight: normal;
 }
 
-@media (max-width: 575.98px) {
-  .blog-card .blog-content.card-post-content .text-content .inline-dot-list li,
-  .blog-card .blog-content.card-post-content .text-content .inline-line-list li {
-    font-size: 14px;
-  }
+.blog-card .blog-content.card-post-content .text-content .inline-dot-list,
+.blog-card .blog-content.card-post-content .text-content .inline-line-list {
+  font-size: 14px;
 }
 
 .blog-card .blog-content.card-post-content .text-content .inline-line-list {
   margin-bottom: 10px !important;
 }
 
-@media (max-width: 575.98px) {
-  .blog-card .blog-content.card-post-content .text-content .badges-- {
-    margin-top: 7px !important;
-    margin-bottom: 7px !important;
-  }
+.blog-card .blog-content.card-post-content .text-content .badges-- {
+  margin-top: 7px !important;
+  margin-bottom: 7px !important;
 }
 
 .blog-card .blog-content.card-post-content .card-footer {
@@ -3434,35 +3412,25 @@ p .custom-badge-group {
   border-radius: 50%;
 }
 
-@media (max-width: 575.98px) {
-  .blog-card .blog-content.card-post-content .card-footer .com-avater-info .text-info p {
-    font-size: 12px;
-  }
+.blog-card .blog-content.card-post-content .card-footer .com-avater-info .text-info p {
+  font-size: 12px;
 }
 
 .blog-card .blog-content.card-post-content .card-footer .right-area .btn.call- {
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
-  padding: 7px 14px;
+  padding: 4px 9px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
-@media (max-width: 575.98px) {
-  .blog-card .blog-content.card-post-content .card-footer .right-area .btn.call- {
-    padding: 3px 9px;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .blog-card .blog-content.card-post-content .card-footer .right-area .whatsapp- {
-    padding: 6px 9px;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
+.blog-card .blog-content.card-post-content .card-footer .right-area .whatsapp- {
+  padding: 6px 9px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .post-item p {

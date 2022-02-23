@@ -49,30 +49,20 @@
       .--tag {
         display: block;
         position: absolute;
-        top: 15px;
-        left: 15px;
-        font-size: 14px;
-        padding: 1px 7px 2px 7px;
-        border-radius: 5px;
         background: #743393;
         color: white;
         font-weight: 600;
-        @media #{$sm_device} {
-          font-size: 12px;
-          padding: 0px 6px 0px 6px;
-          border-radius: 3px;
-          top: 13px;
-          left: 13px;
-        }
+        font-size: 12px;
+        padding: 0px 6px 0px 6px;
+        border-radius: 3px;
+        top: 13px;
+        left: 13px;
       }
       .--photos {
         position: absolute;
-        bottom: 15px;
-        left: 15px;
-        @media #{$sm_device} {
-          bottom: 13px;
-          left: 13px;
-        }
+
+        bottom: 13px;
+        left: 13px;
       }
     }
   }
@@ -85,11 +75,10 @@
       font-weight: 600;
       line-height: 24px;
       color: #111828;
-      margin-bottom: 12px;
+      margin-bottom: 8px;
       @media #{$sm_device} {
         font-size: 18px;
         line-height: 22px;
-        margin-bottom: 8px;
       }
     }
     p {
@@ -135,20 +124,14 @@
         }
         .inline-dot-list,
         .inline-line-list {
-          li {
-            @media #{$sm_device} {
-              font-size: 14px;
-            }
-          }
+          font-size: 14px;
         }
         .inline-line-list {
           margin-bottom: 10px !important;
         }
         .badges-- {
-          @media #{$sm_device} {
-            margin-top: 7px !important;
-            margin-bottom: 7px !important;
-          }
+          margin-top: 7px !important;
+          margin-bottom: 7px !important;
         }
       }
       .card-footer {
@@ -169,25 +152,18 @@
           }
           .text-info {
             p {
-              @media #{$sm_device} {
-                font-size: 12px;
-              }
+              font-size: 12px;
             }
           }
         }
         .right-area .btn.call- {
           min-width: fit-content;
-          padding: 7px 14px;
-          @media #{$sm_device} {
-            padding: 3px 9px;
-            height: fit-content;
-          }
+          padding: 4px 9px;
+          height: fit-content;
         }
         .right-area .whatsapp- {
-          @media #{$sm_device} {
-            padding: 6px 9px;
-            height: fit-content;
-          }
+          padding: 6px 9px;
+          height: fit-content;
         }
       }
     }
